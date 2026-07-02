@@ -21,7 +21,7 @@
 <div class="concept-list">
   {% for c in concepts %}
   <a href="/{{ c.slug }}.html" class="concept-card">
-    <span class="type-badge type-{{ c.frontmatter.type | replace(' ', '') }}">{{ c.frontmatter.type }}</span>
+    <span class="type-badge type-{{ c.frontmatter.type | replace(' ', '') }}">{{ c.emoji }} {{ c.frontmatter.type }}</span>
     <strong>{{ c.title }}</strong>
     {% if c.frontmatter.description %}
     <p>{{ c.frontmatter.description }}</p>

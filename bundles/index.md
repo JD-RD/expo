@@ -7,6 +7,12 @@ description: Des bundles de connaissances structurées, explorables et partageab
 
 Des bundles de connaissances en **OKF** (Open Knowledge Format). Navigables, interconnectés, et vivants.
 
-## Bundles
+## 🇯🇵 Voyage Japon 2026
 
-Parcourez les bundles ci-dessous pour découvrir des connaissances structurées.
+83 concepts — Tokyo, Kyoto, Kanazawa, Kiso Valley, Kusatsu. Restaurants, attractions, shopping, hébergement, et onsens.
+
+[Explorer le bundle →](/japon/)
+
+## Tags
+
+Parcourir par tag : [japon](/tags/japon), [tokyo](/tags/tokyo), [kyoto](/tags/kyoto), [restaurant](/tags/restaurant), [ramen](/tags/ramen), [onsen](/tags/onsen)

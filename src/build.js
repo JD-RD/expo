@@ -6,6 +6,7 @@ import { join, relative, dirname, basename, extname } from 'path';
 import matter from 'gray-matter';
 import { marked } from 'marked';
 import nunjucks from 'nunjucks';
+import lunr from 'lunr';
 
 const ROOT = new URL('..', import.meta.url).pathname;
 const BUNDLES = join(ROOT, 'bundles');
@@ -211,7 +212,12 @@ function build() {
       body: bundle.meta.body ? marked.parse(bundle.meta.body, { breaks: true }) : '',
       tree: bundle.tree,
       bundleName: name,
-      concepts: bundle.concepts.slice(0, 20),
+      concepts: bundle.concepts.slice(0, 20).map(c => ({
+        slug: c.slug,
+        frontmatter: c.frontmatter,
+        title: c.frontmatter.title || c.slug.split('/').pop(),
+        emoji: typeEmoji(c.frontmatter.type),
+      })),
     });
     writeFileSync(join(bundleDir, 'index.html'), bundleHtml);
     console.log(`  📖 ${name} → /${name}/index.html`);
@@ -286,6 +292,7 @@ function build() {
             slug: c.slug,
             frontmatter: c.frontmatter,
             title: c.frontmatter.title || c.slug.split('/').pop(),
+            emoji: typeEmoji(c.frontmatter.type),
           }));
 
         let pageTitle, description, body;
@@ -350,8 +357,51 @@ function build() {
     console.log('\n  🎨 assets/ → dist/assets/');
   }
 
-  // ── 5. Copy CNAME / sitemap / robots if present ────────────
-  for (const f of ['CNAME', 'robots.txt', 'sitemap.xml']) {
+  // ── 5. Generate search index (Lunr.js) ──────────
+  const searchDocs = [];
+  for (const [name, bundle] of Object.entries(bundles)) {
+    for (const concept of bundle.concepts) {
+      searchDocs.push({
+        id: concept.path,
+        title: concept.frontmatter.title || concept.slug.split('/').pop(),
+        description: (concept.frontmatter.description || '').slice(0, 200),
+        url: concept.path + '.html',
+        tags: (concept.frontmatter.tags || []).join(' '),
+        bundle: bundle.meta.title || name,
+      });
+    }
+  }
+
+  if (searchDocs.length > 0) {
+    const idx = lunr(function () {
+      this.ref('id');
+      this.field('title', { boost: 10 });
+      this.field('description', { boost: 5 });
+      this.field('tags', { boost: 3 });
+      this.field('bundle');
+
+      for (const doc of searchDocs) {
+        this.add(doc);
+      }
+    });
+
+    const searchIndex = {
+      index: idx.toJSON(),
+      docs: searchDocs,
+    };
+    writeFileSync(join(assetsDist, 'search-index.json'), JSON.stringify(searchIndex));
+    console.log('  🔍 search-index.json → dist/assets/search-index.json');
+  }
+
+  // ── 6. 404 page ──────────────────────────────────
+  const notFoundHtml = nunjucks.render('404.njk', {
+    siteTitle: '404 · EXPO',
+  });
+  writeFileSync(join(DIST, '404.html'), notFoundHtml);
+  console.log('  🌊 404 → /404.html');
+
+  // ── 7. Copy CNAME / sitemap / robots if present ────
+  for (const f of ['CNAME', 'robots.txt', 'sitemap.xml', 'manifest.json']) {
     const src = join(ROOT, f);
     if (existsSync(src)) writeFileSync(join(DIST, f), readFileSync(src));
   }
