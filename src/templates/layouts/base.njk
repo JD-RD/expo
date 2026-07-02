@@ -10,24 +10,30 @@
 </head>
 <body>
   <nav class="topbar">
+    {% if tree %}<button class="hamburger" onclick="toggleSidebar()" aria-label="Menu">☰</button>{% endif %}
     <a href="/" class="logo">⚡ EXPO</a>
-    <input type="search" id="search" placeholder="Rechercher dans les bundles..." autocomplete="off">
+    <input type="search" id="search" placeholder="Rechercher..." autocomplete="off">
   </nav>
+
+  {% if tree %}<div class="sidebar-overlay" id="sidebar-overlay" onclick="toggleSidebar()"></div>{% endif %}
 
   <div class="layout">
     {% if tree %}
     <aside class="sidebar" id="sidebar">
-      <button class="sidebar-toggle" onclick="document.body.classList.toggle('sidebar-collapsed')">☰</button>
+      <div class="sidebar-header">
+        <span class="sidebar-title">Navigation</span>
+        <button class="sidebar-close" onclick="toggleSidebar()" aria-label="Fermer">✕</button>
+      </div>
       <div class="tree">
         <div class="tree-root">
-          <a href="/{{ bundleName }}/" class="tree-bundle">📦 {{ bundleName }}</a>
+          <a href="/{{ bundleName }}/" class="tree-bundle" onclick="closeSidebar(event)">📦 {{ bundleName }}</a>
         </div>
         {% macro render_children(children) %}
           {% if children %}
             <ul>
             {% for child in children %}
               <li>
-                <a href="{{ child.path }}" class="tree-dir">{{ child.label }}</a>
+                <a href="{{ child.path }}" class="tree-dir" onclick="closeSidebar(event)">{{ child.label }}</a>
                 {{ render_children(child.children) }}
               </li>
             {% endfor %}
@@ -58,6 +64,16 @@
     </main>
   </div>
 
+  <script>
+    function toggleSidebar() {
+      document.body.classList.toggle('sidebar-open');
+    }
+    function closeSidebar(e) {
+      if (window.innerWidth <= 768) {
+        document.body.classList.remove('sidebar-open');
+      }
+    }
+  </script>
   <script src="/assets/search.js"></script>
 </body>
 </html>
