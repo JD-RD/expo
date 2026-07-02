@@ -441,6 +441,21 @@ body.sidebar-open .sidebar-overlay {
 .link-group li { margin-bottom: 0.2rem; }
 .link-group li::before { content: '• '; color: var(--text-dim); }
 
+/* ─── Footer ──────────────────────────────────── */
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+.site-footer a {
+  color: var(--text-muted);
+}
+.site-footer a:hover {
+  color: var(--accent);
+}
+
 /* ─── Search Results ──────────────────────────── */
 .search-overlay {
   display: none;
