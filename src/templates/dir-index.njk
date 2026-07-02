@@ -1,18 +1,6 @@
 {% extends "layouts/base.njk" %}
 
 {% block content %}
-<nav class="breadcrumb">
-  <a href="/">Accueil</a>
-  {% for crumb in breadcrumb %}
-    <span class="sep">/</span>
-    {% if crumb.path %}
-      <a href="{{ crumb.path }}">{{ crumb.label }}</a>
-    {% else %}
-      <span>{{ crumb.label }}</span>
-    {% endif %}
-  {% endfor %}
-</nav>
-
 {% if body %}
 <div class="markdown-body">{{ body | safe }}</div>
 {% endif %}
