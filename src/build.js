@@ -264,7 +264,70 @@ function build() {
     }
   }
 
-  // ── 4. Copy static assets ──────────────────────────────────
+  // ── 4. Generate subdirectory index pages ───────────────────
+  for (const [name, bundle] of Object.entries(bundles)) {
+    const bundleDir = join(BUNDLES, name);
+
+    function genDirIndex(dir, prefix) {
+      const entries = readdirSync(dir, { withFileTypes: true });
+      for (const e of entries) {
+        if (!e.isDirectory()) continue;
+        if (e.name.startsWith('_')) continue;
+
+        const subDir = join(dir, e.name);
+        const indexPath = join(subDir, 'index.md');
+        if (!existsSync(indexPath)) continue;
+
+        const relPath = prefix ? `${prefix}/${e.name}` : e.name;
+        const { frontmatter, body } = readMd(indexPath);
+
+        // Concepts in this directory (excluding deeper subdirs)
+        const dirPrefix = `${name}/${relPath}/`;
+        const dirConcepts = bundle.concepts
+          .filter(c => c.slug.startsWith(dirPrefix) && c.slug.split('/').length === relPath.split('/').length + 2)
+          .map(c => ({
+            slug: c.slug,
+            frontmatter: c.frontmatter,
+            title: c.frontmatter.title || c.slug.split('/').pop(),
+          }));
+
+        // Breadcrumb
+        const parts = relPath.split('/');
+        const breadcrumb = [{ label: bundle.meta.title || name, path: `/${name}/` }];
+        let accum = name;
+        for (let i = 0; i < parts.length; i++) {
+          accum += '/' + parts[i];
+          if (i === parts.length - 1) {
+            breadcrumb.push({ label: frontmatter.title || parts[i], path: null });
+          } else {
+            breadcrumb.push({ label: parts[i], path: '/' + accum + '/' });
+          }
+        }
+
+        const html = nunjucks.render('dir-index.njk', {
+          siteTitle: `${frontmatter.title || relPath} · ${bundle.meta.title}`,
+          pageTitle: frontmatter.title || e.name,
+          description: frontmatter.description || '',
+          body: body ? marked.parse(body, { breaks: true }) : '',
+          concepts: dirConcepts,
+          breadcrumb,
+          tree: bundle.tree,
+          bundleName: name,
+        });
+
+        const outDir = join(DIST, name, relPath);
+        mkdirSync(outDir, { recursive: true });
+        writeFileSync(join(outDir, 'index.html'), html);
+        console.log(`  📁 ${name}/${relPath}/ → /${name}/${relPath}/index.html`);
+
+        // Recurse into subdirectories
+        genDirIndex(subDir, relPath);
+      }
+    }
+    genDirIndex(bundleDir, '');
+  }
+
+  // ── 5. Copy static assets ──────────────────────────────────
   const assetsDist = join(DIST, 'assets');
   if (existsSync(ASSETS_SRC)) {
     mkdirSync(assetsDist, { recursive: true });
