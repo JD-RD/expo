@@ -1,0 +1,53 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+<article class="concept">
+  <header class="concept-header">
+    <span class="type-badge type-{{ type | replace(' ', '') }}">{{ typeEmoji }} {{ type }}</span>
+    <h1>{{ pageTitle }}</h1>
+    {% if description %}
+    <p class="lead">{{ description }}</p>
+    {% endif %}
+    {% if tags.length > 0 %}
+    <div class="tags">
+      {% for tag in tags %}
+      <a href="/tags/{{ tag }}.html" class="tag">#{{ tag }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+    {% if timestamp %}
+    <time class="timestamp">{{ timestamp }}</time>
+    {% endif %}
+  </header>
+
+  <div class="markdown-body">
+    {{ body | safe }}
+  </div>
+
+  {% if forwardLinks.length > 0 or backlinks.length > 0 %}
+  <footer class="concept-links">
+    <h3>🔗 Liens</h3>
+    {% if forwardLinks.length > 0 %}
+    <div class="link-group">
+      <h4>→ Vers</h4>
+      <ul>
+        {% for link in forwardLinks %}
+        <li><a href="{{ link.path }}">{{ link.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+    {% if backlinks.length > 0 %}
+    <div class="link-group">
+      <h4>← Référencé par</h4>
+      <ul>
+        {% for link in backlinks %}
+        <li><a href="{{ link.path }}">{{ link.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </footer>
+  {% endif %}
+</article>
+{% endblock %}

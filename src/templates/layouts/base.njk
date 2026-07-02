@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ siteTitle }}</title>
+  {% if description %}<meta name="description" content="{{ description }}">{% endif %}
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+  <nav class="topbar">
+    <a href="/" class="logo">⚡ EXPO</a>
+    <input type="search" id="search" placeholder="Rechercher dans les bundles..." autocomplete="off">
+  </nav>
+
+  <div class="layout">
+    {% if tree %}
+    <aside class="sidebar" id="sidebar">
+      <button class="sidebar-toggle" onclick="document.body.classList.toggle('sidebar-collapsed')">☰</button>
+      <div class="tree">
+        <div class="tree-root">
+          <a href="/{{ bundleName }}/" class="tree-bundle">📦 {{ bundleName }}</a>
+        </div>
+        {% macro render_children(children) %}
+          {% if children %}
+            <ul>
+            {% for child in children %}
+              <li>
+                <a href="{{ child.path }}" class="tree-dir">{{ child.label }}</a>
+                {{ render_children(child.children) }}
+              </li>
+            {% endfor %}
+            </ul>
+          {% endif %}
+        {% endmacro %}
+        {{ render_children(tree) }}
+      </div>
+    </aside>
+    {% endif %}
+
+    <main class="content">
+      {% if breadcrumb %}
+      <nav class="breadcrumb">
+        <a href="/">Accueil</a>
+        {% for crumb in breadcrumb %}
+          <span class="sep">/</span>
+          {% if crumb.path %}
+            <a href="{{ crumb.path }}">{{ crumb.label }}</a>
+          {% else %}
+            <span>{{ crumb.label }}</span>
+          {% endif %}
+        {% endfor %}
+      </nav>
+      {% endif %}
+
+      {% block content %}{% endblock %}
+    </main>
+  </div>
+
+  <script src="/assets/search.js"></script>
+</body>
+</html>

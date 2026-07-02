@@ -1,0 +1,22 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+<h1 class="portal-title">{{ siteTitle }}</h1>
+
+{% if body %}
+<div class="portal-body">{{ body | safe }}</div>
+{% endif %}
+
+<div class="bundle-grid">
+  {% for bundle in bundles %}
+  <a href="{{ bundle.path }}" class="bundle-card">
+    <span class="bundle-emoji">{{ bundle.emoji }}</span>
+    <div class="bundle-info">
+      <h2>{{ bundle.title }}</h2>
+      <p>{{ bundle.description }}</p>
+      <span class="bundle-meta">{{ bundle.conceptCount }} concepts</span>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+{% endblock %}

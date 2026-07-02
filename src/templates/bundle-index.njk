@@ -1,0 +1,27 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+<header class="page-header">
+  <h1>{{ pageTitle }}</h1>
+  {% if description %}<p class="lead">{{ description }}</p>{% endif %}
+</header>
+
+{% if body %}
+<div class="markdown-body">{{ body | safe }}</div>
+{% endif %}
+
+{% if concepts and concepts.length > 0 %}
+<h2>Concepts</h2>
+<div class="concept-list">
+  {% for c in concepts %}
+  <a href="/{{ c.slug }}.html" class="concept-card">
+    <span class="type-badge type-{{ c.frontmatter.type | replace(' ', '') }}">{{ c.frontmatter.type }}</span>
+    <strong>{{ c.frontmatter.title or c.slug | split('/') | last }}</strong>
+    {% if c.frontmatter.description %}
+    <p>{{ c.frontmatter.description }}</p>
+    {% endif %}
+  </a>
+  {% endfor %}
+</div>
+{% endif %}
+{% endblock %}

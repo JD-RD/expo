@@ -1,0 +1,17 @@
+{
+  "name": "expo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Static portail de connaissances OKF",
+  "scripts": {
+    "build": "node src/build.js",
+    "dev": "node src/build.js --watch",
+    "preview": "cd dist && python3 -m http.server 8000"
+  },
+  "devDependencies": {
+    "gray-matter": "^4.0.3",
+    "marked": "^14.0.0",
+    "nunjucks": "^3.2.4"
+  }
+}
