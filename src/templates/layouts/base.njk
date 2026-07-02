@@ -77,12 +77,14 @@
 
   <script>
     function openIssue(e) {
+      e.preventDefault();
       const title = document.title;
       const url = window.location.href;
       const desc = document.querySelector('meta[name="description"]')?.content || '';
       const body = `**Page** : ${url}\n${desc ? `**Description** : ${desc}\n` : ''}\n**Ce qui devrait être corrigé** :\n\n\n---\n_Page : ${title}_`;
-      e.target.href = `https://github.com/JD-RD/expo/issues/new?title=${encodeURIComponent('EXPO: ' + title)}&body=${encodeURIComponent(body)}`;
-      return true;
+      const issueUrl = `https://github.com/JD-RD/expo/issues/new?title=${encodeURIComponent('EXPO: ' + title)}&body=${encodeURIComponent(body)}`;
+      window.open(issueUrl, '_blank');
+      return false;
     }
     function toggleSidebar() {
       document.body.classList.toggle('sidebar-open');
