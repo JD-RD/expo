@@ -124,6 +124,7 @@ body.sidebar-open .sidebar-overlay {
   border-bottom: 1px solid var(--border);
   margin-bottom: 0.5rem;
 }
+.sidebar-header > :first-child { margin-right: auto; }
 .sidebar-title {
   font-weight: 600;
   font-size: 0.85rem;
@@ -131,6 +132,18 @@ body.sidebar-open .sidebar-overlay {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
+.sidebar-toggle-all {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  line-height: 1;
+  margin-right: 0.3rem;
+}
+.sidebar-toggle-all:hover { color: var(--text); background: var(--bg-hover); }
 .sidebar-close {
   display: none;
   background: none;
@@ -154,21 +167,18 @@ body.sidebar-open .sidebar-overlay {
 .tree ul { list-style: none; padding-left: 1rem; margin: 0.2rem 0; }
 .tree li { margin: 0.15rem 0; }
 .tree li.tree-collapsed > ul { display: none; }
-.tree-toggle {
+.tree-folder { cursor: pointer; }
+.tree-folder::before {
+  content: '';
   display: inline-block;
-  cursor: pointer;
-  font-size: 0.6rem;
+  width: 0.6rem;
+  margin-right: 0.2rem;
   color: var(--text-dim);
-  width: 1.2em;
-  text-align: center;
-  user-select: none;
+  font-size: 0.65rem;
   transition: transform 0.15s;
-  flex-shrink: 0;
 }
-.tree-toggle:hover { color: var(--text); }
-.tree-toggle.open {
-  transform: rotate(90deg);
-}
+.tree li:not(.tree-collapsed) > .tree-folder::before { content: '⊟'; }
+.tree li.tree-collapsed > .tree-folder::before { content: '⊞'; }
 .tree a {
   display: block;
   padding: 0.2rem 0.4rem;

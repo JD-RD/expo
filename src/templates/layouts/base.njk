@@ -24,6 +24,7 @@
     <aside class="sidebar" id="sidebar">
       <div class="sidebar-header">
         <span class="sidebar-title">Navigation</span>
+        <button class="sidebar-toggle-all" onclick="toggleAllTree()" title="Tout déplier / replier">⊞</button>
         <button class="sidebar-close" onclick="toggleSidebar()" aria-label="Fermer">✕</button>
       </div>
       <div class="tree">
@@ -36,9 +37,10 @@
             {% for child in children %}
               <li{% if child.children and child.children.length > 0 and startCollapsed %} class="tree-collapsed"{% endif %}>
                 {% if child.children and child.children.length > 0 %}
-                <span class="tree-toggle" onclick="toggleTree(this)" aria-label="Déplier">▶</span>
-                {% endif %}
+                <a href="{{ child.path }}" class="tree-dir tree-folder" onclick="return toggleTree(this)">{{ child.label }}</a>
+                {% else %}
                 <a href="{{ child.path }}" class="tree-dir" onclick="closeSidebar(event)">{{ child.label }}</a>
+                {% endif %}
                 {{ render_children(child.children, startCollapsed) }}
               </li>
             {% endfor %}
@@ -81,8 +83,14 @@
     function toggleTree(el) {
       const li = el.parentElement;
       li.classList.toggle('tree-collapsed');
-      el.classList.toggle('open');
-      el.textContent = el.classList.contains('open') ? '▼' : '▶';
+    }
+    function toggleAllTree() {
+      const items = document.querySelectorAll('.tree > ul > li');
+      if (items.length === 0) return;
+      const allCollapsed = document.querySelectorAll('.tree > ul > li.tree-collapsed').length === items.length;
+      for (const li of items) {
+        li.classList.toggle('tree-collapsed', !allCollapsed);
+      }
     }
   </script>
   <script src="/assets/search.js"></script>
