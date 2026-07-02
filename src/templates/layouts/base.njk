@@ -83,6 +83,7 @@
     function toggleTree(el) {
       const li = el.parentElement;
       li.classList.toggle('tree-collapsed');
+      return false;
     }
     function toggleAllTree() {
       const items = document.querySelectorAll('.tree > ul > li');
