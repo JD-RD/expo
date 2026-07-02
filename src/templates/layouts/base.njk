@@ -80,9 +80,17 @@
         document.body.classList.remove('sidebar-open');
       }
     }
+    function saveTreeState() {
+      const state = {};
+      document.querySelectorAll('.tree-folder').forEach(a => {
+        state[a.getAttribute('href')] = a.parentElement.classList.contains('tree-collapsed');
+      });
+      localStorage.setItem('expo-tree', JSON.stringify(state));
+    }
     function toggleTree(el) {
       const li = el.parentElement;
       li.classList.toggle('tree-collapsed');
+      saveTreeState();
       return false;
     }
     function toggleAllTree() {
@@ -92,7 +100,21 @@
       for (const li of items) {
         li.classList.toggle('tree-collapsed', !allCollapsed);
       }
+      saveTreeState();
     }
+    function restoreTreeState() {
+      const saved = localStorage.getItem('expo-tree');
+      if (!saved) return;
+      try {
+        const state = JSON.parse(saved);
+        document.querySelectorAll('.tree-folder').forEach(a => {
+          if (state[a.getAttribute('href')] === false) {
+            a.parentElement.classList.remove('tree-collapsed');
+          }
+        });
+      } catch(e) {}
+    }
+    restoreTreeState();
   </script>
   <script src="/assets/search.js"></script>
 </body>
