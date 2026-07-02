@@ -72,10 +72,18 @@
   </div>
 
   <footer class="site-footer">
-    <a href="https://github.com/JD-RD/expo/issues/new" target="_blank" rel="noopener">Signaler une erreur → GitHub Issues</a>
+    <a href="https://github.com/JD-RD/expo/issues/new" target="_blank" rel="noopener" onclick="return openIssue(event)">Signaler une erreur → GitHub Issues</a>
   </footer>
 
   <script>
+    function openIssue(e) {
+      const title = document.title;
+      const url = window.location.href;
+      const desc = document.querySelector('meta[name="description"]')?.content || '';
+      const body = `**Page** : ${url}\n${desc ? `**Description** : ${desc}\n` : ''}\n**Ce qui devrait être corrigé** :\n\n\n---\n_Page : ${title}_`;
+      e.target.href = `https://github.com/JD-RD/expo/issues/new?title=${encodeURIComponent('EXPO: ' + title)}&body=${encodeURIComponent(body)}`;
+      return true;
+    }
     function toggleSidebar() {
       document.body.classList.toggle('sidebar-open');
     }
