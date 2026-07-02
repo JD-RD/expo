@@ -4,10 +4,6 @@
 <article class="concept">
   <header class="concept-header">
     <span class="type-badge type-{{ type | replace(' ', '') }}">{{ typeEmoji }} {{ type }}</span>
-    <h1>{{ pageTitle }}</h1>
-    {% if description %}
-    <p class="lead">{{ description }}</p>
-    {% endif %}
     {% if tags.length > 0 %}
     <div class="tags">
       {% for tag in tags %}

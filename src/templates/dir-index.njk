@@ -13,17 +13,11 @@
   {% endfor %}
 </nav>
 
-<header class="page-header">
-  <h1>{{ pageTitle }}</h1>
-  {% if description %}<p class="lead">{{ description }}</p>{% endif %}
-</header>
-
 {% if body %}
 <div class="markdown-body">{{ body | safe }}</div>
 {% endif %}
 
 {% if concepts and concepts.length > 0 %}
-<h2>Concepts</h2>
 <div class="concept-list">
   {% for c in concepts %}
   <a href="/{{ c.slug }}.html" class="concept-card">
