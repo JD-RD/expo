@@ -138,8 +138,10 @@ body.sidebar-open .sidebar-overlay {
   color: var(--text-muted);
   font-size: 1.1rem;
   cursor: pointer;
-  padding: 0.2rem 0.4rem;
+  padding: 0.3rem 0.5rem;
   border-radius: 4px;
+  min-width: 36px;
+  min-height: 36px;
 }
 .sidebar-close:hover { color: var(--text); background: var(--bg-hover); }
 .tree { padding: 0 0.75rem; }
@@ -418,8 +420,23 @@ body.sidebar-open .sidebar-overlay {
 
 /* ─── Responsive ──────────────────────────────── */
 @media (max-width: 768px) {
-  .hamburger { display: flex; }
-  .sidebar-close { display: block; }
+  .hamburger {
+    display: flex;
+    font-size: 2rem;
+    padding: 0.7rem;
+    background: var(--bg-hover);
+    border-radius: 10px;
+  }
+  .sidebar-close {
+    display: flex;
+    font-size: 1.5rem;
+    padding: 0.7rem;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+  }
+  .topbar { padding: 0.5rem 0.6rem; }
 
   .sidebar {
     position: fixed;
