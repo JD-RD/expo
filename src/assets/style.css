@@ -153,6 +153,22 @@ body.sidebar-open .sidebar-overlay {
 }
 .tree ul { list-style: none; padding-left: 1rem; margin: 0.2rem 0; }
 .tree li { margin: 0.15rem 0; }
+.tree li.tree-collapsed > ul { display: none; }
+.tree-toggle {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 0.6rem;
+  color: var(--text-dim);
+  width: 1.2em;
+  text-align: center;
+  user-select: none;
+  transition: transform 0.15s;
+  flex-shrink: 0;
+}
+.tree-toggle:hover { color: var(--text); }
+.tree-toggle.open {
+  transform: rotate(90deg);
+}
 .tree a {
   display: block;
   padding: 0.2rem 0.4rem;
