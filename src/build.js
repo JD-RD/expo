@@ -75,6 +75,18 @@ function buildTree(dir, bundleName, basePath = '') {
         path: `/${bundleName}/${relPath}/`,
         children: buildTree(join(dir, e.name), bundleName, relPath),
       });
+    } else if (e.isFile() && e.name.endsWith('.md')) {
+      const relPath = basePath ? `${basePath}/${e.name.replace(/\.md$/, '')}` : e.name.replace(/\.md$/, '');
+      const { frontmatter } = readMd(join(dir, e.name));
+      const label = frontmatter.title || e.name.replace(/\.md$/, '').replace(/[-_]/g, ' ');
+      items.push({
+        type: 'concept',
+        name: e.name.replace(/\.md$/, ''),
+        label,
+        desc: frontmatter.description || '',
+        path: `/${bundleName}/${relPath}.html`,
+        children: [],
+      });
     }
   }
   return items;

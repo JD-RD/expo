@@ -32,7 +32,7 @@
           <a href="/{{ bundleName }}/" class="tree-bundle" onclick="closeSidebar(event)">📦 {{ bundleName }}</a>
         </div>
         {% macro render_children(children, startCollapsed=true) %}
-          {% if children %}
+          {% if children and children.length > 0 %}
             <ul>
             {% for child in children %}
               <li{% if child.children and child.children.length > 0 and startCollapsed %} class="tree-collapsed"{% endif %}>
