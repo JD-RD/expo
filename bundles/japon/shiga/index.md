@@ -1,0 +1,1 @@
+# Shiga (Ōmi-Hachiman) — Lac Biwa, rizières, villages historiques.

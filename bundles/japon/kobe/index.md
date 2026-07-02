@@ -1,0 +1,1 @@
+# Kobe & Hyōgo — Bœuf de Kobe, quartier étranger, onsens d'Arima.

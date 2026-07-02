@@ -1,0 +1,1 @@
+# Kōyasan — Montagne sacrée du bouddhisme Shingon, cimetière Okunoin.

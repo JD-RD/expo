@@ -1,0 +1,1 @@
+# Gifu & Takayama — Alpes japonaises, village historique de Shirakawa-go.

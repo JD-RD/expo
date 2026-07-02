@@ -1,0 +1,1 @@
+# Kagoshima & Amami — Volcan Sakurajima, onsens, plages tropicales.

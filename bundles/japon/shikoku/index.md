@@ -1,0 +1,1 @@
+# Shikoku — Pèlerinage des 88 temples, nature préservée.

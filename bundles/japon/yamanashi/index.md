@@ -1,0 +1,1 @@
+# Yamanashi (Fuji Five Lakes) — Vue imprenable sur le Mont Fuji, lacs et randonnées.
