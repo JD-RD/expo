@@ -276,12 +276,9 @@ function build() {
 
         const subDir = join(dir, e.name);
         const indexPath = join(subDir, 'index.md');
-        if (!existsSync(indexPath)) continue;
-
         const relPath = prefix ? `${prefix}/${e.name}` : e.name;
-        const { frontmatter, body } = readMd(indexPath);
 
-        // Concepts in this directory (excluding deeper subdirs)
+        // Concepts in this directory (first level only, excl. deeper subdirs)
         const dirPrefix = `${name}/${relPath}/`;
         const dirConcepts = bundle.concepts
           .filter(c => c.slug.startsWith(dirPrefix) && c.slug.split('/').length === relPath.split('/').length + 2)
@@ -291,6 +288,18 @@ function build() {
             title: c.frontmatter.title || c.slug.split('/').pop(),
           }));
 
+        let pageTitle, description, body;
+        if (existsSync(indexPath)) {
+          const fm = readMd(indexPath);
+          pageTitle = fm.frontmatter.title || e.name;
+          description = fm.frontmatter.description || '';
+          body = fm.body ? marked.parse(fm.body, { breaks: true }) : '';
+        } else {
+          pageTitle = e.name.replace(/[-_]/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+          description = `${dirConcepts.length} concepts`;
+          body = '';
+        }
+
         // Breadcrumb
         const parts = relPath.split('/');
         const breadcrumb = [{ label: bundle.meta.title || name, path: `/${name}/` }];
@@ -298,17 +307,17 @@ function build() {
         for (let i = 0; i < parts.length; i++) {
           accum += '/' + parts[i];
           if (i === parts.length - 1) {
-            breadcrumb.push({ label: frontmatter.title || parts[i], path: null });
+            breadcrumb.push({ label: pageTitle, path: null });
           } else {
             breadcrumb.push({ label: parts[i], path: '/' + accum + '/' });
           }
         }
 
         const html = nunjucks.render('dir-index.njk', {
-          siteTitle: `${frontmatter.title || relPath} · ${bundle.meta.title}`,
-          pageTitle: frontmatter.title || e.name,
-          description: frontmatter.description || '',
-          body: body ? marked.parse(body, { breaks: true }) : '',
+          siteTitle: `${pageTitle} · ${bundle.meta.title}`,
+          pageTitle,
+          description,
+          body,
           concepts: dirConcepts,
           breadcrumb,
           tree: bundle.tree,
@@ -318,7 +327,7 @@ function build() {
         const outDir = join(DIST, name, relPath);
         mkdirSync(outDir, { recursive: true });
         writeFileSync(join(outDir, 'index.html'), html);
-        console.log(`  📁 ${name}/${relPath}/ → /${name}/${relPath}/index.html`);
+        console.log(`  📁 ${name}/${relPath}/ → /${name}/${relPath}/index.html (${dirConcepts.length} concepts)`);
 
         // Recurse into subdirectories
         genDirIndex(subDir, relPath);
