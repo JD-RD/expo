@@ -155,14 +155,14 @@ function createConceptMarkdown(item, cityDir, okfType) {
   if (item.url) body.push(`resource: ${item.url}`);
   body.push(`tags: [${tags.join(', ')}]`);
   body.push(`timestamp: ${new Date().toISOString().split('T')[0]}`);
-  if (item.location) body.push(`lieu: "${item.location}"`);
+  if (item.location) body.push(`quartier: "${item.location}"`);
   body.push('---');
   body.push('');
-  body.push(`# ${item.name}`);
-  body.push('');
-  if (item.note) body.push(item.note);
-  body.push('');
-  if (item.url) body.push(`[📍 Google Maps](${item.url})`);
+  // Body: only actual additional content (skip title — already in frontmatter)
+  if (item.note) {
+    const cleanNote = item.note.replace(/^📍 .+$/, '').trim();
+    if (cleanNote && cleanNote !== item.name) body.push(cleanNote);
+  }
 
   return { slug, content: body.join('\n') };
 }
