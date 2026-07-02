@@ -321,7 +321,9 @@ function build() {
         // Subdirectories from the tree
         const currentPath = `/${name}/${relPath}/`;
         const treeNode = findTreeNode(bundle.tree, currentPath);
-        const subdirs = treeNode && treeNode.children ? treeNode.children.map(child => ({
+        const subdirs = treeNode && treeNode.children ? treeNode.children
+          .filter(child => child.type === 'directory')
+          .map(child => ({
           label: child.label,
           path: child.path,
           desc: child.desc,
