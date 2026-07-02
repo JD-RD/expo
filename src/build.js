@@ -274,6 +274,17 @@ function build() {
   for (const [name, bundle] of Object.entries(bundles)) {
     const bundleDir = join(BUNDLES, name);
 
+    function findTreeNode(nodes, targetPath) {
+      for (const node of nodes) {
+        if (node.path === targetPath) return node;
+        if (node.children) {
+          const found = findTreeNode(node.children, targetPath);
+          if (found) return found;
+        }
+      }
+      return null;
+    }
+
     function genDirIndex(dir, prefix) {
       const entries = readdirSync(dir, { withFileTypes: true });
       for (const e of entries) {
@@ -294,6 +305,16 @@ function build() {
             title: c.frontmatter.title || c.slug.split('/').pop(),
             emoji: typeEmoji(c.frontmatter.type),
           }));
+
+        // Subdirectories from the tree
+        const currentPath = `/${name}/${relPath}/`;
+        const treeNode = findTreeNode(bundle.tree, currentPath);
+        const subdirs = treeNode && treeNode.children ? treeNode.children.map(child => ({
+          label: child.label,
+          path: child.path,
+          desc: child.desc,
+          count: bundle.concepts.filter(c => c.slug.startsWith(`${name}/${relPath}/${child.name}/`)).length,
+        })) : [];
 
         let pageTitle, description, body;
         if (existsSync(indexPath)) {
@@ -326,6 +347,7 @@ function build() {
           description,
           body,
           concepts: dirConcepts,
+          subdirs,
           breadcrumb,
           tree: bundle.tree,
           bundleName: name,

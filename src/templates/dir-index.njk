@@ -5,6 +5,18 @@
 <div class="markdown-body">{{ body | safe }}</div>
 {% endif %}
 
+{% if subdirs and subdirs.length > 0 %}
+<div class="subdir-list">
+  {% for d in subdirs %}
+  <a href="{{ d.path }}" class="subdir-card">
+    <strong>{{ d.label }}</strong>
+    {% if d.desc %}<p>{{ d.desc }}</p>{% endif %}
+    <span class="subdir-count">{{ d.count }} concept{% if d.count != 1 %}s{% endif %}</span>
+  </a>
+  {% endfor %}
+</div>
+{% endif %}
+
 {% if concepts and concepts.length > 0 %}
 <div class="concept-list">
   {% for c in concepts %}
@@ -17,5 +29,9 @@
   </a>
   {% endfor %}
 </div>
+{% endif %}
+
+{% if not subdirs and not concepts and not body %}
+<p class="empty-state">Cette section est vide pour le moment.</p>
 {% endif %}
 {% endblock %}
