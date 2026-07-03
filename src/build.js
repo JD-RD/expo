@@ -108,7 +108,7 @@ function typeEmoji(type) {
   const map = {
     'Restaurant': '🍜', 'Attraction': '🗿', 'Lieu': '📍', 'Café': '☕',
     'Shopping': '🛍', 'Transport': '🚃', 'Projet': '🛠', 'Personne': '👤',
-    'Bien-être': '♨️', 'Hébergement': '🏨', 'Musée': '🏛', 'Parc': '🌳',
+    'Bien-être': '♨️', 'Onsen': '♨️', 'Hébergement': '🏨', 'Musée': '🏛', 'Parc': '🌳',
     'Activité': '🎯', 'Playbook': '📋', 'Reference': '📖',
   };
   return map[type] || '📄';
@@ -210,7 +210,7 @@ function build() {
       description: bundle.meta.description || '',
       path: `/${name}/`,
       conceptCount: bundle.concepts.length,
-      emoji: name === 'japon' ? '🇯🇵' : name === 'projets' ? '🛠' : '📦',
+      emoji: name === 'japon' ? '🇯🇵' : name === 'wishlist' ? '🗾' : name === 'projets' ? '🛠' : '📦',
     });
   }
 
