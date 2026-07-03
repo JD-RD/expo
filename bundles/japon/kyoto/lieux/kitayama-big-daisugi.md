@@ -1,5 +1,5 @@
 ---
-type: Restaurant
+type: Lieu
 title: "Kitayama Big Daisugi"
 description: ""
 resource: https://www.google.com/maps/place/Kitayama+Big+Daisugi/data=!4m2!3m1!1s0x6001a9cb8a33c699:0x30a930200d46f9ca

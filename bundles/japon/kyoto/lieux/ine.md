@@ -1,5 +1,5 @@
 ---
-type: Restaurant
+type: Lieu
 title: "Ine"
 description: "fhttps://www.youtube.com/watch?v=KgBCDMrRcD8&t=1s"
 resource: https://www.google.com/maps/place/Ine/data=!4m2!3m1!1s0x5fff0a758dad84e7:0x7d1ea3d53ffb1928
