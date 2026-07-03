@@ -82,19 +82,22 @@
       const url = window.location.href;
       const desc = document.querySelector('meta[name="description"]')?.content || '';
       const body = `**Page** : ${url}\n${desc ? `**Description** : ${desc}\n` : ''}\n\n**Ce qui devrait être corrigé** :\n\n\n\n---\n_Page : ${title}_`;
+      const issueUrl = `https://github.com/JD-RD/expo/issues/new?title=${encodeURIComponent('EXPO: ' + title)}&body=${encodeURIComponent(body)}`;
 
-      // Copy template to clipboard (works on all browsers)
+      // Copy to clipboard (always — backup si l'auto échoue)
       navigator.clipboard.writeText(body).then(() => {
         const link = document.querySelector('.site-footer a');
         const orig = link.textContent;
-        link.textContent = '✅ Template copié ! Colle-le dans l\'issue';
-        setTimeout(() => { link.textContent = orig; }, 3000);
-      }).catch(() => {
-        // Fallback if clipboard API fails
-      });
+        link.textContent = '✅ Copié !';
+        setTimeout(() => { link.textContent = orig; }, 2000);
+      }).catch(() => {});
 
-      // Navigate to blank issue form
-      window.location.href = 'https://github.com/JD-RD/expo/issues/new';
+      // Tentative d'ouverture auto avec paramètres
+      const win = window.open(issueUrl, '_blank');
+      if (!win || win.closed || typeof win.closed === 'undefined') {
+        // Popup bloquée → fallback navigation même fenêtre
+        window.location.href = 'https://github.com/JD-RD/expo/issues/new';
+      }
       return false;
     }
     function toggleSidebar() {
