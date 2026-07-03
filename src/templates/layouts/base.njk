@@ -84,13 +84,12 @@
       const body = `**Page** : ${url}\n${desc ? `**Description** : ${desc}\n` : ''}\n\n**Ce qui devrait être corrigé** :\n\n\n\n---\n_Page : ${title}_`;
       const issueUrl = `https://github.com/JD-RD/expo/issues/new?title=${encodeURIComponent('EXPO: ' + title)}&body=${encodeURIComponent(body)}`;
 
-      // Copy to clipboard (always — backup si l'auto échoue)
-      navigator.clipboard.writeText(body).then(() => {
-        const link = document.querySelector('.site-footer a');
-        const orig = link.textContent;
-        link.textContent = '✅ Copié !';
-        setTimeout(() => { link.textContent = orig; }, 2000);
-      }).catch(() => {});
+      // Copie presse-papier après navigation (ne bloque pas)
+      setTimeout(() => {
+        navigator.clipboard.writeText(body).then(() => {
+          // Discrètement, sans modifier l'UI
+        }).catch(() => {});
+      }, 100);
 
       // Navigation directe vers l'issue pré-remplie
       window.location.href = issueUrl;
