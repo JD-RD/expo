@@ -82,17 +82,17 @@
       const url = window.location.href;
       const desc = document.querySelector('meta[name="description"]')?.content || '';
       const body = `**Page** : ${url}\n${desc ? `**Description** : ${desc}\n` : ''}\n\n**Ce qui devrait être corrigé** :\n\n\n\n---\n_Page : ${title}_`;
-      const issueUrl = `https://github.com/JD-RD/expo/issues/new?title=${encodeURIComponent('EXPO: ' + title)}&body=${encodeURIComponent(body)}`;
 
-      // Copie presse-papier après navigation (ne bloque pas)
-      setTimeout(() => {
-        navigator.clipboard.writeText(body).then(() => {
-          // Discrètement, sans modifier l'UI
-        }).catch(() => {});
-      }, 100);
+      // Copier dans le presse-papier (fiable partout)
+      navigator.clipboard.writeText(body).then(() => {
+        const link = document.querySelector('.site-footer a');
+        const orig = link.textContent;
+        link.textContent = '✅ Copié ! Collez dans GitHub →';
+        setTimeout(() => { link.textContent = orig; }, 4000);
+      }).catch(() => {});
 
-      // Navigation directe vers l'issue pré-remplie
-      window.location.href = issueUrl;
+      // Navigation vers GitHub (l'app mobile va intercepter)
+      window.location.href = 'https://github.com/JD-RD/expo/issues/new';
       return false;
     }
     function toggleSidebar() {
