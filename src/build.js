@@ -323,12 +323,17 @@ function build() {
         const treeNode = findTreeNode(bundle.tree, currentPath);
         const subdirs = treeNode && treeNode.children ? treeNode.children
           .filter(child => child.type === 'directory')
-          .map(child => ({
-          label: child.label,
-          path: child.path,
-          desc: child.desc,
-          count: bundle.concepts.filter(c => c.slug.startsWith(`${name}/${relPath}/${child.name}/`)).length,
-        })) : [];
+          .map(child => {
+            const subDirCount = bundle.concepts.filter(c => c.slug.startsWith(`${name}/${relPath}/${child.name}/`)).length;
+            const subDirEmojis = { 'attractions': '🗿', 'bars': '🍺', 'hebergements': '🏨', 'lieux': '📍', 'onsens': '♨️', 'restaurants': '🍜', 'shoppings': '🛍️', 'activites': '🎯' };
+            return {
+              label: child.label,
+              path: child.path,
+              desc: child.desc || `${subDirCount} concepts`,
+              count: subDirCount,
+              emoji: subDirEmojis[child.name] || '📂',
+            };
+          }) : [];
 
         let pageTitle, description, body;
         if (existsSync(indexPath)) {

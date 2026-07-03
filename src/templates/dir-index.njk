@@ -1,17 +1,33 @@
 {% extends "layouts/base.njk" %}
 
 {% block content %}
+<nav class="breadcrumb">
+  <a href="/">Accueil</a>
+  {% for crumb in breadcrumb %}
+    <span class="sep">/</span>
+    {% if crumb.path %}
+      <a href="{{ crumb.path }}">{{ crumb.label }}</a>
+    {% else %}
+      <span>{{ crumb.label }}</span>
+    {% endif %}
+  {% endfor %}
+</nav>
+
 {% if body %}
 <div class="markdown-body">{{ body | safe }}</div>
 {% endif %}
 
 {% if subdirs and subdirs.length > 0 %}
-<div class="subdir-list">
-  {% for d in subdirs %}
-  <a href="{{ d.path }}" class="subdir-card">
-    <strong>{{ d.label }}</strong>
-    {% if d.desc %}<p>{{ d.desc }}</p>{% endif %}
-    <span class="subdir-count">{{ d.count }} concept{% if d.count != 1 %}s{% endif %}</span>
+<div class="concept-list">
+  {% for sd in subdirs %}
+  <a href="{{ sd.path }}" class="concept-card subdir-card">
+    <span class="subdir-emoji">{{ sd.emoji }}</span>
+    <div class="subdir-info">
+      <strong>{{ sd.label }}</strong>
+      {% if sd.desc %}
+      <p>{{ sd.count }} concept{% if sd.count > 1 %}s{% endif %}</p>
+      {% endif %}
+    </div>
   </a>
   {% endfor %}
 </div>
@@ -21,7 +37,7 @@
 <div class="concept-list">
   {% for c in concepts %}
   <a href="/{{ c.slug }}.html" class="concept-card">
-    <span class="type-badge type-{{ c.frontmatter.type | replace(' ', '') }}">{{ c.emoji }} {{ c.frontmatter.type }}</span>
+    <span class="type-badge type-{{ c.frontmatter.type | replace(' ', '') }}">{{ c.frontmatter.type }}</span>
     <strong>{{ c.title }}</strong>
     {% if c.frontmatter.description %}
     <p>{{ c.frontmatter.description }}</p>
@@ -29,9 +45,5 @@
   </a>
   {% endfor %}
 </div>
-{% endif %}
-
-{% if not subdirs and not concepts and not body %}
-<p class="empty-state">Cette section est vide pour le moment.</p>
 {% endif %}
 {% endblock %}

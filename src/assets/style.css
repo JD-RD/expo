@@ -334,6 +334,32 @@ body.sidebar-open .sidebar-overlay {
   margin: 0;
 }
 
+/* ─── Subdirectory Cards ────────────────────── */
+.subdir-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem;
+}
+.subdir-emoji {
+  font-size: 1.8rem;
+  line-height: 1;
+  flex-shrink: 0;
+  width: 48px;
+  text-align: center;
+}
+.subdir-info strong {
+  display: block;
+  color: var(--text);
+  font-size: 1.1rem;
+  margin-bottom: 0.15rem;
+}
+.subdir-info p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
 /* ─── Concept Page ────────────────────────────── */
 .concept-header { margin-bottom: 1.5rem; }
 .concept-header h1 { font-size: 2rem; font-weight: 700; margin-top: 0.3rem; }
