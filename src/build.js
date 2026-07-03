@@ -452,8 +452,8 @@ function build() {
   writeFileSync(join(DIST, '404.html'), notFoundHtml);
   console.log('  🌊 404 → /404.html');
 
-  // ── 7. Copy CNAME / sitemap / robots if present ────
-  for (const f of ['CNAME', 'robots.txt', 'sitemap.xml', 'manifest.json']) {
+  // ── 7. Copy root files (CNAME, manifest, icons) ────
+  for (const f of ['CNAME', 'robots.txt', 'sitemap.xml', 'manifest.json', 'site.webmanifest']) {
     const src = join(ROOT, f);
     if (existsSync(src)) writeFileSync(join(DIST, f), readFileSync(src));
   }

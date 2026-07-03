@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#161b22"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded rect background -->
+  <rect width="180" height="180" rx="36" fill="url(#bg)"/>
+  <!-- Lightning bolt -->
+  <path d="M95 30 L40 90 L80 90 L55 145 L135 80 L95 80 L120 30 Z"
+        fill="none" stroke="#58a6ff" stroke-width="8" stroke-linejoin="round"/>
+  <!-- Inner accent line for depth -->
+  <path d="M95 30 L95 80" stroke="#58a6ff" stroke-width="6" stroke-linecap="round" opacity="0.25"/>
+</svg>
