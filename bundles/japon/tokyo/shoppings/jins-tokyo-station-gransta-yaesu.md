@@ -1,5 +1,5 @@
 ---
-type: Attraction
+type: Shopping
 title: "JINS Tokyo Station Gransta Yaesu"
 description: ""
 resource: https://www.google.com/maps/place/JINS+Tokyo+Station+Gransta+Yaesu/data=!4m2!3m1!1s0x60188bfc0624b3eb:0x2d40ed95c4f96d0f
