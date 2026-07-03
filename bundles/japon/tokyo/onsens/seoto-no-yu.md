@@ -1,5 +1,5 @@
 ---
-type: Restaurant
+type: Onsen
 title: "Seoto-no-yu"
 description: ""
 resource: https://www.google.com/maps/place/Seoto-no-yu/data=!4m2!3m1!1s0x60193d0fe663df17:0x7a88aa86dce37029
