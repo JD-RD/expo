@@ -1,5 +1,5 @@
 ---
-type: Restaurant
+type: Shopping
 title: "Dashi Okume Azabudai Hills"
 description: "Make your own dashi!"
 resource: https://www.google.com/maps/place/Dashi+Okume+Azabudai+Hills/data=!4m2!3m1!1s0x60188b33bf2683a5:0xd546a05fc32dd349
