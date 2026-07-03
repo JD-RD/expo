@@ -91,8 +91,8 @@
         setTimeout(() => { link.textContent = orig; }, 4000);
       }).catch(() => {});
 
-      // Navigation vers GitHub (l'app mobile va intercepter)
-      window.location.href = 'https://github.com/JD-RD/expo/issues/new';
+      // Navigation vers GitHub (nouvel onglet)
+      window.open('https://github.com/JD-RD/expo/issues/new', '_blank');
       return false;
     }
     function toggleSidebar() {

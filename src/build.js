@@ -8,6 +8,17 @@ import { marked } from 'marked';
 import nunjucks from 'nunjucks';
 import lunr from 'lunr';
 
+// ─── Marked: ouvrir les liens externes dans un nouvel onglet ──────
+const renderer = new marked.Renderer();
+const origLink = renderer.link;
+renderer.link = ({ href, title, text }) => {
+  const isExternal = href.startsWith('http://') || href.startsWith('https://');
+  const titleAttr = title ? ` title="${title.replace(/"/g, '&quot;')}"` : '';
+  const target = isExternal ? ' target="_blank" rel="noopener"' : '';
+  return `<a href="${href}"${titleAttr}${target}>${text}</a>`;
+};
+marked.setOptions({ renderer, breaks: true });
+
 const ROOT = new URL('..', import.meta.url).pathname;
 const BUNDLES = join(ROOT, 'bundles');
 const TEMPLATES = join(ROOT, 'src', 'templates');
@@ -136,7 +147,7 @@ function build() {
     const files = walkMd(bundleDir, name);
     const concepts = files.map(f => {
       const { frontmatter, body } = readMd(f.filePath);
-      const bodyHtml = marked.parse(body, { breaks: true });
+      const bodyHtml = marked.parse(body);
       return {
         path: `/${f.slug}`,
         slug: f.slug,
@@ -187,7 +198,7 @@ function build() {
   let portalMeta = { title: 'KAI', description: 'Knowledge Explorer' };
   if (existsSync(portalIndexPath)) {
     const { frontmatter, body } = readMd(portalIndexPath);
-    portalMeta = { ...portalMeta, ...frontmatter, body: marked.parse(body, { breaks: true }) };
+    portalMeta = { ...portalMeta, ...frontmatter, body: marked.parse(body) };
   }
 
   // Build bundle list for portal
@@ -221,7 +232,7 @@ function build() {
       siteTitle: bundle.meta.title,
       pageTitle: bundle.meta.title,
       description: bundle.meta.description,
-      body: bundle.meta.body ? marked.parse(bundle.meta.body, { breaks: true }) : '',
+      body: bundle.meta.body ? marked.parse(bundle.meta.body) : '',
       tree: bundle.tree,
       bundleName: name,
       concepts: bundle.concepts.slice(0, 20).map(c => ({
@@ -340,7 +351,7 @@ function build() {
           const fm = readMd(indexPath);
           pageTitle = fm.frontmatter.title || e.name;
           description = fm.frontmatter.description || '';
-          body = fm.body ? marked.parse(fm.body, { breaks: true }) : '';
+          body = fm.body ? marked.parse(fm.body) : '';
         } else {
           pageTitle = e.name.replace(/[-_]/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
           description = `${dirConcepts.length} concepts`;
