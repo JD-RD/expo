@@ -92,12 +92,8 @@
         setTimeout(() => { link.textContent = orig; }, 2000);
       }).catch(() => {});
 
-      // Tentative d'ouverture auto avec paramètres
-      const win = window.open(issueUrl, '_blank');
-      if (!win || win.closed || typeof win.closed === 'undefined') {
-        // Popup bloquée → fallback navigation même fenêtre
-        window.location.href = 'https://github.com/JD-RD/expo/issues/new';
-      }
+      // Navigation directe vers l'issue pré-remplie
+      window.location.href = issueUrl;
       return false;
     }
     function toggleSidebar() {
