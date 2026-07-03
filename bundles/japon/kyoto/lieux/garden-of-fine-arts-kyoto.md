@@ -1,5 +1,5 @@
 ---
-type: Restaurant
+type: Lieu
 title: "Garden of Fine Arts Kyoto"
 description: ""
 resource: https://www.google.com/maps/place/Garden+of+Fine+Arts+Kyoto/data=!4m2!3m1!1s0x6001081c3eee1555:0x227999c66c2b289f
