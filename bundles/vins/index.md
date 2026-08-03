@@ -1,7 +1,7 @@
 ---
 type: Répertoire
 title: 🍷 Cave — Vins nature SAQ
-description: Sélection de vins rouges légers et fruités — vins nature + famille valpolicella. Recommandations personnelles. Taux de sucre entre 1,2 et 4,8 g/L.
+description: Sélection de vins rouges légers et fruités — vins nature + famille valpolicella — et vins orange (blancs de macération). Recommandations personnelles. Taux de sucre entre 1,2 et 4,8 g/L.
 tags: [vin, saq, cave, nature, valpolicella]
 timestamp: 2026-07-31
 ---
@@ -228,6 +228,71 @@ Mêmes cépages que le valpolicella mais venu du lac de Garde. Cerise, fraise, p
 | [Folonari](https://www.saq.com/fr/10270442) | 16,55 $ | 2,5 g/L | 12,5% | Corvina, Molinara, Rondinella | ✅ Masson · Angus |
 | [Masi Bonacosta](https://www.saq.com/fr/285585) | 18,95 $ | 4,8 g/L | 12% | — | ✅ Angus |
 | [Le Fraghe](https://www.saq.com/fr/14955713) | 27,70 $ | 2 g/L | 12,5% | Corvina, Rondinella | ✅ Angus |
+
+---
+
+## 7. Famille orange — blancs de macération (le ramato du Ferlat)
+
+La quête du **Ferlat PG Rosa** (pinot grigio ramato de Frioul) a mené à cette famille : des blancs vinifiés sur peaux (macération), teinte ambrée/rosée, plus de texture et de caractère qu'un blanc classique. Tous nature/bio, tous disponibles.
+
+**1. Southbrook Triomphe Orange 2020 — le meilleur choix (en ligne)**
+
+| | |
+|---|---|
+| **Code SAQ** | [`14977189`](https://www.saq.com/fr/14977189) |
+| **Prix** | 31,25 $ |
+| **Format** | 750 ml |
+| **Sucre** | 1,3 g/L |
+| **Alcool** | 11,3 % |
+| **Cépages** | Chardonnay musqué 55 %, Vidal 45 % |
+| **Région** | Péninsule du Niagara, Ontario, Canada |
+| **Producteur** | Southbrook |
+| **Avis** | ⭐ 5,00 (2) |
+| **Dispo** | ✅ 24 en ligne |
+
+Blanc de macération bio et biodynamique — abricot, mandarine, notes florales, poivre blanc. Le plus proche du profil ramato du Ferlat, livrable en succursale par cueillette. [Voir sur SAQ](https://www.saq.com/fr/14977189)
+
+**2. Christina Orange 2021 — l'Autriche ambrée**
+
+| | |
+|---|---|
+| **Code SAQ** | [`15128841`](https://www.saq.com/fr/15128841) |
+| **Prix** | 29,65 $ |
+| **Format** | 750 ml |
+| **Sucre** | non listé |
+| **Alcool** | 12,3 % |
+| **Cépages** | Weissburgunder 40 %, Sauvignon blanc 35 %, Chardonnay 20 %, Welschriesling 5 % |
+| **Région** | Autriche |
+| **Producteur** | Christina |
+| **Avis** | ⭐ (2) |
+| **Dispo** | ✅ Angus (1) |
+
+Vin orange autrichien, nature et bio. Un assemblage original de blancs macérés — à découvrir pour la curiosité. [Voir sur SAQ](https://www.saq.com/fr/15128841)
+
+**3. Charles Frey Macération 2024 — l'Alsace parfumée**
+
+| | |
+|---|---|
+| **Code SAQ** | [`15087364`](https://www.saq.com/fr/15087364) |
+| **Prix** | 30,75 $ |
+| **Format** | 750 ml |
+| **Sucre** | <1,2 g/L *(très sec)* |
+| **Alcool** | 13 % |
+| **Cépages** | Gewurztraminer 95 %, Muscat 5 % |
+| **Région** | Alsace, France |
+| **Producteur** | SAS Maison Charles Frey |
+| **Avis** | ⭐ 8 |
+| **Dispo** | ✅ Angus (3) |
+
+Macération de gewurztraminer et muscat — bergamote, litchi, notes florales. Biodynamique, le plus aromatique de la bande. [Voir sur SAQ](https://www.saq.com/fr/15087364)
+
+### Tableau comparatif — famille orange
+
+| Vin | Prix | Sucre | Alcool | Cépages | Pays | Dispo |
+|---|---|---|---|---|---|---|
+| [Southbrook Triomphe](https://www.saq.com/fr/14977189) | 31,25 $ | 1,3 g/L | 11,3% | Chardonnay musqué, Vidal | 🇨🇦 | ✅ En ligne |
+| [Christina Orange](https://www.saq.com/fr/15128841) | 29,65 $ | — | 12,3% | Weissburgunder, Sauvignon | 🇦🇹 | ✅ Angus |
+| [Charles Frey](https://www.saq.com/fr/15087364) | 30,75 $ | <1,2 g/L | 13% | Gewurztraminer, Muscat | 🇫🇷 | ✅ Angus |
 
 ---
 
