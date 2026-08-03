@@ -109,7 +109,7 @@ function typeEmoji(type) {
     'Restaurant': '🍜', 'Attraction': '🗿', 'Lieu': '📍', 'Café': '☕',
     'Shopping': '🛍', 'Transport': '🚃', 'Projet': '🛠', 'Personne': '👤',
     'Bien-être': '♨️', 'Onsen': '♨️', 'Hébergement': '🏨', 'Musée': '🏛', 'Parc': '🌳',
-    'Activité': '🎯', 'Playbook': '📋', 'Reference': '📖',
+    'Activité': '🎯', 'Playbook': '📋', 'Reference': '📖', 'Vin': '🍷',
   };
   return map[type] || '📄';
 }

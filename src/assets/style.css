@@ -381,6 +381,7 @@ body.sidebar-open .sidebar-overlay {
 .type-Activité { background: #a5d6ff22; color: #a5d6ff; }
 .type-Playbook { background: #ffd70022; color: #ffd700; }
 .type-Reference { background: #bc8cff22; color: #bc8cff; }
+.type-Vin { background: #ff6b8122; color: #ff6b81; }
 
 .tags { margin-top: 0.5rem; display: flex; gap: 0.4rem; flex-wrap: wrap; }
 .tag {
