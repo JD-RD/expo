@@ -13,9 +13,15 @@ const renderer = new marked.Renderer();
 const origLink = renderer.link;
 renderer.link = ({ href, title, text }) => {
   const isExternal = href.startsWith('http://') || href.startsWith('https://');
+  // Liens internes sans extension (ex. /vins/orange) → /vins/orange.html
+  // Intacts : externes, répertoires (/vins/), ancres (#...), fichiers avec extension (.css, .png…)
+  let finalHref = href;
+  if (!isExternal && href.startsWith('/') && !href.endsWith('/') && !href.includes('#') && !/\.[a-z0-9]+$/i.test(href)) {
+    finalHref = href + '.html';
+  }
   const titleAttr = title ? ` title="${title.replace(/"/g, '&quot;')}"` : '';
   const target = isExternal ? ' target="_blank" rel="noopener"' : '';
-  return `<a href="${href}"${titleAttr}${target}>${text}</a>`;
+  return `<a href="${finalHref}"${titleAttr}${target}>${text}</a>`;
 };
 marked.setOptions({ renderer, breaks: true });
 
