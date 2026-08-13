@@ -1,14 +1,14 @@
 ---
 type: Répertoire
 title: 🍷 Cave — Vins SAQ
-description: Sélection de vins rouges légers et fruités — vins nature + famille valpolicella — et vins orange (blancs de macération). Recommandations personnelles. Taux de sucre entre 1,2 et 4,8 g/L.
-tags: [vin, saq, cave, nature, valpolicella, orange]
-timestamp: 2026-08-02
+description: Sélection de vins rouges légers et fruités — vins nature + famille valpolicella — et vins orange (blancs de macération). Depuis août 2026, vins blancs nature fruités et vifs. Recommandations personnelles. Taux de sucre entre 1,2 et 4,8 g/L.
+tags: [vin, saq, cave, nature, valpolicella, orange, blanc]
+timestamp: 2026-08-13
 ---
 
 # 🍷 Cave — Vins SAQ
 
-Sélection de vins **rouges légers**, **fruités et digestes** — la catégorie « glouglou » — complétée par des **vins orange** (blancs de macération). Tous disponibles à la SAQ, succursale Masson ou Angus.
+Sélection de vins **rouges légers**, **fruités et digestes** — la catégorie « glouglou » — complétée par des **vins orange** (blancs de macération) et des **vins blancs nature** (fruités et vifs). Tous disponibles à la SAQ, succursale Masson ou Angus.
 
 ## Sommaire
 
@@ -17,6 +17,7 @@ Sélection de vins **rouges légers**, **fruités et digestes** — la catégori
 | [🍷 Vins nature — rouges légers](/vins/vins-nature) | La catégorie « glouglou » : nature, fruités, digestes | 6 | 20,30–26,95 $ | Masson · Angus · En ligne |
 | [🇮🇹 Famille Valpolicella](/vins/valpolicella) | Brigaldara (référence) + 5 vins similaires, même vibe | 6 | 16,55–27,70 $ | Masson · Angus |
 | [🍊 Famille orange — blancs de macération](/vins/orange) | Blancs sur peaux (ramato), nature et bio | 3 | 29,65–31,25 $ | Angus · En ligne |
+| [🥂 Vins blancs nature — fruités et vifs](/vins/vins-blancs-nature) | Le « glouglou » en blanc : nature, légers, 11–12,5 % | 6 | 20,95–31,50 $ | Masson · Angus |
 
 ## Tous les vins en un coup d'œil
 
@@ -37,7 +38,13 @@ Sélection de vins **rouges légers**, **fruités et digestes** — la catégori
 | [Southbrook Triomphe](https://www.saq.com/fr/14977189) | Orange | 31,25 $ | 1,3 g/L | 11,3% | ✅ 24 en ligne |
 | [Christina Orange](https://www.saq.com/fr/15128841) | Orange | 29,65 $ | — | 12,3% | ✅ Angus |
 | [Charles Frey](https://www.saq.com/fr/15087364) | Orange | 30,75 $ | <1,2 g/L | 13% | ✅ Angus |
+| [Le Litre Bovin](https://www.saq.com/fr/15388968) | Blancs nature | 31,50 $ | — | 11,5% | ✅ Masson (1) · Angus (7) |
+| [Écu Schistes](https://www.saq.com/fr/13807102) | Blancs nature | 21,55 $ | 1,3 g/L | 12,5% | ✅ Masson (50) · Angus (8) |
+| [Meinklang Grüner](https://www.saq.com/fr/13631071) | Blancs nature | 20,95 $ | 2,5 g/L | 11% | ✅ Masson (25) · Angus (129) |
+| [Pirouettes Tutti Frutti](https://www.saq.com/fr/13903639) | Blancs nature | 24,70 $ | — | 13% | ✅ Masson (14) · Angus (4) |
+| [Tète Blanche](https://www.saq.com/fr/14019790) | Blancs nature | 21,35 $ | 1,3 g/L | 12% | ✅ Masson (64) · Angus (65) |
+| [Credo Miranius](https://www.saq.com/fr/12866557) | Blancs nature | 24,85 $ | — | 11,5% | ✅ Masson (55) · Angus (26) |
 
 ---
 
-*Dernière mise à jour : 2 août 2026. Prix, disponibilités (Masson/Angus) et inventaires sujets à changement.*
+*Dernière mise à jour : 13 août 2026. Prix, disponibilités (Masson/Angus) et inventaires sujets à changement.*
