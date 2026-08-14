@@ -19,6 +19,8 @@
     {% if tree %}<button class="hamburger" onclick="toggleSidebar()" aria-label="Menu">☰</button>{% endif %}
     <a href="/" class="logo">⚡ EXPO</a>
     <input type="search" id="search" placeholder="Rechercher..." autocomplete="off">
+    <button class="copy-url" onclick="sharePage(event)" title="Partager la page" aria-label="Partager la page">📤</button>
+    <button class="copy-url" onclick="copyPageUrl(event)" title="Copier l'URL de la page" aria-label="Copier l'URL de la page">🔗</button>
   </nav>
 
   {% if tree %}<div class="sidebar-overlay" id="sidebar-overlay" onclick="toggleSidebar()"></div>{% endif %}
@@ -98,6 +100,39 @@
       // Navigation vers GitHub (nouvel onglet)
       window.open('https://github.com/JD-RD/expo/issues/new', '_blank');
       return false;
+    }
+    function flashBtn(btn, icon, text) {
+      btn.textContent = text;
+      setTimeout(() => { btn.textContent = icon; }, 2000);
+    }
+    function copyCurrentUrl(btn) {
+      const done = () => flashBtn(btn, '🔗', '✅');
+      const fallback = () => {
+        const ta = document.createElement('textarea');
+        ta.value = window.location.href;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); done(); } catch(err) {}
+        document.body.removeChild(ta);
+      };
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(window.location.href).then(done).catch(fallback);
+      } else {
+        fallback();
+      }
+    }
+    function copyPageUrl(e) {
+      copyCurrentUrl(e.currentTarget);
+    }
+    function sharePage(e) {
+      const btn = e.currentTarget;
+      if (navigator.share) {
+        navigator.share({ title: document.title, url: window.location.href }).catch(() => {});
+      } else {
+        copyCurrentUrl(btn);
+      }
     }
     function toggleSidebar() {
       document.body.classList.toggle('sidebar-open');

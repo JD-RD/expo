@@ -83,6 +83,20 @@ img { max-width: 100%; height: auto; }
 }
 .topbar #search:focus { border-color: var(--accent); }
 .topbar #search::placeholder { color: var(--text-dim); }
+.copy-url {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.4rem 0.55rem;
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+  flex-shrink: 0;
+}
+.copy-url:hover { border-color: var(--accent); background: var(--bg-hover); }
+.copy-url:active { transform: scale(0.94); }
 
 /* ─── Layout ──────────────────────────────────── */
 .layout {
