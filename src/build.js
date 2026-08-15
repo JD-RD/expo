@@ -50,6 +50,20 @@ function isReserved(filename) {
   return filename === 'index.md' || filename === 'log.md';
 }
 
+/** Convert rendered HTML to plain text for search indexing */
+function htmlToText(html) {
+  return html
+    .replace(/<[^>]+>/g, ' ')   // strip tags
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&nbsp;/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 /** Recursively walk a directory, returning all .md file paths (except reserved names) */
 function walkMd(dir, bundleName) {
   const results = [];
@@ -426,17 +440,23 @@ function build() {
         url: concept.path + '.html',
         tags: (concept.frontmatter.tags || []).join(' '),
         bundle: bundle.meta.title || name,
+        content: htmlToText(concept.bodyHtml).slice(0, 8000),
       });
     }
   }
 
   if (searchDocs.length > 0) {
     const idx = lunr(function () {
+      // No English stemmer: it mangles French proper nouns (Patrice→patric,
+      // Pommyers→pommyer) and prefix wildcards already cover inflections
+      // (digestes* matches digeste/digestes).
+      this.pipeline.remove(lunr.stemmer);
       this.ref('id');
       this.field('title', { boost: 10 });
       this.field('description', { boost: 5 });
       this.field('tags', { boost: 3 });
       this.field('bundle');
+      this.field('content', { boost: 1 });
 
       for (const doc of searchDocs) {
         this.add(doc);

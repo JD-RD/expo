@@ -51,7 +51,7 @@
       return;
     }
 
-    const results = idx.search(query + '~1').slice(0, 20);
+    const results = searchLunr(query).slice(0, 20);
 
     if (results.length === 0) {
       resultsBox.innerHTML = '<div class="search-empty">Aucun résultat</div>';
@@ -71,6 +71,34 @@
       `;
     }
     resultsBox.innerHTML = html;
+  }
+
+  // Escape Lunr special characters in a single term
+  function escapeLunrTerm(term) {
+    return term.replace(/([+\-&|!(){}[\]^"~*?:\\])/g, '\\$1');
+  }
+
+  // Search with prefix (wildcard) matching, falling back to fuzzy (~1)
+  function searchLunr(query) {
+    const terms = query.split(/\s+/).filter(Boolean);
+    if (terms.length === 0) return [];
+
+    // 1) Prefix search: "val" → "val*" (matches Valpolicella, Valeur, ...)
+    const prefixQuery = terms.map(t => escapeLunrTerm(t) + '*').join(' ');
+    try {
+      const results = idx.search(prefixQuery);
+      if (results.length > 0) return results;
+    } catch (e) {
+      // Lunr throws on too-short wildcards — fall through to fuzzy
+    }
+
+    // 2) Fallback: fuzzy edit-distance 1 (typos mid-word)
+    const fuzzyQuery = terms.map(t => escapeLunrTerm(t) + '~1').join(' ');
+    try {
+      return idx.search(fuzzyQuery);
+    } catch (e) {
+      return [];
+    }
   }
 
   function highlight(text, query) {
