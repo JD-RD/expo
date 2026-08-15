@@ -12,4 +12,4 @@ Bundles de connaissance navigables, interconnectés et vivants.
 - 🇯🇵 [Voyage Japon 2026](/japon/)
 - 🛠 [Projets](/projets/)
 - 🇯🇵 [Wishlist Japon](/wishlist/)
-- 🍷 [Cave — Vins nature SAQ](/vins/)
+- 🍷 [Cave — Vins SAQ](/vins/)
