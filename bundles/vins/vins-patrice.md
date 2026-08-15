@@ -16,6 +16,7 @@ Sélection faite le 14 août 2026 : **3 vins de référence** (les préférés d
 
 | | |
 |---|---|
+| **Image** | ![Château des Seigneurs de Pommyers Bordeaux 2022](https://www.saq.com/media/catalog/product/8/9/892695-1_1593714366.png?optimize=high&fit=bounds&height=400&width=400) |
 | **Code SAQ** | [`892695`](https://www.saq.com/fr/892695) |
 | **Prix** | 24,25 $ |
 | **Format** | 750 ml |
@@ -36,6 +37,7 @@ Entre Gironde et Dordogne, un assemblage dominé par le merlot complété de cab
 
 | | |
 |---|---|
+| **Image** | ![Château Les 5 Clés Bordeaux 2022](https://www.saq.com/media/catalog/product/1/4/14038350-1_1685714285.png?optimize=high&fit=bounds&height=400&width=400) |
 | **Code SAQ** | [`14038350`](https://www.saq.com/fr/14038350) |
 | **Prix** | 19,25 $ |
 | **Sucre** | 1,9 g/L |
@@ -52,6 +54,7 @@ Même ADN que le Pommyers : bio, merlot dominant, cerise et cassis avec une touc
 
 | | |
 |---|---|
+| **Image** | ![Château Cailleteau Bergeron Prestige Blaye Côtes de Bordeaux](https://www.saq.com/media/catalog/product/9/1/919373-1_1580608226.png?optimize=high&fit=bounds&height=400&width=400) |
 | **Code SAQ** | [`919373`](https://www.saq.com/fr/919373) |
 | **Prix** | 22,80 $ |
 | **Sucre** | 3,8 g/L |
@@ -69,6 +72,7 @@ Plus charnu et boisé : fruits noirs, cèdre, café, graphite. 91 % d'avis posit
 
 | | |
 |---|---|
+| **Image** | ![Torres Gran Coronas Reserva](https://www.saq.com/media/catalog/product/3/6/36483-1_1732191784.png?optimize=high&fit=bounds&height=400&width=400) |
 | **Code SAQ** | [`36483`](https://www.saq.com/fr/36483) |
 | **Prix** | 20,55 $ |
 | **Format** | 750 ml |
@@ -89,6 +93,7 @@ Le grand classique de Torres : cabernet-sauvignon dominé par le tempranillo, é
 
 | | |
 |---|---|
+| **Image** | ![Faustino V Rioja Reserva](https://www.saq.com/media/catalog/product/1/0/10857497-1_1729027083.png?optimize=high&fit=bounds&height=400&width=400) |
 | **Code SAQ** | [`10857497`](https://www.saq.com/fr/10857497) |
 | **Prix** | 21,05 $ |
 | **Sucre** | 2,2 g/L |
@@ -104,6 +109,7 @@ Le plus proche du Torres en prix et en profil : tempranillo élevé, petits frui
 
 | | |
 |---|---|
+| **Image** | ![Protos Roble Ribera del Duero](https://www.saq.com/media/catalog/product/1/4/14323839-1_1764019083.png?optimize=high&fit=bounds&height=400&width=400) |
 | **Code SAQ** | [`14323839`](https://www.saq.com/fr/14323839) |
 | **Prix** | 21,05 $ |
 | **Sucre** | 2 g/L |
@@ -137,6 +143,7 @@ Bordeaux artisanal du domaine familial Massereau : vendanges triées à la main,
 
 | | |
 |---|---|
+| **Image** | ![Château Suau Semper Viva Bordeaux 2022](https://www.saq.com/media/catalog/product/1/5/15147515-1_1776096184.png?optimize=high&fit=bounds&height=400&width=400) |
 | **Code SAQ** | [`15147515`](https://www.saq.com/fr/15147515) |
 | **Prix** | 26,65 $ |
 | **Sucre** | 1,8 g/L |
@@ -152,6 +159,7 @@ La gamme « nature » de Château Suau : cassis, fruits sauvages, violette — m
 
 | | |
 |---|---|
+| **Image** | ![Les Vignerons de Buzet Sans Sulfites Ajoutés](https://www.saq.com/media/catalog/product/1/3/13862081-1_1742419684.png?optimize=high&fit=bounds&height=400&width=400) |
 | **Code SAQ** | [`13862081`](https://www.saq.com/fr/13862081) |
 | **Prix** | 16,05 $ |
 | **Sucre** | — |
