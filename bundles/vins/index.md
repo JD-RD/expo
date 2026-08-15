@@ -18,7 +18,7 @@ Sélection de vins **rouges légers**, **fruités et digestes** — la catégori
 | [🇮🇹 Famille Valpolicella](/vins/valpolicella) | Brigaldara (référence) + 5 vins similaires, même vibe | 6 | 16,55–27,70 $ | Masson · Angus |
 | [🍊 Famille orange — blancs de macération](/vins/orange) | Blancs sur peaux (ramato), nature et bio | 3 | 29,65–31,25 $ | Angus · En ligne |
 | [🥂 Vins blancs nature — fruités et vifs](/vins/vins-blancs-nature) | Le « glouglou » en blanc : nature, légers, 11–12,5 % | 6 | 20,95–31,50 $ | Masson · Angus |
-| [🍷 Suggestions pour Patrice](/vins/vins-patrice) | Les préférés de Patrice (Pommyers, Torres, Massereau) + 3 séries de vins similaires, dispo en ligne | 14 | 16,05–29,45 $ | En ligne |
+| [🍷 Suggestions pour Patrice](/vins/vins-patrice) | Les préférés de Patrice (Pommyers, Torres, Massereau) + 2 valeurs sûres par série, dispo en ligne | 8 | 16,05–26,65 $ | En ligne |
 
 ## Tous les vins en un coup d'œil
 
@@ -48,17 +48,11 @@ Sélection de vins **rouges légers**, **fruités et digestes** — la catégori
 | [Pommyers Bordeaux](https://www.saq.com/fr/892695) | Patrice | 24,25 $ | 2 g/L | 14,5% | ✅ En ligne |
 | [Les 5 Clés Bordeaux](https://www.saq.com/fr/14038350) | Patrice | 19,25 $ | 1,9 g/L | 14% | ✅ En ligne |
 | [Cailleteau Bergeron Prestige](https://www.saq.com/fr/919373) | Patrice | 22,80 $ | 3,8 g/L | 14% | ✅ En ligne |
-| [Fillon Cuvée Première](https://www.saq.com/fr/12489528) | Patrice | 17,90 $ | 2,3 g/L | 13% | ✅ En ligne |
-| [Puyfromage Francs](https://www.saq.com/fr/33605) | Patrice | 19,20 $ | 2,6 g/L | 14% | ✅ En ligne |
 | [Torres Gran Coronas](https://www.saq.com/fr/36483) | Patrice | 20,55 $ | 2,4 g/L | 14% | ✅ En ligne |
 | [Faustino V Reserva](https://www.saq.com/fr/10857497) | Patrice | 21,05 $ | 2,2 g/L | 14% | ✅ En ligne |
 | [Protos Roble](https://www.saq.com/fr/14323839) | Patrice | 21,05 $ | 2 g/L | 15% | ✅ En ligne |
-| [Coto de Imaz Reserva](https://www.saq.com/fr/10857569) | Patrice | 24,90 $ | 2,8 g/L | 14% | ✅ En ligne |
-| [Muga Reserva](https://www.saq.com/fr/855007) | Patrice | 29,45 $ | 2,6 g/L | 14,5% | ✅ En ligne |
 | [Suau Semper Viva](https://www.saq.com/fr/15147515) | Patrice | 26,65 $ | 1,8 g/L | 14% | ✅ En ligne |
 | [Buzet Sans Sulfites](https://www.saq.com/fr/13862081) | Patrice | 16,05 $ | — | 12,5% | ✅ En ligne |
-| [Sichel 1883](https://www.saq.com/fr/14228786) | Patrice | 20,95 $ | 2,3 g/L | 13% | ✅ En ligne |
-| [Gérard Bertrand Naturae](https://www.saq.com/fr/15162109) | Patrice | 20,20 $ | 2,4 g/L | 13% | ✅ En ligne |
 
 ---
 
