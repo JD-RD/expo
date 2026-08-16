@@ -64,6 +64,32 @@ function htmlToText(html) {
     .trim();
 }
 
+/** Extract all individual wines from the vins bundle summary table
+ *  (« Tous les vins en un coup d'œil » in bundles/vins/index.md). */
+function extractAllWines() {
+  const indexPath = join(BUNDLES, 'vins', 'index.md');
+  if (!existsSync(indexPath)) return [];
+  const { body } = readMd(indexPath);
+  const wines = [];
+  for (const line of body.split('\n')) {
+    if (!line.includes('saq.com/fr/')) continue;
+    const cells = line.split('|').map(c => c.trim()).filter(Boolean);
+    if (cells.length < 6) continue;
+    const m = cells[0].match(/\[([^\]]+)\]\(([^)]+)\)/);
+    if (!m) continue;
+    wines.push({
+      name: m[1],
+      url: m[2],
+      famille: cells[1],
+      prix: cells[2],
+      sucre: cells[3],
+      alcool: cells[4],
+      dispo: cells[5],
+    });
+  }
+  return wines;
+}
+
 /** Recursively walk a directory, returning all .md file paths (except reserved names) */
 function walkMd(dir, bundleName) {
   const results = [];
@@ -340,11 +366,14 @@ function build() {
       tagged.sort((a, b) => a.title.localeCompare(b.title, 'fr'));
       const tagDir = join(DIST, 'tags');
       mkdirSync(tagDir, { recursive: true });
+      // #saq = tous les vins trouvables à la SAQ : les familles + chaque vin individuel
+      const allWines = tag === 'saq' ? extractAllWines() : [];
       const html = nunjucks.render('tag.njk', {
         siteTitle: `#${tag} · EXPO`,
         description: `${tagged.length} concept${tagged.length > 1 ? 's' : ''} tagué${tagged.length > 1 ? 's' : ''} #${tag}`,
         tag,
         concepts: tagged,
+        wines: allWines,
         breadcrumb: [
           { label: 'Tags', path: null },
           { label: `#${tag}`, path: null },

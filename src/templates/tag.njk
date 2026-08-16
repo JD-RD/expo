@@ -18,4 +18,34 @@
   {% endfor %}
 </div>
 {% endif %}
+
+{% if wines and wines.length > 0 %}
+<h2>🍷 Tous les vins à la SAQ ({{ wines.length }})</h2>
+<div class="markdown-body">
+<table>
+  <thead>
+    <tr>
+      <th>Vin</th>
+      <th>Famille</th>
+      <th>Prix</th>
+      <th>Sucre</th>
+      <th>Alcool</th>
+      <th>Dispo</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for w in wines %}
+    <tr>
+      <td><a href="{{ w.url }}" target="_blank" rel="noopener">{{ w.name }}</a></td>
+      <td>{{ w.famille }}</td>
+      <td>{{ w.prix }}</td>
+      <td>{{ w.sucre }}</td>
+      <td>{{ w.alcool }}</td>
+      <td>{{ w.dispo }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endif %}
 {% endblock %}
