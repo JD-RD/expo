@@ -313,6 +313,48 @@ function build() {
     }
   }
 
+  // ── 3.5. Tag pages (bundle vins only for now) ───────────────
+  // concept.njk links tags to /tags/<tag>.html — generate those pages
+  // for tags used in the vins bundle (JD choice 2026-08-15).
+  const vinsBundle = bundles['vins'];
+  if (vinsBundle) {
+    const vinsTags = new Set();
+    for (const c of vinsBundle.concepts) {
+      for (const t of (c.frontmatter.tags || [])) vinsTags.add(t);
+    }
+    for (const tag of vinsTags) {
+      const tagged = [];
+      for (const [name, bundle] of Object.entries(bundles)) {
+        for (const c of bundle.concepts) {
+          if ((c.frontmatter.tags || []).includes(tag)) {
+            tagged.push({
+              url: c.path + '.html',
+              title: c.frontmatter.title || c.slug.split('/').pop(),
+              type: c.frontmatter.type || 'Concept',
+              description: (c.frontmatter.description || '').slice(0, 150),
+              bundle: bundle.meta.title || name,
+            });
+          }
+        }
+      }
+      tagged.sort((a, b) => a.title.localeCompare(b.title, 'fr'));
+      const tagDir = join(DIST, 'tags');
+      mkdirSync(tagDir, { recursive: true });
+      const html = nunjucks.render('tag.njk', {
+        siteTitle: `#${tag} · EXPO`,
+        description: `${tagged.length} concept${tagged.length > 1 ? 's' : ''} tagué${tagged.length > 1 ? 's' : ''} #${tag}`,
+        tag,
+        concepts: tagged,
+        breadcrumb: [
+          { label: 'Tags', path: null },
+          { label: `#${tag}`, path: null },
+        ],
+      });
+      writeFileSync(join(tagDir, `${tag}.html`), html);
+      console.log(`  🏷 #${tag} → /tags/${tag}.html (${tagged.length} concepts)`);
+    }
+  }
+
   // ── 4. Generate subdirectory index pages ───────────────────
   for (const [name, bundle] of Object.entries(bundles)) {
     const bundleDir = join(BUNDLES, name);
