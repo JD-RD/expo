@@ -1,8 +1,8 @@
 ---
 type: Répertoire
 title: 🍷 Cave — Vins SAQ
-description: Sélection de vins rouges légers et fruités — vins nature + famille valpolicella — et vins orange (blancs de macération). Depuis août 2026, vins blancs nature fruités et vifs. Depuis le 14 août, suggestions de vins pour Patrice. Recommandations personnelles. Taux de sucre entre 1,2 et 4,8 g/L.
-tags: [vin, saq, cave, nature, valpolicella, orange, blanc, patrice]
+description: Sélection de vins rouges légers et fruités — vins nature + famille valpolicella — lambrusco pétillants, vins orange (blancs de macération). Depuis août 2026, vins blancs nature fruités et vifs. Depuis le 14 août, suggestions de vins pour Patrice. Recommandations personnelles. Taux de sucre entre 1,2 et 4,8 g/L.
+tags: [vin, saq, cave, nature, valpolicella, lambrusco, orange, blanc, patrice]
 timestamp: 2026-08-14
 ---
 
@@ -16,6 +16,7 @@ Sélection de vins **rouges légers**, **fruités et digestes** — la catégori
 |---|---|---|---|---|
 | [🍷 Vins nature — rouges légers](/vins/vins-nature) | La catégorie « glouglou » : nature, fruités, digestes | 6 | 20,30–26,95 $ | Masson · Angus · En ligne |
 | [🇮🇹 Famille Valpolicella](/vins/valpolicella) | Brigaldara (référence) + 5 vins similaires, même vibe | 6 | 16,55–27,70 $ | Masson · Angus |
+| [🥂 Lambrusco — Pétillants rouges](/vins/lambrusco) | Frizzante naturel d'Émilie, Grasparossa, le « glouglou » en pétillant | 2 | 20,45–28,20 $ | Masson · Angus |
 | [🍊 Famille orange — blancs de macération](/vins/orange) | Blancs sur peaux (ramato), nature et bio | 3 | 29,65–31,25 $ | Angus · En ligne |
 | [🥂 Vins blancs nature — fruités et vifs](/vins/vins-blancs-nature) | Le « glouglou » en blanc : nature, légers, 11–12,5 % | 6 | 20,95–31,50 $ | Masson · Angus |
 | [🍷 Suggestions pour Patrice](/vins/vins-patrice) | Les préférés de Patrice (Pommyers, Torres, Massereau) + 2 valeurs sûres par série, dispo en ligne | 8 | 16,05–26,65 $ | En ligne |
@@ -36,6 +37,8 @@ Sélection de vins **rouges légers**, **fruités et digestes** — la catégori
 | [Folonari](https://www.saq.com/fr/10270442) | Valpolicella | 16,55 $ | 2,5 g/L | 12,5% | ✅ Masson · Angus |
 | [Masi Bonacosta](https://www.saq.com/fr/285585) | Valpolicella | 18,95 $ | 4,8 g/L | 12% | ✅ Angus |
 | [Le Fraghe](https://www.saq.com/fr/14955713) | Valpolicella | 27,70 $ | 2 g/L | 12,5% | ✅ Angus |
+| [La Battagliola Dosage 15](https://www.saq.com/fr/15481126) | Lambrusco | 28,20 $ | — | 11,5% | ✅ Masson (12) |
+| [Cleto Chiarli Grasparossa](https://www.saq.com/fr/15223338) | Lambrusco | 20,45 $ | 17 g/L | 11% | ✅ Angus (1) |
 | [Southbrook Triomphe](https://www.saq.com/fr/14977189) | Orange | 31,25 $ | 1,3 g/L | 11,3% | ✅ 24 en ligne |
 | [Christina Orange](https://www.saq.com/fr/15128841) | Orange | 29,65 $ | — | 12,3% | ✅ Angus |
 | [Charles Frey](https://www.saq.com/fr/15087364) | Orange | 30,75 $ | <1,2 g/L | 13% | ✅ Angus |
@@ -56,4 +59,4 @@ Sélection de vins **rouges légers**, **fruités et digestes** — la catégori
 
 ---
 
-*Dernière mise à jour : 13 août 2026. Prix, disponibilités (Masson/Angus) et inventaires sujets à changement.*
+*Dernière mise à jour : 22 août 2026. Prix, disponibilités (Masson/Angus) et inventaires sujets à changement.*
