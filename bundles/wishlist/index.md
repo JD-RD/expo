@@ -23,6 +23,9 @@ Régions et villes du Japon (et Taïwan) qui ne font pas partie du voyage 2026, 
 | [❄️ Hokkaidō & Tōhoku](/wishlist/hokkaido/) | 9 | Nature sauvage, onsens, stations de ski. |
 | [🗻 Shizuoka & Izu](/wishlist/shizuoka/) | 5 | Mont Fuji, onsens, thé vert. |
 | [🏡 Gifu & Takayama](/wishlist/gifu-takayama/) | 3 | Alpes japonaises, Shirakawa-go. |
+| [🏯 Kanazawa](/wishlist/kanazawa/) | 5 | Ville historique, côte de la mer du Japon. |
+| [🏔 Kiso Valley & Matsumoto](/wishlist/kiso-matsumoto/) | 5 | Vallée Nakasendō, randonnées et onsens. |
+| [♨️ Kusatsu](/wishlist/kusatsu/) | 8 | Onsens traditionnels, ville thermale. |
 | [🥩 Kobe & Hyōgo](/wishlist/kobe/) | 1 | Bœuf de Kobe, onsens d'Arima. |
 | [🌳 Ibaraki & Tochigi](/wishlist/ibaraki/) | 4 | Jardins Kairaku-en, Nikkō Tōshō-gū. |
 | [🌋 Kagoshima & Amami](/wishlist/kagoshima/) | 2 | Volcan Sakurajima, plages tropicales. |
@@ -30,4 +33,4 @@ Régions et villes du Japon (et Taïwan) qui ne font pas partie du voyage 2026, 
 | [🏔 Yamanashi](/wishlist/yamanashi/) | 1 | Fuji Five Lakes, randonnées. |
 | [🏙 Taipei (Taïwan)](/wishlist/taipei/) | 1 | Night markets, temple Longshan. |
 
-Total: **48 concepts** — pour le prochain voyage !
+Total: **66 concepts** — pour le prochain voyage !
