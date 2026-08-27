@@ -12,13 +12,13 @@ Planification du voyage au Japon (Octobre 2026) — restaurants, attractions, sh
 
 | Ville | Concepts | Description |
 |-------|----------|-------------|
-| [🗼 Tokyo](/japon/tokyo/) | 44 | Capitale dynamique. Arrivée et début du voyage. |
+| [🗼 Tokyo](/japon/tokyo/) | 36 | Capitale dynamique. Arrivée et début du voyage. |
 | [⛩ Kyoto](/japon/kyoto/) | 16 | Temples, jardins, gastronomie traditionnelle. |
 | [🏯 Kanazawa](/japon/kanazawa/) | 5 | Ville historique, côte de la mer du Japon. |
 | [🏔 Kiso Valley & Matsumoto](/japon/kiso-matsumoto/) | 5 | Vallée Nakasendō, randonnées et onsens. |
 | [♨️ Kusatsu](/japon/kusatsu/) | 8 | Station thermale réputée, onsens traditionnels. |
 
-Total: **79 concepts** — pour le voyage 2026.
+Total: **70 concepts** — pour le voyage 2026.
 
 ## Liens
 
