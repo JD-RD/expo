@@ -1,1 +1,0 @@
-# Shizuoka & Izu — Mont Fuji, onsens, plages, thé vert.

@@ -396,6 +396,11 @@ body.sidebar-open .sidebar-overlay {
 .type-Playbook { background: #ffd70022; color: #ffd700; }
 .type-Reference { background: #bc8cff22; color: #bc8cff; }
 .type-Vin { background: #ff6b8122; color: #ff6b81; }
+.type-Hébergement { background: #56d4bd22; color: #56d4bd; }
+.type-Musée { background: #e3b34122; color: #e3b341; }
+.type-Parc { background: #56d36422; color: #56d364; }
+.type-Onsen { background: #ff7b7222; color: #ff7b72; }
+.type-Bien-être { background: #ff7b7222; color: #ff7b72; }
 
 .tags { margin-top: 0.5rem; display: flex; gap: 0.4rem; flex-wrap: wrap; }
 .tag {

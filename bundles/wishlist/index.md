@@ -12,7 +12,7 @@ Régions et villes du Japon (et Taïwan) qui ne font pas partie du voyage 2026, 
 
 | Ville | Concepts | Description |
 |-------|----------|-------------|
-| [🍜 Osaka](/wishlist/osaka/) | 2 | Gastronomie, Dōtonbori, château d'Osaka. |
+| [🍜 Osaka](/wishlist/osaka/) | 3 | Gastronomie, Dōtonbori, château d'Osaka. |
 | [🦌 Nara](/wishlist/nara/) | 3 | Temple Tōdai-ji, daims en liberté. |
 | [🏖 Kamakura](/wishlist/kamakura/) | 2 | Grand Bouddha, temples, plages. |
 | [⛰ Kōyasan](/wishlist/koyasan/) | 8 | Montagne sacrée du bouddhisme Shingon. |
@@ -21,7 +21,6 @@ Régions et villes du Japon (et Taïwan) qui ne font pas partie du voyage 2026, 
 | [🎨 Naoshima](/wishlist/naoshima/) | 2 | Île d'art contemporain, musées Tadao Andō. |
 | [🚶 Shikoku](/wishlist/shikoku/) | 2 | Pèlerinage des 88 temples. |
 | [❄️ Hokkaidō & Tōhoku](/wishlist/hokkaido/) | 9 | Nature sauvage, onsens, stations de ski. |
-| [🗻 Shizuoka & Izu](/wishlist/shizuoka/) | 5 | Mont Fuji, onsens, thé vert. |
 | [🏡 Gifu & Takayama](/wishlist/gifu-takayama/) | 3 | Alpes japonaises, Shirakawa-go. |
 | [🏯 Kanazawa](/wishlist/kanazawa/) | 5 | Ville historique, côte de la mer du Japon. |
 | [🏔 Kiso Valley & Matsumoto](/wishlist/kiso-matsumoto/) | 5 | Vallée Nakasendō, randonnées et onsens. |
@@ -33,4 +32,4 @@ Régions et villes du Japon (et Taïwan) qui ne font pas partie du voyage 2026, 
 | [🏔 Yamanashi](/wishlist/yamanashi/) | 1 | Fuji Five Lakes, randonnées. |
 | [🏙 Taipei (Taïwan)](/wishlist/taipei/) | 1 | Night markets, temple Longshan. |
 
-Total: **66 concepts** — pour le prochain voyage !
+Total: **62 concepts** — pour le prochain voyage !
