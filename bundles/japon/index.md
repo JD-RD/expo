@@ -22,5 +22,4 @@ Total: **79 concepts** — pour le voyage 2026.
 
 ## Liens
 
-- Recommandé par [Meggie Lennon](/japon/_people/meggie-lennon)
 - Voir aussi la [🇯🇵 Wishlist](/wishlist/) pour les autres régions

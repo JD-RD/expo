@@ -89,7 +89,7 @@ Zéro runtime. Tout est build-time. Le site déployé est du HTML/CSS/JS pur.
 │   │   ├── kusatsu/
 │   │   │   └── ...
 │   │   └── _people/
-│   │       └── meggie-lennon.md
+│   │       └── ...
 │   │
 │   └── projets/                ← Bundle Projets (futur)
 │       ├── index.md
@@ -158,7 +158,6 @@ Idéal pour un repas rapide en solo.
 ## Liens
 
 - Voisin du [Shibuya Crossing](/japon/tokyo/attractions/shibuya-crossing)
-- Recommandé par [Meggie](/japon/_people/meggie-lennon)
 - Quartier [Shibuya](/japon/tokyo/index)
 
 ## Citations
@@ -265,7 +264,6 @@ Le script `src/build.js` s'exécute en une passe :
         <h3>🔗 Liens</h3>
         <ul>
           <li>→ <a href="/japon/tokyo/attractions/shibuya-crossing">Shibuya Crossing</a></li>
-          <li>→ <a href="/japon/_people/meggie-lennon">Meggie</a></li>
         </ul>
 
         <div id="graph" style="height:300px"></div>
@@ -528,7 +526,7 @@ Chaque entrée d'un tableau existant devient un concept `.md` :
 
 ```
 japon/
-├── _people/                    ← Personnes (Meggie, guides, etc.)
+├── _people/                    ← Personnes (guides, etc.)
 ├── tokyo/
 │   ├── index.md
 │   ├── restaurants.md          ← ! Converti en dossier si >5 entrées
@@ -547,7 +545,7 @@ japon/
 
 - Fichiers : `kebab-case.md` (ex: `ichiran-shibuya.md`)
 - Dossiers : `kebab-case` (ex: `petanque-clubs/`)
-- Personnes : `_prefix` pour concepts non-lieux (ex: `_people/meggie-lennon.md`)
+- Personnes : `_prefix` pour concepts non-lieux (ex: `_people/guide.md`)
 - Tags : lowercase, sans accents (ex: `tokyo`, `ramen`, `shibuya`)
 
 ---

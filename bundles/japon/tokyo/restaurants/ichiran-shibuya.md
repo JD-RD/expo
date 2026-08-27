@@ -21,4 +21,3 @@ Idéal pour un repas rapide en solo.
 ## Liens
 
 - Voisin du [Shibuya Crossing](/japon/tokyo/attractions/shibuya-crossing)
-- Recommandé par [Meggie](/japon/_people/meggie-lennon)
