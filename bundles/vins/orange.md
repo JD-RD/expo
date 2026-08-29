@@ -40,9 +40,9 @@ Blanc de macération bio et biodynamique — abricot, mandarine, notes florales,
 | **Région** | Autriche |
 | **Producteur** | Christina |
 | **Avis** | ⭐ (2) |
-| **Dispo** | ✅ Angus (1) |
+| **Dispo** | ❌ Épuisé partout (29 août 2026) — voir [Épuisés](/vins/epuises) |
 
-Vin orange autrichien, nature et bio. Un assemblage original de blancs macérés — à découvrir pour la curiosité. [Voir sur SAQ](https://www.saq.com/fr/15128841)
+Vin orange autrichien, nature et bio. Un assemblage original de blancs macérés — à découvrir pour la curiosité. Épuisé partout depuis le 29 août 2026 — [Épuisés](/vins/epuises). [Voir sur SAQ](https://www.saq.com/fr/15128841)
 
 ---
 
@@ -59,9 +59,9 @@ Vin orange autrichien, nature et bio. Un assemblage original de blancs macérés
 | **Région** | Alsace, France |
 | **Producteur** | SAS Maison Charles Frey |
 | **Avis** | ⭐ 8 |
-| **Dispo** | ✅ Angus (3) |
+| **Dispo** | ❌ Épuisé partout (29 août 2026) — voir [Épuisés](/vins/epuises) |
 
-Macération de gewurztraminer et muscat — bergamote, litchi, notes florales. Biodynamique, le plus aromatique de la bande. [Voir sur SAQ](https://www.saq.com/fr/15087364)
+Macération de gewurztraminer et muscat — bergamote, litchi, notes florales. Biodynamique, le plus aromatique de la bande. Épuisé partout depuis le 29 août 2026 — [Épuisés](/vins/epuises). [Voir sur SAQ](https://www.saq.com/fr/15087364)
 
 ---
 
@@ -69,8 +69,8 @@ Macération de gewurztraminer et muscat — bergamote, litchi, notes florales. B
 
 | Vin | Prix | Sucre | Alcool | Cépages | Pays | Dispo |
 |---|---|---|---|---|---|---|
-| [Southbrook Triomphe](https://www.saq.com/fr/14977189) | 31,25 $ | 1,3 g/L | 11,3% | Chardonnay musqué, Vidal | 🇨🇦 | ✅ En ligne |
-| [Christina Orange](https://www.saq.com/fr/15128841) | 29,65 $ | — | 12,3% | Weissburgunder, Sauvignon | 🇦🇹 | ✅ Angus |
-| [Charles Frey](https://www.saq.com/fr/15087364) | 30,75 $ | <1,2 g/L | 13% | Gewurztraminer, Muscat | 🇫🇷 | ✅ Angus |
+| [Southbrook Triomphe](https://www.saq.com/fr/14977189) | 31,25 $ | 1,3 g/L | 11,3% | Chardonnay musqué, Vidal | 🇨🇦 | 🌐 En ligne seulement |
+| [Christina Orange](https://www.saq.com/fr/15128841) | 29,65 $ | — | 12,3% | Weissburgunder, Sauvignon | 🇦🇹 | ❌ Épuisé |
+| [Charles Frey](https://www.saq.com/fr/15087364) | 30,75 $ | <1,2 g/L | 13% | Gewurztraminer, Muscat | 🇫🇷 | ❌ Épuisé |
 
 ← [Retour au sommaire](/vins/)

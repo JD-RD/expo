@@ -55,9 +55,9 @@ Le plus proche du Koi en style : méthode ancestrale, producteur petit et artisa
 | **Région** | Lambrusco Grasparossa di Castelvetro DOC, Émilie-Romagne, Italie |
 | **Producteur** | Cleto Chiarli (depuis 1860) |
 | **Particularité** | Bio |
-| **Dispo** | ✅ Angus (1) |
+| **Dispo** | ❌ Épuisé partout (29 août 2026) — voir [Épuisés](/vins/epuises) |
 
-Producteur historique (1860), un des meilleurs Lambrusco_grasparossa à ce prix. ⭐ 100% satisfaction (3 avis). Banane, cerise noire, petits fruits rouges, violette. Stock très limité — vas-y vite. [Voir sur SAQ](https://www.saq.com/fr/15223338)
+Producteur historique (1860), un des meilleurs Lambrusco_grasparossa à ce prix. ⭐ 100% satisfaction (3 avis). Banane, cerise noire, petits fruits rouges, violette. Épuisé partout depuis le 29 août 2026 — [Épuisés](/vins/epuises). [Voir sur SAQ](https://www.saq.com/fr/15223338)
 
 ---
 
@@ -65,8 +65,8 @@ Producteur historique (1860), un des meilleurs Lambrusco_grasparossa à ce prix.
 
 | Vin | Code | Prix | Sucre | Alcool | Bio | Dispo |
 |---|---|---|---|---|---|---|
-| Gavioli Secco | [`15408818`](https://www.saq.com/fr/15408818) | 18,60 $ | 11 g/L | 11% | ✅ | ❌ Rupture |
-| Formigine Passione | [`15222036`](https://www.saq.com/fr/15222036) | 18,15 $ | 8,6 g/L | 10,5% | ✅ | ❌ Rupture |
-| Albinea Canali | [`15221957`](https://www.saq.com/fr/15221957) | 19,15 $ | 24 g/L | 10% | — | ❌ Rupture |
+| Gavioli Secco | [`15408818`](https://www.saq.com/fr/15408818) | 18,60 $ | 11 g/L | 11% | ✅ | 🌐 En ligne seulement |
+| Formigine Passione | [`15222036`](https://www.saq.com/fr/15222036) | 18,15 $ | 8,6 g/L | 10,5% | ✅ | ❌ Épuisé partout |
+| Albinea Canali | [`15221957`](https://www.saq.com/fr/15221957) | 19,15 $ | 24 g/L | 10% | — | ❌ Épuisé partout |
 
 ← [Retour au sommaire](/vins/)

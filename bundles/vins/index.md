@@ -2,7 +2,7 @@
 type: Répertoire
 title: 🍷 Cave — Vins SAQ
 description: Sélection de vins rouges légers et fruités — vins nature + famille valpolicella — lambrusco pétillants, vins orange (blancs de macération). Depuis août 2026, vins blancs nature fruités et vifs. Depuis le 14 août, suggestions de vins pour Patrice. Depuis le 29 août, sakés japonais sous 31 $. Recommandations personnelles. Taux de sucre entre 1,2 et 4,8 g/L.
-tags: [vin, saq, cave, nature, valpolicella, lambrusco, orange, blanc, patrice, sake]
+tags: [vin, saq, cave, nature, valpolicella, lambrusco, orange, blanc, patrice, sake, epuise]
 timestamp: 2026-08-14
 ---
 
@@ -21,6 +21,7 @@ Sélection de vins **rouges légers**, **fruités et digestes** — la catégori
 | [🥂 Vins blancs nature — fruités et vifs](/vins/vins-blancs-nature) | Le « glouglou » en blanc : nature, légers, 11–12,5 % | 6 | 20,95–31,50 $ | Masson · Angus |
 | [🍷 Suggestions pour Patrice](/vins/vins-patrice) | Les préférés de Patrice (Pommyers, Torres, Massereau) + 2 valeurs sûres par série, dispo en ligne | 8 | 16,05–26,65 $ | En ligne |
 | [🍶 Saké — japonais sous 31 $](/vins/sake) | Junmai, ginjo, daiginjo, nigori et pétillants — inventaire Angus vérifié | 22 | 4,80–29,75 $ | Angus (19) · Masson |
+| [🗑️ Épuisés — à surveiller](/vins/epuises) | Goûts validés épuisés partout (succursales + en ligne) — surveiller réappro ou nouveau millésime | 8 | 18,15–30,75 $ | ❌ Épuisé |
 
 ## Tous les vins en un coup d'œil
 
@@ -28,10 +29,10 @@ Sélection de vins **rouges légers**, **fruités et digestes** — la catégori
 |---|---|---|---|---|---|
 | [Drink Me](https://www.saq.com/fr/14092680) | Nature | 21,75 $ | 2,2 g/L | 12,5% | ✅ En ligne |
 | [Montalbera Grigné](https://www.saq.com/fr/13014372) | Nature | 20,30 $ | 3,5 g/L | 13,5% | ✅ 72 en ligne |
-| [Tetramythos](https://www.saq.com/fr/11885457) | Nature | 20,30 $ | 1,9 g/L | 12% | ❌ Succursale |
-| [Di Giovanna Vurria](https://www.saq.com/fr/11577366) | Nature | 23,05 $ | 2 g/L | 13,5% | ❌ Succursale |
+| [Tetramythos](https://www.saq.com/fr/11885457) | Nature | 20,30 $ | 1,9 g/L | 12% | ❌ Épuisé partout |
+| [Di Giovanna Vurria](https://www.saq.com/fr/11577366) | Nature | 23,05 $ | 2 g/L | 13,5% | ❌ Épuisé partout |
 | [Lapierre Raisins Gaulois](https://www.saq.com/fr/11459976) | Nature | 26,95 $ | <1,2 g/L | 12% | ✅ 125 en ligne |
-| [Rufia](https://www.saq.com/fr/14273499) | Nature | 26,70 $ | 1,2 g/L | 12% | ❌ Succursale |
+| [Rufia](https://www.saq.com/fr/14273499) | Nature | 26,70 $ | 1,2 g/L | 12% | ❌ Épuisé partout |
 | [Brigaldara](https://www.saq.com/fr/14320523) | Valpolicella | 19,75 $ | 3,3 g/L | 13% | ✅ Masson · Angus |
 | [Allegrini](https://www.saq.com/fr/15082926) | Valpolicella | 22,45 $ | 3,2 g/L | 12,5% | ✅ Angus |
 | [Bolla](https://www.saq.com/fr/16840) | Valpolicella | 17,55 $ | 3 g/L | 12,5% | ✅ Angus |
@@ -39,11 +40,11 @@ Sélection de vins **rouges légers**, **fruités et digestes** — la catégori
 | [Masi Bonacosta](https://www.saq.com/fr/285585) | Valpolicella | 18,95 $ | 4,8 g/L | 12% | ✅ Angus |
 | [Le Fraghe](https://www.saq.com/fr/14955713) | Valpolicella | 27,70 $ | 2 g/L | 12,5% | ✅ Angus |
 | [La Battagliola Dosage 15](https://www.saq.com/fr/15481126) | Lambrusco | 28,20 $ | — | 11,5% | ✅ Masson (12) |
-| [Cleto Chiarli Grasparossa](https://www.saq.com/fr/15223338) | Lambrusco | 20,45 $ | 17 g/L | 11% | ✅ Angus (1) |
-| [Southbrook Triomphe](https://www.saq.com/fr/14977189) | Orange | 31,25 $ | 1,3 g/L | 11,3% | ✅ 24 en ligne |
-| [Christina Orange](https://www.saq.com/fr/15128841) | Orange | 29,65 $ | — | 12,3% | ✅ Angus |
-| [Charles Frey](https://www.saq.com/fr/15087364) | Orange | 30,75 $ | <1,2 g/L | 13% | ✅ Angus |
-| [Le Litre Bovin](https://www.saq.com/fr/15388968) | Blancs nature | 31,50 $ | — | 11,5% | ✅ Masson (1) · Angus (7) |
+| [Cleto Chiarli Grasparossa](https://www.saq.com/fr/15223338) | Lambrusco | 20,45 $ | 17 g/L | 11% | ❌ Épuisé partout |
+| [Southbrook Triomphe](https://www.saq.com/fr/14977189) | Orange | 31,25 $ | 1,3 g/L | 11,3% | 🌐 En ligne seulement |
+| [Christina Orange](https://www.saq.com/fr/15128841) | Orange | 29,65 $ | — | 12,3% | ❌ Épuisé partout |
+| [Charles Frey](https://www.saq.com/fr/15087364) | Orange | 30,75 $ | <1,2 g/L | 13% | ❌ Épuisé partout |
+| [Le Litre Bovin](https://www.saq.com/fr/15388968) | Blancs nature | 31,50 $ | — | 11,5% | 🌐 En ligne seulement |
 | [Écu Schistes](https://www.saq.com/fr/13807102) | Blancs nature | 21,55 $ | 1,3 g/L | 12,5% | ✅ Masson (50) · Angus (8) |
 | [Meinklang Grüner](https://www.saq.com/fr/13631071) | Blancs nature | 20,95 $ | 2,5 g/L | 11% | ✅ Masson (25) · Angus (129) |
 | [Pirouettes Tutti Frutti](https://www.saq.com/fr/13903639) | Blancs nature | 24,70 $ | — | 13% | ✅ Masson (14) · Angus (4) |
@@ -54,7 +55,7 @@ Sélection de vins **rouges légers**, **fruités et digestes** — la catégori
 | [Cailleteau Bergeron Prestige](https://www.saq.com/fr/919373) | Patrice | 22,80 $ | 3,8 g/L | 14% | ✅ En ligne |
 | [Torres Gran Coronas](https://www.saq.com/fr/36483) | Patrice | 20,55 $ | 2,4 g/L | 14% | ✅ En ligne |
 | [Faustino V Reserva](https://www.saq.com/fr/10857497) | Patrice | 21,05 $ | 2,2 g/L | 14% | ✅ En ligne |
-| [Protos Roble](https://www.saq.com/fr/14323839) | Patrice | 21,05 $ | 2 g/L | 15% | ✅ En ligne |
+| [Protos Roble](https://www.saq.com/fr/14323839) | Patrice | 21,05 $ | 2 g/L | 15% | 🌐 En ligne seulement |
 | [Suau Semper Viva](https://www.saq.com/fr/15147515) | Patrice | 26,65 $ | 1,8 g/L | 14% | ✅ En ligne |
 | [Buzet Sans Sulfites](https://www.saq.com/fr/13862081) | Patrice | 16,05 $ | — | 12,5% | ✅ En ligne |
 | [Konishi Junmai Ginjo Hiyashibori](https://www.saq.com/fr/15394461) | Saké | 29,75 $ | 27 g/L | 15,5% | ✅ Angus (15) |
@@ -82,4 +83,4 @@ Sélection de vins **rouges légers**, **fruités et digestes** — la catégori
 
 ---
 
-*Dernière mise à jour : 29 août 2026. Prix, disponibilités (Masson/Angus) et inventaires sujets à changement.*
+*Dernière mise à jour : 29 août 2026 (validation complète des 53 produits — inventaires, statuts en ligne, catégorie [Épuisés](/vins/epuises)). Prix, disponibilités (Masson/Angus) et inventaires sujets à changement.*

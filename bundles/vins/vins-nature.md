@@ -58,9 +58,9 @@ Fraise, pomme, fleurs séchées, réglisse. Vin nature sans élevage en fût —
 | **Région** | IGP Peloponnèse, Grèce |
 | **Producteur** | Domaine Tetramythos |
 | **Avis** | ⭐ 12 |
-| **Dispo** | ❌ Succursale seulement |
+| **Dispo** | ❌ Épuisé partout (29 août 2026) — voir [Épuisés](/vins/epuises) |
 
-Un cépage obscur (« noir de Kalavryta ») — croisement entre un gamay fruité et une syrah épicée. Acidulé, frais, minéral. Parfait sur une planche de charcuterie. Nature + Bio. [Voir sur SAQ](https://www.saq.com/fr/11885457)
+Un cépage obscur (« noir de Kalavryta ») — croisement entre un gamay fruité et une syrah épicée. Acidulé, frais, minéral. Parfait sur une planche de charcuterie. Nature + Bio. Épuisé partout depuis le 29 août 2026 — [Épuisés](/vins/epuises). [Voir sur SAQ](https://www.saq.com/fr/11885457)
 
 ---
 
@@ -77,9 +77,9 @@ Un cépage obscur (« noir de Kalavryta ») — croisement entre un gamay fruit�
 | **Région** | Sicilia DOC, Sicile, Italie |
 | **Producteur** | Di Giovanna |
 | **Avis** | ⭐ 9 |
-| **Dispo** | ❌ Succursale seulement |
+| **Dispo** | ❌ Épuisé partout (29 août 2026) — voir [Épuisés](/vins/epuises) |
 
-Herbes séchées, notes florales, petits fruits rouges. Un vin de l'Etna accessible, nature et bio. [Voir sur SAQ](https://www.saq.com/fr/11577366)
+Herbes séchées, notes florales, petits fruits rouges. Un vin de l'Etna accessible, nature et bio. Épuisé partout depuis le 29 août 2026 — [Épuisés](/vins/epuises). [Voir sur SAQ](https://www.saq.com/fr/11577366)
 
 ---
 
@@ -115,9 +115,9 @@ La référence historique des vins nature. Marcel Lapierre fut l'un des pionnier
 | **Région** | Portugal |
 | **Producteur** | João Eduardo Novais Malheiro Tavares de Pina |
 | **Avis** | ⭐ 17 |
-| **Dispo** | ❌ Succursale seulement |
+| **Dispo** | ❌ Épuisé partout (29 août 2026) — voir [Épuisés](/vins/epuises) |
 
-Le plus proche du Drink Me en esprit : portugais, nature, fruité, à servir frais. Petits fruits rouges croquants, touche épicée. Acidité vive, attaque en fraîcheur. [Voir sur SAQ](https://www.saq.com/fr/14273499)
+Le plus proche du Drink Me en esprit : portugais, nature, fruité, à servir frais. Petits fruits rouges croquants, touche épicée. Acidité vive, attaque en fraîcheur. Épuisé partout depuis le 29 août 2026 — [Épuisés](/vins/epuises). [Voir sur SAQ](https://www.saq.com/fr/14273499)
 
 ---
 
@@ -127,9 +127,9 @@ Le plus proche du Drink Me en esprit : portugais, nature, fruité, à servir fra
 |---|---|---|---|---|---|---|
 | [Drink Me](https://www.saq.com/fr/14092680) | 21,75 $ | 2,2 g/L | 12,5% | Baga | 🇵🇹 | ✅ |
 | [Montalbera Grigné](https://www.saq.com/fr/13014372) | 20,30 $ | 3,5 g/L | 13,5% | Grignolino | 🇮🇹 | ✅ |
-| [Tetramythos](https://www.saq.com/fr/11885457) | 20,30 $ | 1,9 g/L | 12% | Mavro Kalavrytino | 🇬🇷 | ❌ |
-| [Di Giovanna Vurria](https://www.saq.com/fr/11577366) | 23,05 $ | 2 g/L | 13,5% | Nerello Mascalese | 🇮🇹 | ❌ |
+| [Tetramythos](https://www.saq.com/fr/11885457) | 20,30 $ | 1,9 g/L | 12% | Mavro Kalavrytino | 🇬🇷 | ❌ Épuisé |
+| [Di Giovanna Vurria](https://www.saq.com/fr/11577366) | 23,05 $ | 2 g/L | 13,5% | Nerello Mascalese | 🇮🇹 | ❌ Épuisé |
 | [Lapierre Raisins Gaulois](https://www.saq.com/fr/11459976) | 26,95 $ | <1,2 g/L | 12% | Gamay | 🇫🇷 | ✅ |
-| [Rufia](https://www.saq.com/fr/14273499) | 26,70 $ | 1,2 g/L | 12% | Mencía blend | 🇵🇹 | ❌ |
+| [Rufia](https://www.saq.com/fr/14273499) | 26,70 $ | 1,2 g/L | 12% | Mencía blend | 🇵🇹 | ❌ Épuisé |
 
 ← [Retour au sommaire](/vins/)
