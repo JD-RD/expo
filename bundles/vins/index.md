@@ -1,8 +1,8 @@
 ---
 type: Répertoire
 title: 🍷 Cave — Vins SAQ
-description: Sélection de vins rouges légers et fruités — vins nature + famille valpolicella — lambrusco pétillants, vins orange (blancs de macération). Depuis août 2026, vins blancs nature fruités et vifs. Depuis le 14 août, suggestions de vins pour Patrice. Recommandations personnelles. Taux de sucre entre 1,2 et 4,8 g/L.
-tags: [vin, saq, cave, nature, valpolicella, lambrusco, orange, blanc, patrice]
+description: Sélection de vins rouges légers et fruités — vins nature + famille valpolicella — lambrusco pétillants, vins orange (blancs de macération). Depuis août 2026, vins blancs nature fruités et vifs. Depuis le 14 août, suggestions de vins pour Patrice. Depuis le 29 août, sakés japonais sous 31 $. Recommandations personnelles. Taux de sucre entre 1,2 et 4,8 g/L.
+tags: [vin, saq, cave, nature, valpolicella, lambrusco, orange, blanc, patrice, sake]
 timestamp: 2026-08-14
 ---
 
@@ -20,6 +20,7 @@ Sélection de vins **rouges légers**, **fruités et digestes** — la catégori
 | [🍊 Famille orange — blancs de macération](/vins/orange) | Blancs sur peaux (ramato), nature et bio | 3 | 29,65–31,25 $ | Angus · En ligne |
 | [🥂 Vins blancs nature — fruités et vifs](/vins/vins-blancs-nature) | Le « glouglou » en blanc : nature, légers, 11–12,5 % | 6 | 20,95–31,50 $ | Masson · Angus |
 | [🍷 Suggestions pour Patrice](/vins/vins-patrice) | Les préférés de Patrice (Pommyers, Torres, Massereau) + 2 valeurs sûres par série, dispo en ligne | 8 | 16,05–26,65 $ | En ligne |
+| [🍶 Saké — japonais sous 31 $](/vins/sake) | Junmai, ginjo, daiginjo, nigori et pétillants — inventaire Angus vérifié | 22 | 4,80–29,75 $ | Angus (19) · Masson |
 
 ## Tous les vins en un coup d'œil
 
@@ -56,7 +57,29 @@ Sélection de vins **rouges légers**, **fruités et digestes** — la catégori
 | [Protos Roble](https://www.saq.com/fr/14323839) | Patrice | 21,05 $ | 2 g/L | 15% | ✅ En ligne |
 | [Suau Semper Viva](https://www.saq.com/fr/15147515) | Patrice | 26,65 $ | 1,8 g/L | 14% | ✅ En ligne |
 | [Buzet Sans Sulfites](https://www.saq.com/fr/13862081) | Patrice | 16,05 $ | — | 12,5% | ✅ En ligne |
+| [Konishi Junmai Ginjo Hiyashibori](https://www.saq.com/fr/15394461) | Saké | 29,75 $ | 27 g/L | 15,5% | ✅ Angus (15) |
+| [Kizakura Junmai Daiginjo](https://www.saq.com/fr/15294849) | Saké | 22,00 $ | 25 g/L | 16% | ✅ Angus (7) |
+| [Yuki Hotaru Snow Firefly](https://www.saq.com/fr/13990218) | Saké | 23,35 $ | 22 g/L | 13,5% | ✅ Masson (1) · Angus (20) |
+| [Akashi-tai Junmai Tokubetsu](https://www.saq.com/fr/15073739) | Saké | 27,10 $ | 22 g/L | 15% | ✅ Angus (13) |
+| [Kizakura Karakuchi Ikkon](https://www.saq.com/fr/15473062) | Saké | 4,80 $ | — | — | ✅ Angus (13) |
+| [Kizakura Tsu No Junmai Reishu](https://www.saq.com/fr/15073886) | Saké | 6,95 $ | — | — | ✅ Angus (19) |
+| [Nihonsakari Nama Genshu Daiginjo](https://www.saq.com/fr/13903401) | Saké | 8,10 $ | — | — | ✅ Angus (14) |
+| [Hakutsuru Supérieur Junmai Ginjo](https://www.saq.com/fr/10757074) | Saké | 10,00 $ | — | — | ✅ Masson (7) · Angus (1) |
+| [Hakutsuru Awayuki Pétillant](https://www.saq.com/fr/13062884) | Saké | 10,30 $ | — | — | ✅ Masson (11) · Angus (12) |
+| [Hana Kizakura Junmai Ginjo](https://www.saq.com/fr/13903410) | Saké | 11,20 $ | — | — | ✅ Masson (7) · Angus (24) |
+| [Hakutsuru Organic Junmai](https://www.saq.com/fr/15414193) | Saké | 11,45 $ | — | — | ✅ Masson (3) · Angus (11) |
+| [Hakutsuru](https://www.saq.com/fr/12849) | Saké | 12,30 $ | — | — | ✅ Masson (18) · Angus (17) |
+| [Hakutsuru Sho-Une Junmai Dai Ginjo](https://www.saq.com/fr/11458594) | Saké | 12,45 $ | — | — | ✅ Masson (7) · Angus (1) |
+| [Kizakura Kyo No Tokurri Gold](https://www.saq.com/fr/15291429) | Saké | 13,00 $ | — | — | ✅ Angus (3) |
+| [Hakushika Snow Beauty Nigori](https://www.saq.com/fr/12878662) | Saké | 14,35 $ | — | — | ✅ Angus (2) |
+| [Kizakura Ginjo Namachozo](https://www.saq.com/fr/15473071) | Saké | 14,80 $ | — | — | ✅ Angus (14) |
+| [Mio Sparkling Sho Chiku Bai](https://www.saq.com/fr/13903381) | Saké | 17,00 $ | — | — | ✅ Masson (6) · Angus (20) |
+| [Kizakura Symphony of Galaxy](https://www.saq.com/fr/15073907) | Saké | 18,00 $ | — | — | ✅ Angus (4) |
+| [Hakutsuru Nigori Yuzu](https://www.saq.com/fr/15176498) | Saké | 25,50 $ | — | — | ✅ Angus (1) |
+| [Sayuri Nigori](https://www.saq.com/fr/10757103) | Saké | 9,65 $ | 27 g/L | 12,5% | ✅ Masson (6) |
+| [Funaki Shinriki Junmai Ginjo](https://www.saq.com/fr/14020601) | Saké | 21,85 $ | 16 g/L | 15% | ✅ Masson (7) |
+| [Arrive Sage](https://www.saq.com/fr/15392772) | Saké | 22,95 $ | 33 g/L | 15% | ✅ Masson (1) |
 
 ---
 
-*Dernière mise à jour : 22 août 2026. Prix, disponibilités (Masson/Angus) et inventaires sujets à changement.*
+*Dernière mise à jour : 29 août 2026. Prix, disponibilités (Masson/Angus) et inventaires sujets à changement.*
