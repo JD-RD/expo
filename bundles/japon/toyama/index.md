@@ -8,6 +8,10 @@ tags: [japon, toyama]
 
 Oct 8 – 11. Base parfaite après la montagne — plat, calme, bons fruits de mer.
 
+## Arrivée — 8 octobre
+
+Check-in vers 15 h; si l'arrivée se fait plus tôt, garder l'après-midi pour une promenade calme au centre. Pour un repas de fruits de mer, le [marché de Mizuhashi](https://mizuhashi-gyomin.jp/wp/menu/) est une priorité (vérifier les heures avant de partir).
+
 ## Centre-ville
 
 - Fugan Canal Kansui Park
