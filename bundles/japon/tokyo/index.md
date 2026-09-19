@@ -22,9 +22,37 @@ Première soirée sans pression, dans le secteur Tabata/Nishi-Nippori :
 ## Ébauche de journées — premier séjour
 
 - **1 oct.** : Route Books ou Chikukōdō → Ueno et ses rues secondaires → soba chez [Shin Fuji](https://maps.app.goo.gl/wTKUQMVmEuiBXUZs8) ou [Okina An](https://maps.app.goo.gl/RCpr39aESYhTbSMn6) → Echigoya Honten le soir.
-- **2 oct.** : Hamarikyūteien → [Tokyo Kitani](https://maps.app.goo.gl/at9YRNS9LaVkJs5u7) ou Tsukiji Outer Market; privilégier les heures creuses.
+- **2 oct.** : Hamarikyūteien → [Tokyo Kitani](https://maps.app.goo.gl/at9YRNS9LaVkJs5u7) ou Tsukiji Outer Market; puis **Idjut Boys au DJ Bar Bridge Shinjuku** à partir de 21 h.
 - **3 oct.** : pique-nique avec provisions au [parc mémorial Shōwa](https://maps.app.goo.gl/PXaRkBMZq1Qk9WmF8), puis [飲み食い処 ぽちゃ](https://maps.app.goo.gl/Y684jCDwkPAnmAo46) et Nakamuraya Maruyasu.
-- **4 oct.** : Mugi to Olive Ginza ou Tsukiji Uogashi pour le lunch → pétanque (¥150/h, jusqu'à 16 h) → TeamLab seulement si l'envie d'une activité très touristique demeure.
+- **4 oct.** : **double A-side à or, Jingumae (16 h–23 h)**; lunch possible chez Mugi to Olive Ginza ou à Tsukiji Uogashi avant la day party.
+
+## Événements musique — octobre 2026
+
+John Talabot à VENT n'est finalement pas retenu.
+
+### Vendredi 2 octobre — Idjut Boys
+
+**DJ Bar Bridge Shinjuku** — ouverture à **21 h**
+
+Idjut Boys — Dan Tyler et Conrad McDonnell — avec **EZ**, résident de Bridge. Soirée disco-dub, avec grooves dansants, sélections éclectiques, effets dub et ambiance de petite salle.
+
+- [Billets LivePocket](https://livepocket.jp/e/idjutboys)
+- [Annonce officielle](https://ahbproduction.com/2026/09/11/2026-10-02-fri-idjut-boys-dj-bar-bridge-shinjuku-tokyo/)
+- Prévente : **¥2 000** · Entrée : **¥3 000** · U-23 : **¥1 000**
+
+### Dimanche 4 octobre — double A-side
+
+**or, Jingumae** — de **16 h à 23 h**
+
+Day party house/techno avec notamment **AKIRAM EN**, **Sunga** et **Tonbo**.
+
+- [Détails et billets sur Resident Advisor](https://ra.co/events/2518943)
+- Genres : **house / techno**
+
+| Date | Événement | Ambiance |
+|---|---|---|
+| 2 oct. | Idjut Boys — DJ Bar Bridge Shinjuku | Disco-dub, petite salle, nuit dansante |
+| 4 oct. | double A-side — or, Jingumae | House/techno, format après-midi |
 
 ## Fin du voyage
 
