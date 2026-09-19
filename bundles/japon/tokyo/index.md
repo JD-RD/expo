@@ -30,6 +30,25 @@ Première soirée sans pression, dans le secteur Tabata/Nishi-Nippori :
 
 John Talabot à VENT n'est finalement pas retenu.
 
+### Planning du vendredi 2 octobre
+
+Le programme est faisable en protégeant une vraie pause l'après-midi :
+
+| Heure | Programme |
+|---|---|
+| 8 h 15 | Départ de Tabata/Nishi-Nippori vers Hamarikyū; prévoir 35–45 min |
+| 9 h–10 h 30 | [Hamarikyūteien](https://maps.app.goo.gl/LBZYR3gtyNyrqg1s6), visite courte |
+| 10 h 30–10 h 50 | Marche vers Tsukiji |
+| 11 h–13 h | [Tokyo Kitani](https://maps.app.goo.gl/at9YRNS9LaVkJs5u7) puis Tsukiji Outer Market |
+| 13 h–13 h 45 | Retour au logement |
+| 14 h–17 h 30 | **Repos protégé : sieste, douche, aucune autre course** |
+| 17 h 30–18 h 45 | Souper léger |
+| 19 h 30 | Départ vers DJ Bar Bridge Shinjuku |
+| 20 h 30–20 h 45 | Arrivée avant l'ouverture |
+| 21 h–23 h 30+ | Idjut Boys |
+
+**Plan alternatif récupération :** supprimer Hamarikyū, partir vers 10 h 30 pour Tokyo Kitani/Tsukiji, rentrer vers 13 h 30 et garder le repos de 14 h à 18 h 30. C'est le meilleur choix si la nuit précédente a été courte.
+
 ### Vendredi 2 octobre — Idjut Boys
 
 **DJ Bar Bridge Shinjuku** — ouverture à **21 h**
