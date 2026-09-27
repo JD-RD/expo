@@ -6,76 +6,13 @@ tags: [japon, tokyo]
 
 # 🗼 Tokyo
 
-Deux séjours : Sept 30 – Oct 5 (arrivée) et Oct 23 – 29 (fin du voyage).
+Deux séjours : Sept 30 – Oct 5 (arrivée) et Oct 26 – 29 (fin du voyage).
 
-## Arrivée — 30 septembre
+## Vue jour par jour
 
-Atterrissage à **Narita à 15 h 45**. Pour le premier logement : **Skyliner Keisei → Nippori** (environ 36–41 min), puis taxi depuis Nippori (environ 10 min). Au Terminal 1, suivre les panneaux « Train », puis les guichets/automates bleus Keisei; acheter le billet combiné pour Nippori.
+Le programme opérationnel, l'arrivée du 30 septembre, les journées du premier séjour et le départ du 29 octobre sont regroupés dans la [vue du voyage jour par jour](/japon/jours/). Commencer par [l'arrivée à Tokyo](/japon/jours/2026-09-30) ou consulter [le second séjour](/japon/jours/2026-10-26).
 
-Première soirée sans pression, dans le secteur Tabata/Nishi-Nippori :
-
-- [Nakamuraya Maruyasu](https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E6%9D%91%E5%B1%8B%E4%B8%B8%E5%BA%B7%E9%85%92%E5%BA%97+%E8%A5%BF%E6%97%A5%E6%9A%AE%E9%87%8C) — kado-tachi dans un magasin de saké, très local et bon marché.
-- [Genki na Sakanaya-san](https://www.google.com/maps/search/?api=1&query=%E5%85%83%E6%B0%97%E3%81%AA%E9%AD%9A%E5%B1%8B%E3%81%95%E3%82%93+%E8%A5%BF%E6%97%A5%E6%9A%AE%E9%87%8C) — poisson frais et saké debout, environ ¥2 000/personne.
-- [Yakitori Egomo/Shōgen](https://www.google.com/maps/search/?api=1&query=%E3%82%84%E3%81%8D%E3%81%A8%E3%82%8A%E7%AC%91%E5%85%83+%E6%97%A5%E6%9A%AE%E9%87%8C) — izakaya de gare, environ ¥2 500/personne.
-- Plan B : Lawson/FamilyMart à proximité si le décalage horaire gagne.
-
-## Ébauche de journées — premier séjour
-
-- **1 oct.** : Route Books ou Chikukōdō → Ueno et ses rues secondaires → soba chez [Shin Fuji](https://maps.app.goo.gl/wTKUQMVmEuiBXUZs8) ou [Okina An](https://maps.app.goo.gl/RCpr39aESYhTbSMn6) → Echigoya Honten le soir.
-- **2 oct.** : Hamarikyūteien → [Tokyo Kitani](https://maps.app.goo.gl/at9YRNS9LaVkJs5u7) ou Tsukiji Outer Market; puis **Idjut Boys au DJ Bar Bridge Shinjuku** à partir de 21 h.
-- **3 oct.** : pique-nique avec provisions au [parc mémorial Shōwa](https://maps.app.goo.gl/PXaRkBMZq1Qk9WmF8), puis [飲み食い処 ぽちゃ](https://maps.app.goo.gl/Y684jCDwkPAnmAo46) et Nakamuraya Maruyasu.
-- **4 oct.** : **double A-side à or, Jingumae (16 h–23 h)**; lunch possible chez Mugi to Olive Ginza ou à Tsukiji Uogashi avant la day party.
-
-## Événements musique — octobre 2026
-
-John Talabot à VENT n'est finalement pas retenu.
-
-### Planning du vendredi 2 octobre
-
-Le programme est faisable en protégeant une vraie pause l'après-midi :
-
-| Heure | Programme |
-|---|---|
-| 8 h 15 | Départ de Tabata/Nishi-Nippori vers Hamarikyū; prévoir 35–45 min |
-| 9 h–10 h 30 | [Hamarikyūteien](https://maps.app.goo.gl/LBZYR3gtyNyrqg1s6), visite courte |
-| 10 h 30–10 h 50 | Marche vers Tsukiji |
-| 11 h–13 h | [Tokyo Kitani](https://maps.app.goo.gl/at9YRNS9LaVkJs5u7) puis Tsukiji Outer Market |
-| 13 h–13 h 45 | Retour au logement |
-| 14 h–17 h 30 | **Repos protégé : sieste, douche, aucune autre course** |
-| 17 h 30–18 h 45 | Souper léger |
-| 19 h 30 | Départ vers DJ Bar Bridge Shinjuku |
-| 20 h 30–20 h 45 | Arrivée avant l'ouverture |
-| 21 h–23 h 30+ | Idjut Boys |
-
-**Plan alternatif récupération :** supprimer Hamarikyū, partir vers 10 h 30 pour Tokyo Kitani/Tsukiji, rentrer vers 13 h 30 et garder le repos de 14 h à 18 h 30. C'est le meilleur choix si la nuit précédente a été courte.
-
-### Vendredi 2 octobre — Idjut Boys
-
-**DJ Bar Bridge Shinjuku** — ouverture à **21 h**
-
-Idjut Boys — Dan Tyler et Conrad McDonnell — avec **EZ**, résident de Bridge. Soirée disco-dub, avec grooves dansants, sélections éclectiques, effets dub et ambiance de petite salle.
-
-- [Billets LivePocket](https://livepocket.jp/e/idjutboys)
-- [Annonce officielle](https://ahbproduction.com/2026/09/11/2026-10-02-fri-idjut-boys-dj-bar-bridge-shinjuku-tokyo/)
-- Prévente : **¥2 000** · Entrée : **¥3 000** · U-23 : **¥1 000**
-
-### Dimanche 4 octobre — double A-side
-
-**or, Jingumae** — de **16 h à 23 h**
-
-Day party house/techno avec notamment **AKIRAM EN**, **Sunga** et **Tonbo**.
-
-- [Détails et billets sur Resident Advisor](https://ra.co/events/2518943)
-- Genres : **house / techno**
-
-| Date | Événement | Ambiance |
-|---|---|---|
-| 2 oct. | Idjut Boys — DJ Bar Bridge Shinjuku | Disco-dub, petite salle, nuit dansante |
-| 4 oct. | double A-side — or, Jingumae | House/techno, format après-midi |
-
-## Fin du voyage
-
-Le second logement est près de Tabata; le retour vers Narita est prévu à **18 h 45 le 29 octobre**. Garder la dernière journée légère et proche de la ligne Yamanote.
+Les événements et horaires déjà établis, notamment Idjut Boys le 2 octobre et double A-side le 4 octobre, sont conservés sur leurs fiches quotidiennes. John Talabot à VENT n'est finalement pas retenu.
 
 ## Quartiers à explorer
 
@@ -104,4 +41,4 @@ Le second logement est près de Tabata; le retour vers Narita est prévu à **18
 ## Logements
 
 - [Airbnb (Sept 30 – Oct 5)](/japon/tokyo/hebergements/tokyo-airbnb-sept30-oct5)
-- [Alo BnB 15 (Oct 23 – 29)](/japon/tokyo/hebergements/tokyo-alo-bnb-15)
+- [Alo BnB 15 (Oct 26 – 29)](/japon/tokyo/hebergements/tokyo-alo-bnb-15)

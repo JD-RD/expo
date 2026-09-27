@@ -8,11 +8,9 @@ tags: [japon, kyoto]
 
 Oct 11 – 18. Semaine complète dans la capitale culturelle.
 
-## Plan des premiers jours
+## Vue jour par jour
 
-- **11 oct.** : [SECOND ROYAL SHOP](https://maps.app.goo.gl/XMHsULGs6NSw5Qns7) → Nishijin, notamment Horikawa Shopping Street → [Funaoka Onsen](https://maps.app.goo.gl/gwYaYxw7EtFekD5CA).
-- **12 oct.** : sanctuaire Shimogamo, forêt jusqu'à la rivière, puis [COYOTE Roastery](https://maps.app.goo.gl/SwjaBTXSWaKA211W6).
-- **13 oct.** : café et sandwich aux fruits chez [Shizuka](https://maps.app.goo.gl/BYQh4934qGrtiXD28) → jardins impériaux (Kyōto-Gyoen) → [Toriiwaro](https://maps.app.goo.gl/5iSErzYNsR6FRnee7) pour un lunch tôt vers 11 h 20 → [Sasaki Shuzō](https://maps.app.goo.gl/pRoAJVRD8N3dkmCc7).
+Le plan des 11, 12 et 13 octobre est maintenant porté par les fiches quotidiennes, dans la [vue du voyage jour par jour](/japon/jours/) à partir de [la transition vers Kyoto](/japon/jours/2026-10-11).
 
 ## À faire
 
@@ -23,7 +21,7 @@ Oct 11 – 18. Semaine complète dans la capitale culturelle.
 - [Uji](/japon/kyoto/lieux/uji)
 - [Funaoka Onsen](/japon/kyoto/onsens/funaoka-onsen)
 - [Nishijin](/japon/kyoto/lieux/nishijin) — quartier des tissus de soie
-- Day trip possible à Osaka — prendre le **Kyo-Train Garaku**; si on y va, on mange au [Tokito](/japon/tokyo/restaurants/tokito)
+- Day trip possible à Osaka — prendre le **Kyo-Train Garaku**; si on y va, on peut vérifier [Tokito](/wishlist/osaka/restaurants/tokito), fiche encore incertaine
 
 ## Bouffe
 

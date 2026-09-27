@@ -278,6 +278,7 @@ body.sidebar-open .sidebar-overlay {
 .page-header { margin-bottom: 1.5rem; }
 .page-header h1 { font-size: 1.8rem; font-weight: 700; }
 .lead { color: var(--text-muted); font-size: 1.05rem; margin-top: 0.25rem; }
+.day-index-intro { margin-bottom: 1.5rem; }
 .concept-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -347,6 +348,90 @@ body.sidebar-open .sidebar-overlay {
   color: var(--text-muted);
   margin: 0;
 }
+
+/* ─── Day Timeline ───────────────────────────── */
+.timeline {
+  display: grid;
+  gap: 0.85rem;
+  position: relative;
+}
+.day-card {
+  display: grid;
+  grid-template-columns: minmax(8.5rem, 0.25fr) 1fr;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  transition: border-color 0.12s, background 0.12s, transform 0.12s;
+}
+.day-card:hover {
+  background: var(--bg-hover);
+  border-color: var(--accent);
+  text-decoration: none;
+  transform: translateX(2px);
+}
+.day-card-date {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  padding-top: 0.15rem;
+}
+.day-card-date time { color: var(--text); font-weight: 600; }
+.day-card-content h2 {
+  color: var(--text);
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+.day-card-stage { color: var(--accent); font-size: 0.9rem; margin-bottom: 0.35rem; }
+.day-card-preview { color: var(--text-muted); font-size: 0.88rem; margin: 0; }
+.day-status {
+  align-self: flex-start;
+  width: fit-content;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  padding: 0.1rem 0.45rem;
+  font-family: var(--font);
+  font-size: 0.72rem;
+  line-height: 1.3;
+}
+.day-status-planifie { color: var(--accent2); }
+.day-status-partiel { color: var(--accent4); }
+.day-status-a-confirmer { color: var(--danger); }
+
+/* ─── Day Navigation ─────────────────────────── */
+.day-nav {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: stretch;
+  gap: 0.65rem;
+  margin: 0 0 1.5rem;
+}
+.day-nav-link, .day-nav-index {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  font-size: 0.8rem;
+}
+.day-nav-link:hover, .day-nav-index:hover {
+  background: var(--bg-hover);
+  border-color: var(--accent);
+  text-decoration: none;
+}
+.day-nav-link span { color: var(--text-muted); }
+.day-nav-link strong { color: var(--text); font-size: 0.78rem; font-weight: 500; }
+.day-nav-next { text-align: right; }
+.day-nav-index { align-items: center; justify-content: center; white-space: nowrap; }
+.day-nav-placeholder { min-width: 0; }
 
 /* ─── Subdirectory Cards ────────────────────── */
 .subdir-card {
@@ -609,4 +694,11 @@ body.sidebar-open .sidebar-overlay {
   .topbar #search { font-size: 0.8rem; padding: 0.3rem 0.5rem; min-width: 0; }
   .logo { font-size: 1rem; }
   .content { padding: 1rem; }
+  .day-card { grid-template-columns: 1fr; gap: 0.5rem; }
+  .day-card-date { flex-direction: row; align-items: center; justify-content: space-between; }
+  .day-nav { grid-template-columns: 1fr 1fr; }
+  .day-nav-index { grid-column: 1 / -1; grid-row: 1; }
+  .day-nav-previous { grid-column: 1; grid-row: 2; }
+  .day-nav-next { grid-column: 2; grid-row: 2; }
+  .day-nav-placeholder { display: block; }
 }

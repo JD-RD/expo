@@ -1,12 +1,12 @@
 ---
-title: 🌊 Shizuoka — Shimoda (Izu)
-description: Péninsule d'Izu — côte de Shimoda, onsen, kinmedai et plages. Oct 21–23, hôtel à Suzaki.
-tags: [japon, shizuoka, izu, shimoda]
+title: 🗂 Shimoda / Suzaki — archive (Izu)
+description: Ancien segment de Shimoda/Suzaki, écarté de l'itinéraire actif après la mise à jour vers Kawazu.
+tags: [japon, shizuoka, izu, shimoda, archive]
 ---
 
-# 🌊 Shizuoka — Shimoda (Izu)
+# 🗂 Shimoda / Suzaki — archive (Izu)
 
-Oct 21 – 23. Hôtel à Suzaki, ~10 min de taxi de la gare d'Izukyū-Shimoda.
+Ancien segment prévu du 21 au 23 octobre. Il n'est plus dans l'itinéraire actif, qui retient désormais Kawazu; les fiches ci-dessous sont conservées comme documentation et options écartées.
 
 ## Suzaki (autour de l'hôtel)
 

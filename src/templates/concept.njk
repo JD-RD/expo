@@ -7,7 +7,11 @@
     {% if tags.length > 0 %}
     <div class="tags">
       {% for tag in tags %}
+      {% if type == 'Journée' %}
+      <span class="tag">#{{ tag }}</span>
+      {% else %}
       <a href="/tags/{{ tag }}.html" class="tag">#{{ tag }}</a>
+      {% endif %}
       {% endfor %}
     </div>
     {% endif %}
@@ -15,6 +19,28 @@
     <time class="timestamp">{{ timestamp }}</time>
     {% endif %}
   </header>
+
+  {% if dayNav %}
+  <nav class="day-nav" aria-label="Navigation entre les journées">
+    {% if dayNav.previous %}
+    <a href="{{ dayNav.previous.path }}" class="day-nav-link day-nav-previous">
+      <span>← Jour précédent</span>
+      <strong>{{ dayNav.previous.date }} · {{ dayNav.previous.etape }}</strong>
+    </a>
+    {% else %}
+    <span class="day-nav-placeholder"></span>
+    {% endif %}
+    <a href="/japon/jours/" class="day-nav-index">📅 Jour par jour</a>
+    {% if dayNav.next %}
+    <a href="{{ dayNav.next.path }}" class="day-nav-link day-nav-next">
+      <span>Jour suivant →</span>
+      <strong>{{ dayNav.next.date }} · {{ dayNav.next.etape }}</strong>
+    </a>
+    {% else %}
+    <span class="day-nav-placeholder"></span>
+    {% endif %}
+  </nav>
+  {% endif %}
 
   <div class="markdown-body">
     {{ body | safe }}

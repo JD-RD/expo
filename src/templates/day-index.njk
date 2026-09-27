@@ -1,0 +1,32 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+<header class="page-header day-index-header">
+  <h1>{{ pageTitle }}</h1>
+  {% if description %}<p class="lead">{{ description }}</p>{% endif %}
+</header>
+
+{% if body %}
+<div class="markdown-body day-index-intro">{{ body | safe }}</div>
+{% endif %}
+
+{% if days and days.length > 0 %}
+<section class="timeline" aria-label="Journées du voyage">
+  {% for day in days %}
+  <a href="/{{ day.slug }}.html" class="day-card">
+    <div class="day-card-date">
+      <time datetime="{{ day.date }}">{{ day.date }}</time>
+      <span class="day-status day-status-{{ day.statut }}">{{ day.statut }}</span>
+    </div>
+    <div class="day-card-content">
+      <h2>{{ day.title }}</h2>
+      <p class="day-card-stage"><span aria-hidden="true">📍</span> {{ day.etape }}</p>
+      {% if day.preview %}<p class="day-card-preview">{{ day.preview }}</p>{% endif %}
+    </div>
+  </a>
+  {% endfor %}
+</section>
+{% else %}
+<p class="empty-state">Aucune journée documentée pour le moment.</p>
+{% endif %}
+{% endblock %}

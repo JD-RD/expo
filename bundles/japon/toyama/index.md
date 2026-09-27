@@ -8,9 +8,9 @@ tags: [japon, toyama]
 
 Oct 8 – 11. Base parfaite après la montagne — plat, calme, bons fruits de mer.
 
-## Arrivée — 8 octobre
+## Vue jour par jour
 
-Check-in vers 15 h; si l'arrivée se fait plus tôt, garder l'après-midi pour une promenade calme au centre. Pour un repas de fruits de mer, le [marché de Mizuhashi](https://mizuhashi-gyomin.jp/wp/menu/) est une priorité (vérifier les heures avant de partir).
+L'arrivée du 8 octobre et les deux journées à Toyama sont résumées dans la [vue du voyage jour par jour](/japon/jours/), à partir de [la transition depuis Yamanouchi](/japon/jours/2026-10-08).
 
 ## Centre-ville
 

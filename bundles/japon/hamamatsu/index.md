@@ -8,6 +8,8 @@ tags: [japon, hamamatsu, shizuoka]
 
 Oct 18 – 21. Capitale de la fabrication d'instruments (Yamaha, Roland, Kawai) + Jazz Week.
 
+Le programme opérationnel de l'étape est dans la [vue du voyage jour par jour](/japon/jours/), à partir de [l'arrivée du 18 octobre](/japon/jours/2026-10-18).
+
 ## Musique
 
 - [Yamaha Innovation Road](/japon/hamamatsu/attractions/yamaha-innovation-road) — musée corporate Yamaha; gratuit, **réservation requise** (ouvre jusqu'à 90 jours d'avance) → réserver la session du matin du **19 oct**

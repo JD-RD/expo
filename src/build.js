@@ -155,9 +155,80 @@ function typeEmoji(type) {
     'Restaurant': '🍜', 'Attraction': '🗿', 'Lieu': '📍', 'Café': '☕',
     'Shopping': '🛍', 'Transport': '🚃', 'Projet': '🛠', 'Personne': '👤',
     'Bien-être': '♨️', 'Onsen': '♨️', 'Hébergement': '🏨', 'Musée': '🏛', 'Parc': '🌳',
-    'Activité': '🎯', 'Playbook': '📋', 'Reference': '📖', 'Vin': '🍷',
+    'Activité': '🎯', 'Journée': '📅', 'Playbook': '📋', 'Reference': '📖', 'Vin': '🍷',
   };
   return map[type] || '📄';
+}
+
+const DAY_STATUSES = new Set(['planifie', 'partiel', 'a-confirmer']);
+const FIRST_TRIP_DAY = '2026-09-30';
+const LAST_TRIP_DAY = '2026-10-29';
+
+function isIsoDate(value) {
+  if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  const parsed = new Date(`${value}T00:00:00Z`);
+  return !Number.isNaN(parsed.getTime()) && parsed.toISOString().slice(0, 10) === value;
+}
+
+/** Collect and validate the chronological day concepts for the Japan bundle. */
+function collectJapanDays(concepts) {
+  const dayConcepts = concepts.filter(c => c.slug.startsWith('japon/jours/'));
+  const errors = [];
+  const dates = new Map();
+
+  for (const concept of dayConcepts) {
+    const { frontmatter } = concept;
+    if (frontmatter.type !== 'Journée') {
+      errors.push(`${concept.slug}: type doit être « Journée »`);
+    }
+    if (!isIsoDate(frontmatter.date) || frontmatter.date < FIRST_TRIP_DAY || frontmatter.date > LAST_TRIP_DAY) {
+      errors.push(`${concept.slug}: date ISO invalide ou hors voyage (${frontmatter.date || 'absente'})`);
+    } else if (dates.has(frontmatter.date)) {
+      errors.push(`${concept.slug}: date ${frontmatter.date} déjà utilisée par ${dates.get(frontmatter.date)}`);
+    } else {
+      dates.set(frontmatter.date, concept.slug);
+    }
+    if (!frontmatter.title) errors.push(`${concept.slug}: title manquant`);
+    if (!frontmatter.etape) errors.push(`${concept.slug}: etape manquante`);
+    if (!frontmatter.etape_url) errors.push(`${concept.slug}: etape_url manquant`);
+    if (!DAY_STATUSES.has(frontmatter.statut)) {
+      errors.push(`${concept.slug}: statut doit être planifie, partiel ou a-confirmer`);
+    }
+  }
+
+  const expectedDates = [];
+  for (let date = new Date(`${FIRST_TRIP_DAY}T00:00:00Z`); date <= new Date(`${LAST_TRIP_DAY}T00:00:00Z`); date.setUTCDate(date.getUTCDate() + 1)) {
+    expectedDates.push(date.toISOString().slice(0, 10));
+  }
+  const missingDates = expectedDates.filter(date => !dates.has(date));
+  if (dayConcepts.length !== expectedDates.length || missingDates.length > 0) {
+    errors.push(`la série complète doit contenir exactement ${expectedDates.length} journées du ${FIRST_TRIP_DAY} au ${LAST_TRIP_DAY}; dates manquantes : ${missingDates.join(', ') || 'aucune'}`);
+  }
+
+  if (errors.length > 0) {
+    throw new Error(`Validation des journées Japon échouée :\n- ${errors.join('\n- ')}`);
+  }
+
+  const days = dayConcepts.map(concept => {
+    const { frontmatter } = concept;
+    const plainBody = htmlToText(concept.bodyHtml);
+    return {
+      slug: concept.slug,
+      path: concept.path,
+      date: frontmatter.date,
+      title: frontmatter.title,
+      etape: frontmatter.etape,
+      etapeUrl: frontmatter.etape_url,
+      statut: frontmatter.statut,
+      preview: plainBody.length > 180 ? `${plainBody.slice(0, 177).trimEnd()}…` : plainBody,
+    };
+  }).sort((a, b) => a.date.localeCompare(b.date));
+
+  return days.map((day, index) => ({
+    ...day,
+    previous: days[index - 1] || null,
+    next: days[index + 1] || null,
+  }));
 }
 
 // ─── Main Build ─────────────────────────────────────────────────
@@ -211,6 +282,9 @@ function build() {
 
     bundles[name] = { concepts, tree, meta };
   }
+
+  const japanDays = bundles.japon ? collectJapanDays(bundles.japon.concepts) : [];
+  const japanDaysBySlug = new Map(japanDays.map(day => [day.slug, day]));
 
   // ── 2. Build path lookup map ────────────────────────────────
   /** @type {Map<string, Concept>} */
@@ -313,7 +387,7 @@ function build() {
       // Build tree with active state for sidebar
       const activePath = `/${concept.slug}`;
 
-      const html = nunjucks.render('concept.njk', {
+      const templateData = {
         siteTitle: `${concept.frontmatter.title || concept.slug} · ${bundle.meta.title}`,
         pageTitle: concept.frontmatter.title || concept.slug,
         description: concept.frontmatter.description || '',
@@ -333,7 +407,25 @@ function build() {
           const found = bundle.concepts.find(c => c.path === p);
           return found ? { path: `${found.path}.html`, title: found.frontmatter.title || found.slug } : null;
         }).filter(Boolean),
-      });
+      };
+      const day = name === 'japon' ? japanDaysBySlug.get(concept.slug) : null;
+      if (day) {
+        templateData.dayNav = {
+          previous: day.previous ? {
+            path: `${day.previous.path}.html`,
+            date: day.previous.date,
+            title: day.previous.title,
+            etape: day.previous.etape,
+          } : null,
+          next: day.next ? {
+            path: `${day.next.path}.html`,
+            date: day.next.date,
+            title: day.next.title,
+            etape: day.next.etape,
+          } : null,
+        };
+      }
+      const html = nunjucks.render('concept.njk', templateData);
       writeFileSync(outPath, html);
       console.log(`  📄 ${concept.slug} → /${concept.slug}.html`);
     }
@@ -462,7 +554,8 @@ function build() {
           }
         }
 
-        const html = nunjucks.render('dir-index.njk', {
+        const isDayIndex = name === 'japon' && relPath === 'jours';
+        const html = nunjucks.render(isDayIndex ? 'day-index.njk' : 'dir-index.njk', {
           siteTitle: `${pageTitle} · ${bundle.meta.title}`,
           pageTitle,
           description,
@@ -472,6 +565,7 @@ function build() {
           breadcrumb,
           tree: bundle.tree,
           bundleName: name,
+          days: isDayIndex ? japanDays : [],
         });
 
         const outDir = join(DIST, name, relPath);

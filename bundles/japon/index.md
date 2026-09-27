@@ -1,12 +1,14 @@
 ---
 title: 🇯🇵 Voyage Japon 2026
-description: Tout ce qu'il faut savoir pour le voyage — Tokyo, Yamanouchi, Toyama, Kyoto, Hamamatsu, Shimoda.
+description: Tout ce qu'il faut savoir pour le voyage — Tokyo, Yamanouchi, Toyama, Kyoto, Hamamatsu, Kawazu et Shikinejima.
 tags: [japon, voyage]
 ---
 
 # 🇯🇵 Voyage Japon 2026
 
 Planification du voyage au Japon (Sept 30 – Oct 29, 2026) — restaurants, attractions, shopping, hébergement, onsens et bons plans, organisés par étape.
+
+📅 [Consulter le voyage jour par jour](/japon/jours/) — programme opérationnel et transitions documentés au fil des journées.
 
 ## Itinéraire
 
@@ -17,10 +19,11 @@ Planification du voyage au Japon (Sept 30 – Oct 29, 2026) — restaurants, att
 | 3 | [🏙 Toyama](/japon/toyama/) | Oct 8 – 11 | [Airbnb](/japon/toyama/hebergements/toyama-airbnb-oct8-11) | 329 $ |
 | 4 | [⛩ Kyoto](/japon/kyoto/) | Oct 11 – 18 | [Airbnb](/japon/kyoto/hebergements/kyoto-airbnb-oct11-18) | 1 452,65 $ |
 | 5 | [🎸 Hamamatsu](/japon/hamamatsu/) | Oct 18 – 21 | [HOTEL SUI by ABEST](/japon/hamamatsu/hebergements/hotel-sui-hamamatsu) | 181 $ |
-| 6 | [🌊 Shizuoka — Shimoda (Izu)](/japon/shizuoka/) | Oct 21 – 23 | [Ocean View Hiromi SPA](/japon/shizuoka/hebergements/ocean-view-hiromi-spa) | 473 $ |
-| 7 | [🗼 Tokyo](/japon/tokyo/) | Oct 23 – 29 | [Alo BnB 15](/japon/tokyo/hebergements/tokyo-alo-bnb-15) | 880 $ |
+| 6 | [🌊 Kawazu (Izu)](/japon/kawazu/) | Oct 21 – 23 | [Izu Imaihama Tokyu Hotel](/japon/kawazu/hebergements/izu-imaihama-tokyu-hotel) | 351 $ |
+| 7 | [🏝 Shikinejima](/japon/shikinejima/) | Oct 23 – 26 | Hidabun — à confirmer | — |
+| 8 | [🗼 Tokyo](/japon/tokyo/) | Oct 26 – 29 | [Alo BnB 15](/japon/tokyo/hebergements/tokyo-alo-bnb-15) | 880 $ |
 
-Logements : **~4 270 $** — 29 nuits.
+Logements connus : **4 148,65 $** — 29 nuits. Le logement de Shikinejima reste à confirmer.
 
 ## Villes et régions
 
@@ -31,9 +34,11 @@ Logements : **~4 270 $** — 29 nuits.
 | [🏙 Toyama](/japon/toyama/) | 5 | Mer du Japon — glass art, canal, fruits de mer de la baie. |
 | [⛩ Kyoto](/japon/kyoto/) | 23 | Temples, jardins, gastronomie traditionnelle. |
 | [🎸 Hamamatsu](/japon/hamamatsu/) | 7 | Ville de la musique — Yamaha, Roland, Jazz Week. |
-| [🌊 Shizuoka — Shimoda](/japon/shizuoka/) | 11 | Péninsule d'Izu — côte, onsen, kinmedai. |
+| [🌊 Kawazu](/japon/kawazu/) | 1 | Imaihama Beach, côte d'Izu et hôtel Tokyu. |
+| [🏝 Shikinejima](/japon/shikinejima/) | 0 | Segment insulaire — logement et retour à confirmer. |
+| [🗂 Shimoda / Suzaki — archive](/japon/shizuoka/) | 11 | Ancien segment écarté de l'itinéraire actif. |
 
-Total: **92 concepts** — pour le voyage 2026.
+Total: **93 concepts** — pour le voyage 2026, dont 11 archivés.
 
 ## Liste d'achats Japon
 

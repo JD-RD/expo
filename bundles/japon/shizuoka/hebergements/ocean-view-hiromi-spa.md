@@ -1,7 +1,7 @@
 ---
 type: Hébergement
-title: "Ocean View Hiromi SPA Hotel (Oct 21 – 23)"
-description: "Hôtel onsen à Suzaki (Shimoda), 2 nuits, 473 $. Vue océan."
+title: "Ocean View Hiromi SPA Hotel — ancien segment (Oct 21–23)"
+description: "Ancien hôtel onsen à Suzaki (Shimoda), 2 nuits, 473 $. Segment écarté au profit de Kawazu."
 resource: "https://www.booking.com/hotel/jp/ocean-view-hiromi-spa-xia-tian-shi.html?aid=311088&sid=73425db09fa7abe632a923b4a8913a41&checkin=2026-10-21&checkout=2026-10-23&dest_id=-243222&dest_type=city&group_adults=2&group_children=0&no_rooms=2&room1=A&room2=A"
 tags: [shizuoka, hebergement, onsen]
 timestamp: 2026-08-27
