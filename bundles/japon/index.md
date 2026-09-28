@@ -1,6 +1,6 @@
 ---
 title: 🇯🇵 Voyage Japon 2026
-description: Tout ce qu'il faut savoir pour le voyage — Tokyo, Yamanouchi, Kanazawa, Kyoto, Hamamatsu, Kawazu et Shikinejima.
+description: Tout ce qu'il faut savoir pour le voyage — Tokyo, Yamanouchi, Kanazawa, Kyoto, Hamamatsu et Kawazu.
 tags: [japon, voyage]
 ---
 
@@ -20,10 +20,9 @@ Planification du voyage au Japon (Sept 30 – Oct 29, 2026) — restaurants, att
 | 4 | [⛩ Kyoto](/japon/kyoto/) | Oct 11 – 18 | [Airbnb](/japon/kyoto/hebergements/kyoto-airbnb-oct11-18) | 1 452,65 $ |
 | 5 | [🎸 Hamamatsu](/japon/hamamatsu/) | Oct 18 – 21 | [HOTEL SUI by ABEST](/japon/hamamatsu/hebergements/hotel-sui-hamamatsu) | 181 $ |
 | 6 | [🌊 Kawazu (Izu)](/japon/kawazu/) | Oct 21 – 23 | [Izu Imaihama Tokyu Hotel](/japon/kawazu/hebergements/izu-imaihama-tokyu-hotel) | 351 $ |
-| 7 | [🏝 Shikinejima](/japon/shikinejima/) | Oct 23 – 26 | Hidabun — à confirmer | — |
-| 8 | [🗼 Tokyo](/japon/tokyo/) | Oct 26 – 29 | [Alo BnB 15](/japon/tokyo/hebergements/tokyo-alo-bnb-15) | 880 $ |
+| 7 | [🗼 Tokyo](/japon/tokyo/) | Oct 26 – 29 | [Alo BnB 15](/japon/tokyo/hebergements/tokyo-alo-bnb-15) | 880 $ |
 
-Logements connus : **3 819,65 $** — **23 nuits tarifées**; les 3 nuits de Kanazawa et les 3 nuits de Shikinejima restent à confirmer.
+Logements connus : **3 819,65 $** — **23 nuits tarifées**; les 3 nuits de Kanazawa restent à confirmer. Le segment du 23 au 25 octobre est à redéfinir dans Japan V2.
 
 ## Villes et régions
 
@@ -35,7 +34,6 @@ Logements connus : **3 819,65 $** — **23 nuits tarifées**; les 3 nuits de Kan
 | [⛩ Kyoto](/japon/kyoto/) | 23 | Temples, jardins, gastronomie traditionnelle. |
 | [🎸 Hamamatsu](/japon/hamamatsu/) | 7 | Ville de la musique — Yamaha, Roland, Jazz Week. |
 | [🌊 Kawazu](/japon/kawazu/) | 1 | Imaihama Beach, côte d'Izu et hôtel Tokyu. |
-| [🏝 Shikinejima](/japon/shikinejima/) | 0 | Segment insulaire — logement et retour à confirmer. |
 | [🗂 Toyama — archive](/japon/toyama-archive/) | 5 | Ancienne étape écartée de l'itinéraire actif. |
 | [🗂 Shimoda / Suzaki — archive](/japon/shizuoka/) | 11 | Ancien segment écarté de l'itinéraire actif. |
 

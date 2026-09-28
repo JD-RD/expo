@@ -12,7 +12,7 @@ Le déroulé quotidien est regroupé dans la [vue du voyage jour par jour](/japo
 
 ## Arrivée et logement
 
-- Arrivée depuis Hamamatsu le 21 octobre, avec arrivée prévue vers le début de l'après-midi.
+- Départ de Hamamatsu vers 10 h le 21 octobre; le trajet recommandé comporte un seul changement et vise une arrivée avant le début de l'après-midi. Depuis Kawazu Station, le taxi reste l'option recommandée vers l'hôtel.
 - [Izu Imaihama Tokyu Hotel (21–23 octobre)](/japon/kawazu/hebergements/izu-imaihama-tokyu-hotel) — 351 $.
 - L'hôtel se trouve directement sur Imaihama Beach, à environ 3 minutes à pied de la gare d'Imaihama-Kaigan.
 

@@ -46,27 +46,22 @@ Lis `/home/jd/src/expo/AGENTS.md`, `/home/jd/Plans/2026-09-27-plan-vue-jour-par-
 - Kawazu du 21 au 23 octobre;
 - Izu Imaihama Tokyu Hotel;
 - 351 $;
-- ferry le 23 octobre à 9 h 30;
-- Shikinejima du 23 au 26 octobre;
+- ancien segment insulaire et ferry retirés de l'itinéraire actif;
 - Shimoda/Suzaki retiré de l'itinéraire actif.
 
 ## Modifications appliquées
 
 - `bundles/japon/index.md`
-  - itinéraire étendu à 8 segments;
-  - Kawazu et Shikinejima ajoutés;
+  - itinéraire ramené à 7 segments;
+  - Kawazu ajouté;
   - second séjour à Tokyo décalé au 26–29 octobre;
-  - total des logements connus : 4 148,65 $ pour 29 nuits, hors coût de Shikinejima;
+  - total des logements connus : 3 819,65 $ pour 23 nuits tarifées;
   - ancien segment Shimoda/Suzaki indiqué comme archive;
   - compteur Japon mis à jour à 93 concepts, dont 11 archivés.
 - Nouveau `bundles/japon/kawazu/`
   - guide de l'étape;
   - fiche `Izu Imaihama Tokyu Hotel` avec les données confirmées; adresse et réservation laissées en attente de Japan V2.
-- Nouveau `bundles/japon/shikinejima/index.md`
-  - ferry confirmé dans l'itinéraire;
-  - Hidabun conservé comme possibilité non confirmée;
-  - retour vers Tokyo explicitement laissé à organiser plus tard;
-  - contradiction « taxi around 8pm » / ferry à 9 h 30 signalée au lieu d'être corrigée silencieusement.
+- L'ancien segment insulaire, son logement et son transport ont été retirés; les dates du 23 au 25 octobre restent à redéfinir dans Japan V2.
 - Tokyo : dates et durée d'Alo BnB 15 mises à jour à 26–29 octobre, 3 nuits.
 - Shimoda/Suzaki : ancienne page et ancien hôtel marqués comme archive; la fiche Shimoda a été déplacée de `restaurants/` vers `lieux/` et recatégorisée.
 - Kyoto : lien Tokito corrigé vers sa fiche wishlist, avec incertitude explicitement indiquée.
@@ -81,11 +76,9 @@ Lis `/home/jd/src/expo/AGENTS.md`, `/home/jd/Plans/2026-09-27-plan-vue-jour-par-
 
 ## Points restant ouverts
 
-1. Confirmer si Hidabun est réservé et fournir son lien, ou le retirer.
-2. Les informations d'adresse et de réservation de Kawazu seront complétées uniquement depuis Japan V2 lorsqu'elles y apparaîtront.
-3. Déterminer le trajet Shikinejima → Tokyo le 26 octobre.
-4. Confirmer l'heure réelle du taxi vers Shimoda Port le 23 octobre matin.
-5. Session 3 : enrichissement des guides et contrôles éditoriaux supplémentaires.
+1. Les informations d'adresse et de réservation de Kawazu seront complétées uniquement depuis Japan V2 lorsqu'elles y apparaîtront.
+2. Redéfinir les dates du 23 au 25 octobre dans Japan V2.
+3. Session 3 : enrichissement des guides et contrôles éditoriaux supplémentaires.
 
 Ne pas lancer de commit/push avant revue du diff final par JD.
 
@@ -94,8 +87,8 @@ Ne pas lancer de commit/push avant revue du diff final par JD.
 - Les 27 journées manquantes ont été créées dans `bundles/japon/jours/`, pour compléter exactement la série du `2026-09-30` au `2026-10-29`.
 - Les programmes déjà établis ont été migrés vers les fiches quotidiennes : Tokyo (1–4 et 29 octobre), Yamanouchi (5–7), Kyoto (11–13) et Hamamatsu (19 octobre).
 - Les dates moins documentées restent explicitement `partiel` ou `a-confirmer`; aucune réservation, heure de trajet ou activité nouvelle n'a été inventée.
-- Les informations sensibles conservées comprennent l'arrivée à Narita, le ferry du 23 octobre à 9 h 30, le conflit d'heure du taxi vers Shimoda Port, le retour Shikinejima → Tokyo à organiser, Yamaha et le concert Jazz Week du 19 octobre.
-- Les blocs quotidiens détaillés ont été retirés des index Tokyo, Yamanouchi, Toyama et Kyoto après migration; ces index restent des guides et pointent vers la vue jour par jour. Des liens d'accès ont aussi été ajoutés aux index Hamamatsu, Kawazu et Shikinejima.
+- Les informations sensibles conservées comprennent l'arrivée à Narita, Yamaha et le concert Jazz Week du 19 octobre.
+- Les blocs quotidiens détaillés ont été retirés des index Tokyo, Yamanouchi, Toyama et Kyoto après migration; ces index restent des guides et pointent vers la vue jour par jour. Des liens d'accès ont aussi été ajoutés aux index Hamamatsu et Kawazu.
 - `src/build.js` vérifie maintenant que la série complète contient exactement les 30 dates attendues, sans trou, en plus des validations de type, date, doublon, champs et statut du lot A.
 
 ### Contrôles du lot B
@@ -111,7 +104,7 @@ Ne pas lancer de commit/push avant revue du diff final par JD.
 
 - Les changements non committés antérieurs de JD et ceux du lot A ont été préservés.
 - Les changements du lot B portent sur `bundles/japon/jours/**`, les index d'étapes Japon concernés, la validation ciblée de `src/build.js` et ce relais.
-- Incertitudes toujours visibles dans le contenu : confirmation de Hidabun, trajet de retour du 26 octobre et heure réelle du taxi vers Shimoda Port.
+- Incertitudes toujours visibles dans le contenu : dates et programme du 23 au 25 octobre.
 - **Prochain lot : C — QA et corrections.** Ne pas l'entamer dans cette session.
 
 ARRÊT DE SESSION OBLIGATOIRE
@@ -138,7 +131,7 @@ Lis `/home/jd/src/expo/AGENTS.md`, `/home/jd/Plans/2026-09-27-plan-vue-jour-par-
 
 - Les changements non committés antérieurs de JD et ceux des lots A/B ont été préservés. `HANDOFF.md` et `src/templates/concept.njk` sont modifiés; aucun commit, push ou déploiement n'a été effectué.
 - Le générateur conserve son comportement historique de pages de tags limitées au bundle vins; certains concepts non quotidiens existants ont donc encore des liens de tags vers des pages non générées. Ce point est hors du périmètre du lot C et n'a pas été élargi.
-- Incertitudes éditoriales inchangées : confirmation de Hidabun, trajet de retour Shikinejima → Tokyo le 26 octobre et heure réelle du taxi vers Shimoda Port.
+- Incertitudes éditoriales inchangées : dates et programme du 23 au 25 octobre.
 - **Prochain lot : D — livraison optionnelle**, uniquement après revue explicite du diff par JD.
 
 ARRÊT DE SESSION OBLIGATOIRE
@@ -157,5 +150,16 @@ Lis `/home/jd/src/expo/AGENTS.md`, `/home/jd/Plans/2026-09-27-plan-vue-jour-par-
 - Une stratégie d'achats ciblés a été ajoutée à Tokyo : Chrono Trigger sur Super Famicom à Akihabara le 27 octobre; synthés à Five G le 28 octobre; vinyle Little Tempo & Yoko Fujita, `茶の味 / Cha no Aji`, 7 pouces Kedaco Sounds KS-004, avec recherche Discogs et HMV Record Shop Shibuya; Clockface Modular uniquement sur rendez-vous.
 - Contrôles : build réussi à **199 concepts dans 4 bundles**; **226 liens internes contrôlés, 0 cible manquante**; `git diff --check` propre; aucun commit, push ou déploiement.
 - À confirmer avant livraison : prix et réservation Kanazawa, horaires définitifs du trajet du 8 octobre, horaires/rendez-vous des magasins et stock réel du KS-004 et de Chrono Trigger.
+
+ARRÊT DE SESSION — revue explicite de JD requise avant commit/push.
+
+## Session 5 — propositions de transport Japan V2 — terminée localement
+
+- Section **« Propositions »** relue dans le Google Doc Japan V2 en lecture seule.
+- Les propositions de transport ont été intégrées aux journées du 5, 11, 18, 21 et 29 octobre dans `bundles/japon/jours/`; les journées du 23 au 26 ont ensuite été vidées du segment retiré.
+- L'index Kawazu reprend l'arrivée depuis Hamamatsu; les journées du 23 au 25 restent à planifier.
+- Le 29 octobre ne présente plus 18 h 45 comme un départ confirmé : l'ambiguïté vol/arrivée à Narita est visible.
+- Contrôles : `node src/build.js` réussi — **199 concepts dans 4 bundles**; **30 journées** générées; **321 fichiers HTML** contrôlés; **0 lien interne manquant**; `git diff --check` propre.
+- Aucun commit, push ou déploiement effectué; revue explicite de JD requise.
 
 ARRÊT DE SESSION — revue explicite de JD requise avant commit/push.
