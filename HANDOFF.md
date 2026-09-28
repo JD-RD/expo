@@ -153,6 +153,21 @@ Lis `/home/jd/src/expo/AGENTS.md`, `/home/jd/Plans/2026-09-27-plan-vue-jour-par-
 
 ARRÊT DE SESSION — revue explicite de JD requise avant commit/push.
 
+## Session 6 — synchronisation Japan V2 — terminée localement, sans commit ni push
+
+- Japan V2 relu en lecture seule le 28 septembre 2026; document retenu : **Japan V2**, ID `1lGRMYlnpWc1ittvIEIdtwyTHQjzu4hFvaZ5W8NmN9Vc`.
+- Le résumé actuel retient Minamiizu du 21 au 24 octobre (449 $), Gora du 24 au 26 octobre (273 $), puis Tokyo du 26 au 29 octobre (Alo BnB 15 à 543 $). Kanazawa est maintenant chiffré à 329 $.
+- EXPO présente Minamiizu et Gora comme étapes actives; quatre nouvelles fiches ont été ajoutées. Les adresses, réservations et trajets restent explicitement à compléter.
+- La proposition détaillée Kawazu/Imaihama est conservée comme scénario non actif, car elle entre en conflit avec le résumé Minamiizu/Gora de Japan V2.
+- Les journées du 21 au 26 octobre, l'arrivée du 30 septembre et le départ du 29 octobre ont été synchronisés; le vol retour à 18 h 45 est désormais marqué confirmé, avec terminal encore à vérifier.
+- Contrôles : `npm run build` réussi — **201 concepts dans 4 bundles**; **30 journées** générées; **238 fichiers Markdown** analysés pour les liens internes, **0 cible manquante**; `git diff --check` propre.
+- Aucun commit, push, déploiement ou écriture dans Google Docs n'a été effectué dans cette session.
+
+### Portes restantes
+
+- Revoir le diff final avant tout commit ou push.
+- Décider explicitement si Minamiizu/Gora ou Kawazu/Imaihama devient la version définitive avant d'ajouter des trajets réservables.
+
 ## Session 5 — propositions de transport Japan V2 — terminée localement
 
 - Section **« Propositions »** relue dans le Google Doc Japan V2 en lecture seule.

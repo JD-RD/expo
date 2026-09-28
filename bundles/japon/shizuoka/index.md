@@ -1,12 +1,12 @@
 ---
 title: 🗂 Shimoda / Suzaki — archive (Izu)
-description: Ancien segment de Shimoda/Suzaki, écarté de l'itinéraire actif après la mise à jour vers Kawazu.
+description: Ancien segment de Shimoda/Suzaki, écarté de l'itinéraire actif après les mises à jour vers Minamiizu/Gora.
 tags: [japon, shizuoka, izu, shimoda, archive]
 ---
 
 # 🗂 Shimoda / Suzaki — archive (Izu)
 
-Ancien segment prévu du 21 au 23 octobre. Il n'est plus dans l'itinéraire actif, qui retient désormais Kawazu; les fiches ci-dessous sont conservées comme documentation et options écartées.
+Ancien segment prévu du 21 au 23 octobre. Il n'est plus dans l'itinéraire actif, qui retient désormais Minamiizu puis Gora dans le résumé de Japan V2; les fiches ci-dessous sont conservées comme documentation et options écartées.
 
 ## Suzaki (autour de l'hôtel)
 
