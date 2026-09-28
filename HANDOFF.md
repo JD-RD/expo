@@ -147,3 +147,15 @@ Prochain lot: D optionnel
 Nouvelle session: GPT-5.6 Luna / raisonnement high
 Prompt de reprise:
 Lis `/home/jd/src/expo/AGENTS.md`, `/home/jd/Plans/2026-09-27-plan-vue-jour-par-jour-expo.md` et `/home/jd/src/expo/HANDOFF.md`. N'exécute le lot D que si JD demande explicitement le commit et le déploiement après revue du diff; sinon ne modifie rien et n'effectue aucun commit, push ou déploiement.
+
+## Session 4 — Kanazawa et achats ciblés — terminé localement, sans commit ni push
+
+- L'étape active du **8 au 11 octobre** a été remplacée de Toyama par **Kanazawa**, conformément à Japan V2.
+- Nouveau logement : **HOTEL MYSTAYS Kanazawa Katamachi**, 1-10-18 Katamachi, Kanazawa, Ishikawa 920-0981; prix encore à confirmer. Le lien officiel et le lien Booking.com de Japan V2 sont repris dans la fiche.
+- Les anciennes fiches Toyama ont été déplacées sous `bundles/japon/toyama-archive/` et ne sont plus présentées comme une étape active.
+- Les journées du 8, 9, 10 et 11 octobre ont été réécrites pour Kanazawa, avec le trajet de travail Yamanouchi → Nagano → Kanazawa, les activités Japan V2 et les éléments encore à confirmer clairement marqués.
+- Une stratégie d'achats ciblés a été ajoutée à Tokyo : Chrono Trigger sur Super Famicom à Akihabara le 27 octobre; synthés à Five G le 28 octobre; vinyle Little Tempo & Yoko Fujita, `茶の味 / Cha no Aji`, 7 pouces Kedaco Sounds KS-004, avec recherche Discogs et HMV Record Shop Shibuya; Clockface Modular uniquement sur rendez-vous.
+- Contrôles : build réussi à **199 concepts dans 4 bundles**; **226 liens internes contrôlés, 0 cible manquante**; `git diff --check` propre; aucun commit, push ou déploiement.
+- À confirmer avant livraison : prix et réservation Kanazawa, horaires définitifs du trajet du 8 octobre, horaires/rendez-vous des magasins et stock réel du KS-004 et de Chrono Trigger.
+
+ARRÊT DE SESSION — revue explicite de JD requise avant commit/push.

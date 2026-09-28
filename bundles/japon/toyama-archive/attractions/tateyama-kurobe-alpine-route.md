@@ -8,4 +8,4 @@ timestamp: 2026-08-27
 
 **Considérer seulement si la météo montagne est excellente.** Départ tôt + journée complète.
 
-Après 3 jours à Yamanouchi, [Iwase](/japon/toyama/lieux/iwase) offre un meilleur équilibre.
+Après 3 jours à Yamanouchi, [Iwase](/japon/toyama-archive/lieux/iwase) offre un meilleur équilibre.

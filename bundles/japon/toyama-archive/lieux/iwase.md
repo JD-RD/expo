@@ -14,7 +14,7 @@ Ancien quartier des marchands maritimes Kitamae. ~25 min de tram depuis Toyama S
 - Bâtiments marchands et d'expédition historiques
 - Morike Kitamae Shipping Building
 - Studios de céramique et de verre
-- [Masuda Shuzō](/japon/toyama/restaurants/masuda-shuzo) — brasserie de sake
+- [Masuda Shuzō](/japon/toyama-archive/restaurants/masuda-shuzo) — brasserie de sake
 - Douceurs traditionnelles et boutiques de kombu
 - Promenade au bord de l'eau
 

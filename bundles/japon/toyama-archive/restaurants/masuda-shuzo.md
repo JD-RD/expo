@@ -6,4 +6,4 @@ tags: [toyama, sake, iwase]
 timestamp: 2026-08-27
 ---
 
-Brasserie de sake du district [Iwase](/japon/toyama/lieux/iwase). Dégustation possible sur place.
+Brasserie de sake du district [Iwase](/japon/toyama-archive/lieux/iwase). Dégustation possible sur place.

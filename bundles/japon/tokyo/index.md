@@ -38,6 +38,15 @@ Les événements et horaires déjà établis, notamment Idjut Boys le 2 octobre 
 - [Mugi to Olive Ginza](/japon/tokyo/restaurants/mugi-to-olive-ginza)
 - Fondue, si l'envie prend : [Hyoki](/japon/tokyo/restaurants/hyoki)
 
+## Achats ciblés — deuxième séjour
+
+La fenêtre la plus réaliste est le deuxième séjour à Tokyo, après Kanazawa, Kawazu et Shikinejima. Garder le 26 octobre léger à cause du retour de l'île.
+
+- **Mardi 27 octobre — Akihabara :** [Super Potato](/japon/tokyo/shoppings/super-potato-akihabara) pour Chrono Trigger, puis comparaison avec Book Off, Hard Off et Surugaya pour trouver une cartouche Super Famicom japonaise moins chère.
+- **Mercredi 28 octobre — Harajuku → Shibuya :** [Five G Music Technology](/japon/tokyo/shoppings/five-g-music-technology) pour les synthés, puis [HMV Record Shop Shibuya](/japon/tokyo/shoppings/hmv-record-shop-shibuya) et d'autres disquaires pour le [7 pouces Little Tempo KS-004](/japon/tokyo/shoppings/little-tempo-ks-004).
+- **Modulaire :** [Clockface Modular](https://en.clockfacemodular.com/products/showroom) seulement sur rendez-vous au Hatagaya Patching Center; réserver avant le départ.
+- **KS-004 :** ajouter `KS-004`, `茶の味` et `Cha no Aji` à la wantlist Discogs; le stock physique n'est pas confirmé.
+
 ## Logements
 
 - [Airbnb (Sept 30 – Oct 5)](/japon/tokyo/hebergements/tokyo-airbnb-sept30-oct5)
