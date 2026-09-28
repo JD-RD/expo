@@ -216,6 +216,7 @@ body.sidebar-open .sidebar-overlay {
 }
 
 /* ─── Breadcrumb ──────────────────────────────── */
+.mobile-back { display: none; }
 .breadcrumb {
   display: flex; align-items: center; gap: 0.3rem;
   font-size: 0.85rem;
@@ -646,6 +647,21 @@ body.sidebar-open .sidebar-overlay {
 
 /* ─── Responsive ──────────────────────────────── */
 @media (max-width: 768px) {
+  .mobile-back {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    margin-bottom: 0.75rem;
+    padding: 0.35rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg-card);
+    color: var(--accent);
+    font: inherit;
+    cursor: pointer;
+  }
+  .mobile-back:hover { background: var(--bg-hover); }
+  .mobile-back + .breadcrumb { margin-bottom: 1rem; }
   .hamburger {
     display: flex;
     font-size: 2rem;

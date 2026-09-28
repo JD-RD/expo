@@ -59,6 +59,9 @@
     {% endif %}
 
     <main class="content">
+      {% if bundleName == 'japon' %}
+      <button type="button" class="mobile-back" onclick="goBack()" aria-label="Retour à la page précédente">← Retour</button>
+      {% endif %}
       {% if breadcrumb %}
       <nav class="breadcrumb">
         <a href="/">Accueil</a>
@@ -82,6 +85,17 @@
   </footer>
 
   <script>
+    function goBack() {
+      const parent = document.querySelector('.breadcrumb a:last-of-type')?.getAttribute('href') || '/';
+      try {
+        const previous = new URL(document.referrer);
+        if (window.history.length > 1 && previous.origin === window.location.origin && previous.href !== window.location.href) {
+          window.history.back();
+          return;
+        }
+      } catch (e) {}
+      window.location.assign(parent);
+    }
     function openIssue(e) {
       e.preventDefault();
       const title = document.title;
