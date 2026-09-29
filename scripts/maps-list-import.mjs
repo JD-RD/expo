@@ -224,4 +224,4 @@ for (const fileKey of files) {
 // Filter summary
 const filterNote = filterSet ? ` (filtré: ${cityFilter})` : '';
 console.log(`\n✅ ${totalImported} concepts créés dans bundles/${bundleName}/${filterNote}`);
-console.log(`\n   Puis : node src/build.js  →  rebuild le site`);
+console.log(`\n   Puis : npm run build-expo  →  valider et reconstruire le site`);

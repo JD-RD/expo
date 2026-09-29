@@ -56,8 +56,14 @@ cd expo
 # Installer les dépendances
 npm install
 
-# Builder le site
-node src/build.js
+# Builder le site (validation de data/japon.yaml incluse)
+npm run build-expo
+
+# Alias historique du build
+npm run build
+
+# Valider uniquement l’itinéraire
+npm run validate:japan
 
 # Prévisualiser
 npm run preview    # → http://localhost:8000

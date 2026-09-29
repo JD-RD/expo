@@ -177,7 +177,8 @@ Idéal pour un repas rapide en solo.
 
 ## 5. Pipeline du Build
 
-Le script `src/build.js` s'exécute en une passe :
+La commande `npm run build-expo` valide d'abord `data/japon.yaml`, puis
+exécute `src/build.js` en une passe :
 
 ```
 1. Lire bundles/index.md → métadonnées du portail
@@ -408,7 +409,7 @@ L'agent utilise `write_file` pour créer/mettre à jour les `.md` directement, p
 
 ```json
 {
-  "buildCommand": "node src/build.js",
+  "buildCommand": "npm run build-expo",
   "outputDirectory": "dist",
   "framework": null,
   "headers": [

@@ -35,9 +35,11 @@ Générateur de site statique Node.js qui lit des bundles OKF (markdown + YAML f
 ```bash
 cd ~/src/kai
 npm install                      # Install deps
-node src/build.js                # Build le site → dist/
+npm run build-expo               # Valide data/japon.yaml puis construit → dist/
 npm run preview                  # Serveur de test sur :8000
-npm run build                    # Build
+npm run build                    # Alias du build EXPO validé
+npm run validate:japan           # Valide uniquement l'itinéraire YAML
+npm run sync:japan               # Validation + build en dry-run
 ```
 
 ## Conventions

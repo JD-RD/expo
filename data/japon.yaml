@@ -1,0 +1,257 @@
+version: 1
+
+trip:
+  id: japon-2026
+  title: Voyage Japon 2026
+  start_date: 2026-09-30
+  end_date: 2026-10-29
+  currency: CAD
+
+# Les jours restent liés aux pages éditoriales tant que le build depuis YAML
+# n'est pas activé. Le validateur vérifie que les deux représentations restent
+# cohérentes.
+days:
+  - date: 2026-09-30
+    stage: Tokyo
+    status: planifie
+    source_path: bundles/japon/jours/2026-09-30.md
+  - date: 2026-10-01
+    stage: Tokyo
+    status: planifie
+    source_path: bundles/japon/jours/2026-10-01.md
+  - date: 2026-10-02
+    stage: Tokyo
+    status: planifie
+    source_path: bundles/japon/jours/2026-10-02.md
+  - date: 2026-10-03
+    stage: Tokyo
+    status: planifie
+    source_path: bundles/japon/jours/2026-10-03.md
+  - date: 2026-10-04
+    stage: Tokyo
+    status: planifie
+    source_path: bundles/japon/jours/2026-10-04.md
+  - date: 2026-10-05
+    stage: "Tokyo → Yamanouchi"
+    status: partiel
+    source_path: bundles/japon/jours/2026-10-05.md
+  - date: 2026-10-06
+    stage: Yamanouchi
+    status: planifie
+    source_path: bundles/japon/jours/2026-10-06.md
+  - date: 2026-10-07
+    stage: Yamanouchi
+    status: partiel
+    source_path: bundles/japon/jours/2026-10-07.md
+  - date: 2026-10-08
+    stage: "Yamanouchi → Kanazawa"
+    status: partiel
+    source_path: bundles/japon/jours/2026-10-08.md
+  - date: 2026-10-09
+    stage: Kanazawa
+    status: partiel
+    source_path: bundles/japon/jours/2026-10-09.md
+  - date: 2026-10-10
+    stage: Kanazawa
+    status: partiel
+    source_path: bundles/japon/jours/2026-10-10.md
+  - date: 2026-10-11
+    stage: "Kanazawa → Kyoto"
+    status: partiel
+    source_path: bundles/japon/jours/2026-10-11.md
+  - date: 2026-10-12
+    stage: Kyoto
+    status: planifie
+    source_path: bundles/japon/jours/2026-10-12.md
+  - date: 2026-10-13
+    stage: Kyoto
+    status: planifie
+    source_path: bundles/japon/jours/2026-10-13.md
+  - date: 2026-10-14
+    stage: Kyoto
+    status: partiel
+    source_path: bundles/japon/jours/2026-10-14.md
+  - date: 2026-10-15
+    stage: Kyoto
+    status: partiel
+    source_path: bundles/japon/jours/2026-10-15.md
+  - date: 2026-10-16
+    stage: Kyoto
+    status: partiel
+    source_path: bundles/japon/jours/2026-10-16.md
+  - date: 2026-10-17
+    stage: Kyoto
+    status: partiel
+    source_path: bundles/japon/jours/2026-10-17.md
+  - date: 2026-10-18
+    stage: "Kyoto → Hamamatsu"
+    status: partiel
+    source_path: bundles/japon/jours/2026-10-18.md
+  - date: 2026-10-19
+    stage: Hamamatsu
+    status: partiel
+    source_path: bundles/japon/jours/2026-10-19.md
+  - date: 2026-10-20
+    stage: Hamamatsu
+    status: partiel
+    source_path: bundles/japon/jours/2026-10-20.md
+  - date: 2026-10-21
+    stage: "Hamamatsu → Minamiizu"
+    status: a-confirmer
+    source_path: bundles/japon/jours/2026-10-21.md
+  - date: 2026-10-22
+    stage: Minamiizu
+    status: partiel
+    source_path: bundles/japon/jours/2026-10-22.md
+  - date: 2026-10-23
+    stage: Minamiizu
+    status: a-confirmer
+    source_path: bundles/japon/jours/2026-10-23.md
+  - date: 2026-10-24
+    stage: "Minamiizu → Gora"
+    status: a-confirmer
+    source_path: bundles/japon/jours/2026-10-24.md
+  - date: 2026-10-25
+    stage: Gora
+    status: a-confirmer
+    source_path: bundles/japon/jours/2026-10-25.md
+  - date: 2026-10-26
+    stage: "Gora → Tokyo"
+    status: a-confirmer
+    source_path: bundles/japon/jours/2026-10-26.md
+  - date: 2026-10-27
+    stage: Tokyo
+    status: partiel
+    source_path: bundles/japon/jours/2026-10-27.md
+  - date: 2026-10-28
+    stage: Tokyo
+    status: partiel
+    source_path: bundles/japon/jours/2026-10-28.md
+  - date: 2026-10-29
+    stage: Tokyo
+    status: partiel
+    source_path: bundles/japon/jours/2026-10-29.md
+
+arrival:
+  date: 2026-09-30
+  airport: Narita (NRT)
+  arrival_time: "15:25"
+  terminal: "2–3"
+  terminal_status: a-confirmer
+  accommodation_id: tokyo-initial
+  route:
+    - from: Narita Airport Terminal 2–3 Station
+      to: Nippori
+      mode: train
+      service: Keisei Skyliner
+    - from: Nippori
+      to: Akado-shōgakkōmae
+      mode: train
+      service: Nippori–Toneri Liner
+
+accommodations:
+  - id: tokyo-initial
+    active: true
+    status: confirmed
+    stage: Tokyo
+    name: CATS-2
+    room: "502"
+    check_in: 2026-09-30
+    check_out: 2026-10-05
+    nights: 5
+    price_cad: 575
+    address_en: "2-24-5 Tabatashinmachi, Kita City, Tokyo 114-0012, Japan"
+    address_ja: "〒114-0012 東京都北区田端新町2丁目24-5 CATS-2 502号室"
+    station: Akado-shōgakkōmae
+    exit: West exit
+    walking_distance_m: 400
+    key_instruction: "The door is not locked; the key is on the table and must be left in the room at checkout."
+    source_path: bundles/japon/tokyo/hebergements/tokyo-airbnb-sept30-oct5.md
+  - id: yamanouchi
+    active: true
+    status: confirmed
+    stage: Yamanouchi
+    name: Airbnb Yamanouchi
+    check_in: 2026-10-05
+    check_out: 2026-10-08
+    nights: 3
+    price_cad: 380
+    address_en: "2073 Hirao, Yamanouchi, Shimotakai District, Nagano"
+    source_path: bundles/japon/yamanouchi/hebergements/yamanouchi-airbnb-oct5-8.md
+  - id: kanazawa
+    active: true
+    status: confirmed
+    stage: Kanazawa
+    name: HOTEL MYSTAYS Kanazawa Katamachi
+    check_in: 2026-10-08
+    check_out: 2026-10-11
+    nights: 3
+    price_cad: 329
+    address_en: "1-10-18 Katamachi, Kanazawa, Ishikawa 920-0981, Japan"
+    source_path: bundles/japon/kanazawa/hebergements/hotel-mystays-kanazawa-katamachi.md
+  - id: kyoto
+    active: true
+    status: confirmed
+    stage: Kyoto
+    name: Airbnb Kyoto
+    check_in: 2026-10-11
+    check_out: 2026-10-18
+    nights: 7
+    price_cad: 1452.65
+    address_en: "Motokitakōjichō 168, Kamigyō Ward, Kyoto 602-8448"
+    source_path: bundles/japon/kyoto/hebergements/kyoto-airbnb-oct11-18.md
+  - id: hamamatsu
+    active: true
+    status: confirmed
+    stage: Hamamatsu
+    name: HOTEL SUI HAMAMATSU by ABEST
+    check_in: 2026-10-18
+    check_out: 2026-10-21
+    nights: 3
+    price_cad: 181
+    address_en: "314-47 Renjakuchō, Chūō-ku, Hamamatsu, Shizuoka"
+    source_path: bundles/japon/hamamatsu/hebergements/hotel-sui-hamamatsu.md
+  - id: minamiizu
+    active: true
+    status: planned
+    stage: Minamiizu
+    name: Airbnb Minamiizu
+    check_in: 2026-10-21
+    check_out: 2026-10-24
+    nights: 3
+    price_cad: 449
+    address_en: null
+    source_path: bundles/japon/minamiizu/hebergements/minamiizu-airbnb-oct21-24.md
+  - id: gora
+    active: true
+    status: planned
+    stage: Gora
+    name: Airbnb Gora
+    check_in: 2026-10-24
+    check_out: 2026-10-26
+    nights: 2
+    price_cad: 273
+    address_en: null
+    source_path: bundles/japon/gora/hebergements/gora-airbnb-oct24-26.md
+  - id: tokyo-final
+    active: true
+    status: planned
+    stage: Tokyo
+    name: Alo BnB 15
+    check_in: 2026-10-26
+    check_out: 2026-10-29
+    nights: 3
+    price_cad: 543
+    address_en: null
+    source_path: bundles/japon/tokyo/hebergements/tokyo-alo-bnb-15.md
+  - id: kawazu-proposal
+    active: false
+    status: proposed
+    stage: Kawazu
+    name: Izu Imaihama Tokyu Hotel
+    check_in: 2026-10-21
+    check_out: 2026-10-23
+    nights: 2
+    price_cad: 351
+    address_en: null
+    source_path: bundles/japon/kawazu/hebergements/izu-imaihama-tokyu-hotel.md

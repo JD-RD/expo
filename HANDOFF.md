@@ -187,3 +187,89 @@ ARRÊT DE SESSION — revue explicite de JD requise avant commit/push.
 - Aucun commit, push ou déploiement effectué; revue explicite de JD requise.
 
 ARRÊT DE SESSION — revue explicite de JD requise avant commit/push.
+
+## Lot 2 — Validation YAML intégrée au build EXPO — terminé sans commit ni push
+
+### Changements
+
+- Nouvelle commande `scripts/build-expo.mjs` : valide `data/japon.yaml` avec le
+  validateur du lot 1 avant d'invoquer `src/build.js`.
+- `--data <chemin>` est accepté par `build-expo` pour tester une source YAML
+  sans modifier `data/japon.yaml`; les autres arguments sont transmis au
+  générateur.
+- `npm run build` et `npm run dev` passent maintenant par `build-expo`;
+  `npm run build-expo` est la commande canonique.
+- Le dry-run `npm run sync:japan` utilise le même pipeline validé. Le mode
+  `--write` reste indisponible et ne touche pas Google Docs.
+- Vercel, `AGENTS.md`, `README.md`, `SPECS.md` et le message de
+  `scripts/maps-list-import.mjs` documentent le pipeline validé.
+- Tests ajoutés dans `test/build-expo.test.mjs` : YAML invalide bloqué avant
+  génération/nettoyage de `dist`, build réussi sur la source actuelle et
+  absence de modification des sources Markdown/YAML.
+
+### Contrôles du lot 2
+
+- `npm test` réussi : 6 tests.
+- `npm run validate:japan` réussi.
+- `npm run build` réussi : **201 concepts dans 4 bundles**.
+- `npm run sync:japan` réussi en dry-run, sans écriture de source ni Google Doc.
+- `git diff --check` propre.
+- Aucun commit, push ou déploiement effectué.
+
+### Décisions et risques
+
+- Le générateur historique `src/build.js` reste inchangé pour préserver son
+  comportement; les entrées documentées, `npm run build` et Vercel passent par
+  `build-expo`. Une invocation manuelle directe de `node src/build.js` peut
+  donc encore contourner cette validation.
+- Aucun Markdown n'est généré, migré ou écrasé depuis le YAML dans ce lot.
+- Les modifications non commitées des lots précédents et du lot 1 ont été
+  préservées. `dist/` reste une sortie générée et ignorée.
+
+ARRÊT DE SESSION OBLIGATOIRE
+Lot terminé: 2
+Prochain lot: 3 — sync-google-doc ou check-arrival, selon décision explicite
+Nouvelle session: GPT-5.6 Luna / raisonnement high
+Prompt de reprise:
+Lis `AGENTS.md`, `md/plan-automatisation.md` et `HANDOFF.md`. Exécute
+uniquement le lot 3 — `sync-google-doc` ou `check-arrival`, après décision
+explicite sur lequel commencer. Respecte les garde-fous du plan, préserve les
+modifications non commitées, ne modifie pas l'autre sous-lot et n'effectue
+aucun commit, push ou déploiement.
+
+## Lot 3 — `check-arrival` — terminé sans commit ni push
+
+### Décision de périmètre
+
+- Le sous-lot exécuté est **`check-arrival`**; `sync-google-doc` n'a pas été
+  modifié et aucun accès ou appel Google Doc n'a été effectué.
+- Le contrôle reste local et lit `data/japon.yaml`, sans recherche externe ni
+  écriture de source distante.
+
+### Changements
+
+- Ajout d'une section structurée `arrival` pour l'arrivée du 30 septembre :
+  Narita → Nippori par Keisei Skyliner → Akado-shōgakkōmae par
+  Nippori–Toneri Liner → CATS-2.
+- Ajout de `scripts/check-arrival.mjs`, avec `--data <chemin>` comme les
+  autres commandes YAML.
+- Le contrôle vérifie la date, l'aéroport, l'heure, le terminal et son statut,
+  la correspondance des segments, le premier logement actif, l'adresse, la
+  station, la sortie, la distance de marche et les instructions de clé.
+- Ajout de `npm run check-arrival` et de tests couvrant le trajet valide, une
+  mauvaise station finale et l'absence d'instructions de clé.
+
+### Contrôles
+
+- `npm test` réussi.
+- `npm run check-arrival` réussi avec un seul avertissement attendu : le
+  terminal Narita 2–3 reste à confirmer.
+- `npm run validate:japan` réussi.
+- `npm run build` réussi : **201 concepts dans 4 bundles**.
+- `git diff --check` réussi.
+- Aucun commit, push ou déploiement effectué; `dist/` reste généré et ignoré.
+
+ARRÊT DE SESSION RECOMMANDÉ
+Sous-lot terminé: 3 — `check-arrival`
+Sous-lot non commencé: 3 — `sync-google-doc`
+Ne pas commencer `sync-google-doc` dans cette session.
