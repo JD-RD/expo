@@ -273,3 +273,63 @@ ARRÊT DE SESSION RECOMMANDÉ
 Sous-lot terminé: 3 — `check-arrival`
 Sous-lot non commencé: 3 — `sync-google-doc`
 Ne pas commencer `sync-google-doc` dans cette session.
+
+## Lot 3 — `sync-google-doc` — terminé en dry-run, sans écriture Google
+
+### Changements
+
+- Ajout de `scripts/sync-google-doc.mjs`, avec `--dry-run` par défaut et
+  `--write` comme unique option d’écriture distante.
+- Ajout de `scripts/hermes-google-doc.py`, relais local vers le client Hermes
+  externe; aucun token, secret ou identifiant OAuth n’est stocké dans le dépôt.
+- Ajout de la commande `npm run sync-google-doc` et d’une documentation courte
+  dans `README.md`.
+- La source `data/japon.yaml` est validée avant toute lecture ou écriture.
+- La synchronisation ne gère qu’une section délimitée par
+  `<!-- EXPO:SYNC:START -->` et `<!-- EXPO:SYNC:END -->`; elle l’ajoute en fin
+  de document si elle est absente, la remplace si elle existe, et refuse les
+  marqueurs ambigus. Le contenu éditorial existant n’est pas écrasé.
+- Le mode écriture vérifie `mimeType`, `capabilities.canEdit`, un hash de
+  concurrence et `revisionId` avant `batchUpdate`, puis relit le Doc pour
+  confirmer l’état.
+- Les marqueurs inversés sont refusés; les positions de remplacement sont
+  converties en unités UTF-16, comme l’exige l’API Google Docs.
+
+### Contrôles
+
+- `setup.py --check` réussi après rafraîchissement OAuth; secrets conservés
+  hors du dépôt.
+- Japan V2 retrouvé sans ambiguïté et relu en lecture seule : document ID
+  `1lGRMYlnpWc1ittvIEIdtwyTHQjzu4hFvaZ5W8NmN9Vc`, type Google Docs,
+  `canEdit=true`.
+- Dry-run réel réussi : action projetée `append`, section de 1 893 caractères,
+  document distant inchangé.
+- `npm test` réussi : **4 fichiers de test / 13 sous-tests**.
+- `npm run validate:japan` réussi.
+- `npm run build` réussi : **201 concepts dans 4 bundles**.
+- `npm run check-arrival` réussi avec son seul avertissement attendu sur le
+  terminal Narita 2–3; `scripts/check-arrival.mjs` n’a pas été modifié.
+- Syntaxe Node/Python vérifiée et `git diff --check` propre.
+- Après revue explicite de JD, `npm run sync-google-doc -- --write` a ajouté la
+  section gérée en fin de Japan V2. La relecture lecture seule confirme 1
+  marqueur de début, 1 marqueur de fin et **38 399 caractères**; aucun contenu
+  éditorial existant n’a été remplacé.
+- Aucun commit, push ou déploiement effectué.
+
+### Limites restantes
+
+1. La section synchronisée est un résumé structuré des champs YAML validés
+   (arrivée, logements actifs et journées); elle ne remplace pas le contenu
+   éditorial détaillé ni les incohérences déjà présentes dans Japan V2.
+2. L’exécution nécessite le token Hermes local, les dépendances Google dans un
+   environnement Python Hermes/temporaire et `EXPO_GOOGLE_DOC_ID`; ces éléments
+   restent hors du dépôt.
+3. Une revue humaine du plan dry-run reste requise avant chaque future option
+   `--write`; les prochaines exécutions idempotentes pourront remplacer
+   uniquement la section gérée.
+
+ARRÊT DE SESSION OBLIGATOIRE
+Sous-lot terminé: 3 — `sync-google-doc`
+Sous-lot `check-arrival`: préservé, déjà terminé
+Prochaine action: revue du diff local; aucun commit, push ou déploiement sans
+demande explicite.

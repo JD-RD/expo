@@ -65,6 +65,12 @@ npm run build
 # Valider uniquement l’itinéraire
 npm run validate:japan
 
+# Préparer une synchronisation Google Doc (dry-run par défaut)
+EXPO_GOOGLE_DOC_ID=<document-id> npm run sync-google-doc -- --dry-run
+
+# Écrire uniquement après revue explicite du plan
+EXPO_GOOGLE_DOC_ID=<document-id> npm run sync-google-doc -- --write
+
 # Prévisualiser
 npm run preview    # → http://localhost:8000
 
