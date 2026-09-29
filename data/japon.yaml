@@ -135,12 +135,13 @@ days:
 arrival:
   date: 2026-09-30
   airport: Narita (NRT)
-  arrival_time: "15:25"
-  terminal: "2–3"
-  terminal_status: a-confirmer
+  arrival_time: "15:07"
+  terminal: "1"
+  gate: "43"
+  terminal_status: confirme
   accommodation_id: tokyo-initial
   route:
-    - from: Narita Airport Terminal 2–3 Station
+    - from: Narita Airport Terminal 1 Station
       to: Nippori
       mode: train
       service: Keisei Skyliner

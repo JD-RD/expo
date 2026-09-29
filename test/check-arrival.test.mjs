@@ -8,8 +8,7 @@ test('contrôle le trajet d’arrivée et les instructions du premier logement',
 
   assert.deepEqual(result.errors, []);
   assert.equal(result.accommodation.id, 'tokyo-initial');
-  assert.equal(result.warnings.length, 1);
-  assert.equal(result.warnings[0].path, 'arrival.terminal');
+  assert.deepEqual(result.warnings, []);
 });
 
 test('détecte une destination de trajet qui ne correspond pas à la station du logement', () => {
