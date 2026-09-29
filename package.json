@@ -11,6 +11,7 @@
     "preview": "cd dist && python3 -m http.server 8000",
     "validate:japan": "node scripts/validate-itinerary.mjs",
     "check-arrival": "node scripts/check-arrival.mjs",
+    "pre-commit": "node scripts/pre-commit.mjs",
     "sync-google-doc": "node scripts/sync-google-doc.mjs",
     "sync:japan": "node scripts/sync-japan.mjs",
     "test": "node --test"

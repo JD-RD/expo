@@ -333,3 +333,49 @@ Sous-lot terminé: 3 — `sync-google-doc`
 Sous-lot `check-arrival`: préservé, déjà terminé
 Prochaine action: revue du diff local; aucun commit, push ou déploiement sans
 demande explicite.
+
+## Reliquat du plan — `pre-commit` — terminé sans commit ni push
+
+### Changements
+
+- Ajout de `npm run pre-commit`, sans nouvelle dépendance, piloté par
+  `scripts/pre-commit.mjs`.
+- Les contrôles sont séquentiels et s’arrêtent au premier échec :
+  `npm run validate:japan`, `npm run build`, `npm run check-arrival`,
+  `npm test`, puis `git diff --cached --check` lorsqu’un changement est
+  indexé.
+- Lorsque l’index est vide, le dernier contrôle est explicitement indiqué
+  comme ignoré; le script produit ensuite un résumé clair des statuts.
+- Hook Git versionné ajouté dans `.githooks/pre-commit`. Il s’active par clone
+  avec `git config core.hooksPath .githooks`; aucune dépendance de type Husky
+  n’a été ajoutée.
+- Tests ajoutés dans `test/pre-commit.test.mjs` pour le parcours nominal,
+  l’arrêt au premier échec et les deux états de l’index.
+- Installation et utilisation documentées dans `README.md`.
+
+### Contrôles du reliquat
+
+- `npm run validate:japan` réussi.
+- `npm run build` réussi.
+- `npm run check-arrival` réussi avec l’avertissement attendu sur le terminal
+  Narita 2–3 à confirmer.
+- `npm test` réussi, y compris les tests du runner `pre-commit`.
+- `npm run pre-commit` réussi; l’index étant vide dans ce clone,
+  `git diff --cached --check` a été signalé comme ignoré.
+- `git diff --check` propre.
+- `dist/` a seulement été régénéré par les contrôles; aucune modification
+  manuelle n’y a été effectuée et il reste ignoré.
+- Aucun accès Google, secret, écriture distante, commit, push ou déploiement
+  effectué; `check-arrival` et `sync-google-doc` n’ont pas été modifiés.
+
+### Limites restantes
+
+1. Le hook n’est pas activé automatiquement après clonage; chaque clone doit
+   configurer `core.hooksPath` conformément à la documentation.
+2. Le contrôle `git diff --cached --check` ne porte que sur le contenu indexé,
+   comme requis pour un commit; les changements seulement présents dans
+   l’arbre de travail ne sont pas inspectés par ce contrôle.
+3. L’avertissement connu du terminal Narita 2–3 reste volontairement inchangé
+   et doit être résolu depuis la source de voyage avant le départ.
+
+ARRÊT DE SESSION — commit, push et déploiement restent à demander séparément.

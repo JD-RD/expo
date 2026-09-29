@@ -65,6 +65,12 @@ npm run build
 # Valider uniquement l’itinéraire
 npm run validate:japan
 
+# Exécuter tous les contrôles avant un commit
+npm run pre-commit
+
+# Activer le hook Git versionné pour ce clone (une seule fois)
+git config core.hooksPath .githooks
+
 # Préparer une synchronisation Google Doc (dry-run par défaut)
 EXPO_GOOGLE_DOC_ID=<document-id> npm run sync-google-doc -- --dry-run
 
@@ -77,6 +83,20 @@ npm run preview    # → http://localhost:8000
 # Déployer (push sur main)
 git push origin main   # Vercel build automatique
 ```
+
+### Contrôles avant commit
+
+`npm run pre-commit` exécute dans l’ordre la validation de `data/japon.yaml`,
+le build EXPO, `check-arrival`, la suite de tests et
+`git diff --cached --check`. Il s’arrête au premier échec et affiche un résumé
+de chaque contrôle. Si aucun changement n’est indexé, le contrôle du diff
+indexé est indiqué comme ignoré; il sera exécuté par le hook lorsqu’un commit
+est préparé.
+
+Le hook versionné se trouve dans `.githooks/pre-commit`. Il n’est pas activé
+automatiquement par Git : après clonage, activez-le avec
+`git config core.hooksPath .githooks`. Pour revenir au comportement Git par
+défaut dans ce clone, utilisez `git config --unset core.hooksPath`.
 
 ## 🧭 Branches
 
