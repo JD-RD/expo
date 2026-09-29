@@ -1,0 +1,17 @@
+version: 1
+document:
+  id: example-google-doc-id
+  title: Document de voyage exemple
+operations:
+  - id: update-arrival-time
+    type: replace_exact
+    old: "Arrivée: 15 h 25"
+    new: "Arrivée: 15 h 07"
+    expected_matches: 1
+    source: "source de revue désensibilisée"
+  - id: add-arrival-note
+    type: insert_after
+    anchor: "Arrivée: 15 h 07"
+    text: "\nNote: confirmer le terminal avant le départ."
+    expected_matches: 1
+    source: "note éditoriale exemple"

@@ -74,7 +74,16 @@ git config core.hooksPath .githooks
 # Préparer une synchronisation Google Doc (dry-run par défaut)
 EXPO_GOOGLE_DOC_ID=<document-id> npm run sync-google-doc -- --dry-run
 
+# Préparer un patch générique depuis un plan YAML (dry-run par défaut)
+EXPO_GOOGLE_DOC_ID=<document-id> npm run sync-google-doc -- --plan <plan.yaml> --dry-run
+
+# Tester un plan sans réseau avec une fixture JSON {id,title,body,revisionId}
+npm run sync-google-doc -- --plan <plan.yaml> --document-file <document.json> --dry-run
+
 # Écrire uniquement après revue explicite du plan
+EXPO_GOOGLE_DOC_ID=<document-id> npm run sync-google-doc -- --plan <plan.yaml> --write
+
+# Le mode historique EXPO:SYNC reste disponible
 EXPO_GOOGLE_DOC_ID=<document-id> npm run sync-google-doc -- --write
 
 # Prévisualiser
@@ -83,6 +92,43 @@ npm run preview    # → http://localhost:8000
 # Déployer (push sur main)
 git push origin main   # Vercel build automatique
 ```
+
+### Workflow d’un patch générique
+
+1. **Extraire** le document en lecture seule avec `--dry-run`. Les credentials
+   restent gérés hors du dépôt par Hermes; aucun plan réel contenant des données
+   privées ne doit être versionné.
+2. **Planifier** une opération littérale explicite dans un YAML : texte ancien,
+   texte nouveau, ancre ou marqueurs, cardinalité attendue et source de revue.
+   Les recherches ne sont pas des expressions régulières.
+3. **Prévisualiser** d’abord sur une fixture locale. L’exemple désensibilisé
+   [`examples/google-doc-change-plan.example.yaml`](examples/google-doc-change-plan.example.yaml)
+   s’exécute avec
+   [`examples/google-doc-fixture.example.json`](examples/google-doc-fixture.example.json) :
+
+   ```bash
+   npm run sync-google-doc -- \
+     --plan examples/google-doc-change-plan.example.yaml \
+     --document-file examples/google-doc-fixture.example.json \
+     --dry-run
+   ```
+
+4. **Revoir** le résumé : document ciblé, action, cardinalités, tailles et
+   empreintes avant/après. Une cible absente ou ambiguë, un titre inattendu ou
+   une fixture mal associée arrête le dry-run avec un diagnostic exploitable.
+5. **Préparer le dry-run distant** en conservant le plan réel dans un fichier
+   temporaire ou ignoré par Git, puis en fournissant l’identifiant attendu :
+
+   ```bash
+   EXPO_GOOGLE_DOC_ID=<document-id> npm run sync-google-doc -- \
+     --plan /chemin/temporaire/plan-revu.yaml --dry-run
+   ```
+
+   Cette commande relit le Google Doc et n’appelle jamais `batchUpdate`.
+6. **Appliquer puis relire** uniquement après une revue et une confirmation
+   explicites, avec `--write`. Le relais revalide alors le type de document,
+   `canEdit`, l’empreinte de base et la `revisionId`, puis vérifie le texte
+   final. Le lot D ne réalise aucune écriture distante.
 
 ### Contrôles avant commit
 
