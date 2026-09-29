@@ -168,6 +168,15 @@ ARRÊT DE SESSION — revue explicite de JD requise avant commit/push.
 - Revoir le diff final avant tout commit ou push.
 - Décider explicitement si Minamiizu/Gora ou Kawazu/Imaihama devient la version définitive avant d'ajouter des trajets réservables.
 
+## Session 7 — adresse Tokyo et instructions du propriétaire — terminée localement
+
+- Japan V2 a été mis à jour en écriture ciblée avec l'adresse complète **CATS-2, chambre 502**, 2-24-5 Tabatashinmachi, Kita City, Tokyo 114-0012, ainsi que sa version japonaise.
+- La section d'arrivée reprend maintenant le trajet du propriétaire : Terminal 2–3 → Skyliner → Nippori → Nippori–Toneri Liner → Akado-shōgakkōmae, sortie ouest, environ 400 m / 5–6 min de marche.
+- Les consignes de clé sont documentées : porte du logement non verrouillée selon le propriétaire, clé sur la table à l'arrivée, clé laissée dans la chambre au check-out.
+- EXPO est synchronisé avec ces informations dans la fiche d'hébergement Tokyo et la journée du 30 septembre.
+- Contrôles : `npm run build` réussi — **201 concepts dans 4 bundles**; **238 fichiers Markdown** analysés pour les liens internes, **0 cible manquante**; `git diff --check` propre.
+- Les modifications EXPO restent locales et non commitées; aucun push n'a été effectué pour cette session.
+
 ## Session 5 — propositions de transport Japan V2 — terminée localement
 
 - Section **« Propositions »** relue dans le Google Doc Japan V2 en lecture seule.
