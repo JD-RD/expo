@@ -16,8 +16,7 @@ L'arrivée du 8 octobre et les deux journées à Kanazawa sont regroupées dans 
 
 - Itinéraire de travail : Yudanaka 10 h 50 → Nagano 11 h 36, puis Nagano 12 h 06 → Kanazawa 13 h 36 sur le Hakutaka 559; horaires à reconfirmer pour octobre 2026.
 - Depuis Kanazawa Station : bus ou taxi vers le [HOTEL MYSTAYS Kanazawa Katamachi](/japon/kanazawa/hebergements/hotel-mystays-kanazawa-katamachi), environ 15 minutes en bus selon l'hôtel.
-- Adresse : 1-10-18 Katamachi, Kanazawa, Ishikawa 920-0981, Japon.
-- Arrivée prévue vers 14 h 15–14 h 30; check-in à partir de 15 h.
+- Les détails de réservation et d'arrivée sont conservés hors du site public.
 
 ## À faire
 
